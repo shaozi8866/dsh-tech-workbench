@@ -1,0 +1,17 @@
+# DSH 科技风工作台插件 - 配置插入点
+# 安装时被追加进 profile 的组合配置
+# v2.0：皮肤已独立为 dsh-tech-skin 插件，本插件不再包含皮肤相关配置
+- insert:
+    - id: dsh-tech-workbench
+      name: dsh-tech-workbench
+      config:
+        # GitHub 个人访问令牌（可选，提升 API 限额 60→5000 次/小时）
+        githubToken: ""
+        # 用户自定义 GitHub 仓库源列表（owner/repo 格式，自动识别类型）
+        customRepos: []
+        # 用户自定义预设仓库列表（强制归类为预设，owner/repo 格式）
+        customPresetRepos: []
+        # 用户自定义应用仓库列表（强制归类为应用，owner/repo 格式）
+        customAppRepos: []
+        # 缓存过期时间（秒），默认 24 小时
+        cacheExpireSeconds: 86400

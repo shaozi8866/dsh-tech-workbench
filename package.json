@@ -1,0 +1,60 @@
+{
+  "name": "dsh-tech-workbench",
+  "version": "2.2.2",
+  "description": "DSH 插件/预设/应用统一工作台，侧边栏重构，双源数据抓取（Market+GitHub）。样式使用 DSH 原生 --dsw-alias-* 变量，适配任意 DSH 主题（推荐搭配 dsh-tech-skin）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/client.js.map",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.5-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "tsdown": "^0.23.0",
+    "typescript": "^5.5.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "tech-skin",
+    "workbench",
+    "sidebar",
+    "dark-mode",
+    "plugin-manager"
+  ],
+  "license": "MIT",
+  "author": "DSH Tech Workbench"
+}
