@@ -99,13 +99,37 @@ function injectGlobalStyles(): void {
       font-weight: 600;
     }
 
-    /* 侧边栏折叠时的适配 */
-    [data-dsh-frame][data-sidebar-collapsed] [${ENTRY_ATTR}] {
+    /* 侧边栏折叠时的适配
+       v2.2.4: DSH（dsh-client-ui-layout）实际只在 AppFrame 根元素上挂
+       data-sidebar-collapsed="true"；data-dsh-frame 属性不存在于任何 DSH
+       产物中——旧选择器永远不匹配，折叠适配此前是死代码 */
+    [data-sidebar-collapsed] [${ENTRY_ATTR}] {
       justify-content: center;
       padding: 0;
       width: 100%;
     }
-    [data-dsh-frame][data-sidebar-collapsed] [${ENTRY_ATTR}] .wb-label {
+    [data-sidebar-collapsed] [${ENTRY_ATTR}] .wb-label {
+      display: none;
+    }
+
+    /* 第三方侧边栏入口的折叠适配（这些插件自身未处理折叠，集中兜底）：
+       - @dely0/dsh-personal-workbench「工作台」：同为 DOM 注入，.wb-label 惯例
+       - dsh-session-manager「会话管理」：slot 挂载正确，但 label span 不随折叠收起 */
+    [data-sidebar-collapsed] [data-dsh-personal-workbench-entry] {
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    [data-sidebar-collapsed] [data-dsh-personal-workbench-entry] .wb-label {
+      display: none;
+    }
+    [data-sidebar-collapsed] .sm-footerBtn {
+      justify-content: center;
+      gap: 0;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    [data-sidebar-collapsed] .sm-footerBtn span {
       display: none;
     }
   `;
