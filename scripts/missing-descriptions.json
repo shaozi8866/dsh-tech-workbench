@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "@anionex/dsh-vision-toolkit",
+    "name": "@anionex/dsh-vision-toolkit",
+    "description": "DeepSeek Harness-native integration for agent-vision-toolkit: image Q&A, OCR, grounding, UI restoration, pixel diff, Artifacts, and Web UI.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.44",
+    "category": "community"
+  },
+  {
+    "id": "deepseek-harness-wallet",
+    "name": "deepseek-harness-wallet",
+    "description": "Local-first DeepSeek Harness control center for balance monitoring, usage accounting, time-aware custom third-party API pricing, a 365-day local token ledger, Z.ai Coding Plan quotas, official pricing sync, encrypted multi-account switching, reminders, re",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.13",
+    "category": "community"
+  },
+  {
+    "id": "@anionex/dsh-turn-rewind",
+    "name": "@anionex/dsh-turn-rewind",
+    "description": "Turn-level conversation and workspace rewind for DeepSeek Harness, powered by a persistent Change Ledger",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.8",
+    "category": "community"
+  },
+  {
+    "id": "dsh-notifier",
+    "name": "dsh-notifier",
+    "description": "DSH 统一通知推送插件：一个 notify() API 打天下 + 多渠道 adapter；远程审批/远程会话支持 telegram/feishu/qq/wxpusher/wechat/dingtalk 六通道双向回传；移动指挥中心（长任务心跳 / 疑似卡住提醒 / 通知按钮停止任务）；开放事件源（其他插件经 notifier 服务推送 + dsh-notifier/sent 事件订阅）；QQ/钉钉/飞书官方扫码授权；本机 Web 管理台（凭证/路由/扫码授权网页可管，移动端适配）。零运行时依赖（只用",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.9.6",
+    "category": "community"
+  },
+  {
+    "id": "dsh-rewind-plugin",
+    "name": "dsh-rewind-plugin",
+    "description": "DSH 插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）。 · DSH plugin: genuinely effortless in-window conversation rewind — never forking a new session; ships a lightweight workspace backup that restores files together with the rewind (",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.12.0",
+    "category": "community"
+  },
+  {
+    "id": "@openviking/dsh-memory-plugin",
+    "name": "@openviking/dsh-memory-plugin",
+    "description": "OpenViking memory and context bundle for DeepSeek Harness",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-market/plugin",
+    "name": "@dsh-market/plugin",
+    "description": "DSH Market 插件端：cordis 侧边栏插件（浏览/搜索/猜你喜欢/一键安装/已装管理），核心逻辑来自 @dsh-market/core",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.7",
+    "category": "community"
+  },
+  {
+    "id": "@anweat/dsh-browser",
+    "name": "@anweat/dsh-browser",
+    "description": "Self-contained browser runtime plugin for DeepSeek Harness (scoped @anweat) — bundles Playwright (chromium) and OpenCLI as plugin-local dependencies (with global-reuse fallback), exposes a `browser` service and interactive browser tools.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.12",
+    "category": "community"
+  },
+  {
+    "id": "@michengai/dsh-automation",
+    "name": "@michengai/dsh-automation",
+    "description": "在独立 DSH Session 中按计划执行编码任务，支持 Web 设置页与 Agent 双入口管理。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.40",
+    "category": "community"
+  },
+  {
+    "id": "dsh-web-plugin-manager",
+    "name": "dsh-web-plugin-manager",
+    "description": "Manage DeepSeek Harness (DSH) plugins from the Web UI: list, enable/disable, install/remove, environments, and a GitHub-awesome-driven marketplace.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.1",
+    "category": "community"
+  },
+  {
+    "id": "@mars-sea/dsh-commandcode-provider",
+    "name": "@mars-sea/dsh-commandcode-provider",
+    "description": "Unofficial DeepSeek Harness LLM provider plugin for Command Code, ported from pi-commandcode-provider (MIT). Registers the 'commandcode' provider route with a Models-page card and live model catalog.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.10.6",
+    "category": "community"
+  },
+  {
+    "id": "dsh-update-checker",
+    "name": "dsh-update-checker",
+    "description": "Auto-check DeepSeek Harness and third-party plugin updates, notify in the Web GUI, one-click update with backup/rollback and restart watchdog.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.4.22",
+    "category": "community"
+  },
+  {
+    "id": "@a9i5k4/dsh-auto-memory",
+    "name": "@a9i5k4/dsh-auto-memory",
+    "description": "Proactive associative memory for DSH: zero-prompt recall injected before the model speaks, three-layer auto-consolidation, skill crystallization, and Astra-style context management - handoff ledgers, PLAN whiteboard, water-level sensing. Local-first, mode",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2.4.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-writing-guard",
+    "name": "dsh-plugin-writing-guard",
+    "description": "Scientific writing & document integrity guard for AI-assisted research - prompt-guided argument economy with deterministic scientific, delivery, journal, and Word integrity checks.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2.0.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-free-vision",
+    "name": "dsh-free-vision",
+    "description": "Free vision plugin for DeepSeek Harness (dsh): image understanding for text-only models with free-tier providers (Qwen3-VL-Flash / DeepSeek-OCR / Doubao). 免费视觉插件：纯文本模型看图能力，优先免费模型（通义千问 / 硅基流动 / 豆包）。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.0.8",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-market/core",
+    "name": "@dsh-market/core",
+    "description": "DSH Market 插件端核心层：纯 Node 模块，零 DSH API 依赖（数据/搜索/画像/推荐/安装），可独立测试",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.6",
+    "category": "community"
+  },
+  {
+    "id": "dsh-web-search-pro",
+    "name": "dsh-web-search-pro",
+    "description": "Enhanced, persistent web search plugin for DeepSeek Harness — multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, and Playwright rendering.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.11",
+    "category": "community"
+  },
+  {
+    "id": "dsh-tavern",
+    "name": "dsh-tavern",
+    "description": "DeepSeek Tavern - DSH roleplay plugin: character cards, worldbooks, presets, memory, relations, plot options. PolyForm-Noncommercial-Copyleft-1.0.0",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2.3.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-easyrewrite",
+    "name": "dsh-easyrewrite",
+    "description": "DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web — native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI. DSH Web で最もシームレスなメッセージ撤回・再編集プラグイン——ネイテ",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2.5.0",
+    "category": "community"
+  },
+  {
+    "id": "@ychris12138/dsh-usage-stats",
+    "name": "@ychris12138/dsh-usage-stats",
+    "description": "Token usage, provider accounts, session cost estimates, budgets, and exports for the dsh web GUI",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.3",
+    "category": "community"
+  },
+  {
+    "id": "@zhangfengshun/dsh-remote-ssh",
+    "name": "@zhangfengshun/dsh-remote-ssh",
+    "description": "DSH web plugin: VSCode Remote-SSH-like remote development (SSH to supercomputers/servers, remote workspace, file explorer, integrated terminal), integrated with dsh-better-sidebar and DSH settings.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2.4.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-edge",
+    "name": "dsh-edge",
+    "description": "Your DeepSeek Harness, anywhere — deploy a persistent personal coding agent to Cloudflare Workers in one command",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.13.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-ui-tweaks",
+    "name": "dsh-ui-tweaks",
+    "description": "DSH web plugin: live-tune the conversation UI — code font size (px input), a timeline switch (DSH's native turn rail, or the classic v0.11 web rail: hover to preview, click to jump; native by default), a poster theme skin (neon poster, light/dark), a GitB",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.16.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-shop-catalog",
+    "name": "dsh-plugin-shop-catalog",
+    "description": "The dsh plugin catalog, as published by dsh-plugin-shop.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2026.911.1",
+    "category": "community"
+  },
+  {
+    "id": "@vascent/dsh-tui",
+    "name": "@vascent/dsh-tui",
+    "description": "One-command DeepSeek Harness TUI launcher and community extension workspace",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.30",
+    "category": "community"
+  },
+  {
+    "id": "dsh-zotero",
+    "name": "dsh-zotero",
+    "description": "Let agents search, read, and cite your local Zotero library: find papers, browse notes and annotations, pull evidence by question, open the source document, generate citations.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.8.2",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-market/schema",
+    "name": "@dsh-market/schema",
+    "description": "DSH Market shared types (DshPlugin / MarketData / PracticalScore)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "@fslong/dsh-yishi",
+    "name": "@fslong/dsh-yishi",
+    "description": "为 AI Agent 提供类人记忆系统的 DSH 插件（自包含）：同步 docs/scripts 至 ~/.local/share/yishi，注入记忆指令 + 注册 memocap 技能。混合检索/遗忘曲线/时间胶囊/可视化。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.26",
+    "category": "community"
+  },
+  {
+    "id": "deepseek-harness-acp",
+    "name": "deepseek-harness-acp",
+    "description": "Standalone Agent Client Protocol (ACP) server for DeepSeek Harness with real-time streaming, thought visibility, tool lifecycle updates, and session recovery.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.27",
+    "category": "community"
+  },
+  {
+    "id": "dsh-megamesh",
+    "name": "dsh-megamesh",
+    "description": "Super multi-agent architecture: files are messages, adoption replaces all-hands-on-deck failure, term leases replace single points, invariants replace trust, timelines replace non-reproducibility, one file serves humans and machines. Every claim carries a",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.24.1",
+    "category": "community"
+  },
+  {
+    "id": "@lyd123qw2008/dsh-tool-control-chrome",
+    "name": "@lyd123qw2008/dsh-tool-control-chrome",
+    "description": "DeepSeek Harness browser-control tools backed by the pi-control-chrome local Bridge",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.5.6",
+    "category": "community"
+  },
+  {
+    "id": "@hytime/dsh-thinking-effort",
+    "name": "@hytime/dsh-thinking-effort",
+    "description": "为 DSH 的 pi-ai 第三方模型补充可配置的思考强度档位，并设置子 agent 默认思考强度。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-openwolf",
+    "name": "dsh-openwolf",
+    "description": "A compact code-map 'second brain' for DeepSeek Harness: pre-indexed project maps, per-file digests, session digests, read/write interception, and AGENTS.md injection so the agent stops re-reading whole files.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.10.0",
+    "category": "community"
+  },
+  {
+    "id": "@seaveyon/harness-switch",
+    "name": "@seaveyon/harness-switch",
+    "description": "A secure web control plane that switches API providers for Claude Code, Codex, Kimi Code, Pi and DeepSeek Harness by writing their native config files on SSH servers.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.32.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-conversation-navigator",
+    "name": "dsh-conversation-navigator",
+    "description": "DSH(DeepSeek Harness)会话导航插件:按轮折叠的对话大纲面板,支持节点点击跳转、滚动位置高亮与轨迹视图同款配色。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.8",
+    "category": "community"
+  },
+  {
+    "id": "@chenkai114/dsh-daemon",
+    "name": "@chenkai114/dsh-daemon",
+    "description": "dsh daemon: register the DeepSeek Harness web server (dsh web) as an auto-start, self-healing background service (LaunchAgent / systemd / cron + watchdog).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.21",
+    "category": "community"
+  },
+  {
+    "id": "@xgone/dsh-remote",
+    "name": "@xgone/dsh-remote",
+    "description": "Remote access & authentication for the DeepSeek Harness web UI: login gate, MFA (TOTP), signed session cookies, role-based access, in-browser directory picker, account management settings. Fully localized (zh/en).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.3",
+    "category": "community"
+  },
+  {
+    "id": "@jieai/dsh-plugin-vet",
+    "name": "@jieai/dsh-plugin-vet",
+    "description": "Audit deepseek-harness (DSH) plugins before install, guard them at runtime. Static verdict + pre-install audit protocol; supply-chain checks (typosquat, OSV); exfiltration & ransomware detection, honeypot canaries, integrity baseline. Alarm-only; blocks c",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.12",
+    "category": "community"
+  },
+  {
+    "id": "@syncended/dsh-automations",
+    "name": "@syncended/dsh-automations",
+    "description": "Durable cron automations for DeepSeek Harness",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.8.10",
+    "category": "community"
+  },
+  {
+    "id": "@enderfga/claw-orchestrator",
+    "name": "@enderfga/claw-orchestrator",
+    "description": "Claw Orchestrator — run Claude Code, Codex, Gemini, Cursor Agent, OpenCode and custom coding CLIs as one unified runtime. Drop into Hermes Agent, Claude Desktop, Cursor, Cline, Continue, Zed, Windsurf, Goose or any Model Context Protocol (MCP) host, insta",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "7.1.1",
+    "category": "community"
+  },
+  {
+    "id": "@a9i5k4/dsh-literature",
+    "name": "@a9i5k4/dsh-literature",
+    "description": "DSH Literature 文献侧窗：在 DeepSeek Harness 侧边栏识别 DOI/arXiv/标题、抓取元数据与全文、写入本地文献库或导出目录，并提供内置 PDF 阅读器（缩放/翻页/目录/搜索/高亮/笔记）。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.6",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-plugin/dsh-auxiliary",
+    "name": "@dsh-plugin/dsh-auxiliary",
+    "description": "DeepSeek Harness plugin that uses configured model providers for image analysis and context compaction.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-context-compass",
+    "name": "dsh-context-compass",
+    "description": "Session health for DeepSeek Harness: real token-meter data, configurable continue-vs-new decision model. Reactive header badge (compaction-aware), /compass command, context_compass tool.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.12.2",
+    "category": "community"
+  },
+  {
+    "id": "@xmoon76/dsh-pi-tui",
+    "name": "@xmoon76/dsh-pi-tui",
+    "description": "The dsh-pi-tui bundle: a TUI surface for DeepSeek Harness profiles (dsh --profile pi-tui)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.5",
+    "category": "community"
+  },
+  {
+    "id": "dsh-ssh-ops",
+    "name": "dsh-ssh-ops",
+    "description": "SSH ops and database tools for DSH Web UI: connect to remote servers via SSH terminal/SFTP/tunnels, and connect to MySQL/PostgreSQL/Redis/MongoDB databases. Host half manages sessions with ssh2; client half renders the terminal and database panel.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-spend",
+    "name": "dsh-spend",
+    "description": "Token usage, multi-dimensional statistics, auto-detected billing plans (Code/Token) and estimated spend for the dsh web UI",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.3",
+    "category": "community"
+  },
+  {
+    "id": "dsh-privmask",
+    "name": "dsh-privmask",
+    "description": "DeepSeek Harness 本地脱敏插件：在 llm/stream 出口拦截发往云端大模型的请求，将密钥、PII、中文实体（姓名/身份证/公司/机关/地址等）替换为占位符后再发送；用户输入与工具结果在写入本地会话日志前同样遮罩，模型回复经入站还原以原值落盘与显示。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.41",
+    "category": "community"
+  },
+  {
+    "id": "deepseek-acp",
+    "name": "deepseek-acp",
+    "description": "Editor-facing Agent Client Protocol adapter for DeepSeek Harness",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.9.0",
+    "category": "community"
+  },
+  {
+    "id": "deepseek-flow",
+    "name": "deepseek-flow",
+    "description": "DeepSeek Flow — Markdown-first visual workflow plugin for DeepSeek Harness with executable Boolean gate semantics, two-way canvas sync, and AI review/optimization.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-audiogen",
+    "name": "dsh-audiogen",
+    "description": "AI audio generation plugin for the dsh web GUI: multi-vendor TTS/music/sound-effect channels (OpenAI-compatible, ElevenLabs, MiniMax, Stability AI and custom), per-channel model/voice catalogs, Agent tool and a sidebar AI 音频 panel.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.26",
+    "category": "community"
+  },
+  {
+    "id": "dsh-oc",
+    "name": "dsh-oc",
+    "description": "DeepSeek Harness 插件全家桶聚合安装器:一条命令装齐 壳/会话新窗口/深链/右侧工作台/逐轮产出物卡片/会话撤回(并为引擎补齐撤回所需 truncate 补丁;无功能代码,各功能为独立插件)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.43",
+    "category": "community"
+  },
+  {
+    "id": "dsh-dev-memory",
+    "name": "dsh-dev-memory",
+    "description": "Lightweight project memory library for DeepSeek Harness: markdown files, three tools, session-start retrieval. No Claude Code or extra skill required.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.17",
+    "category": "community"
+  },
+  {
+    "id": "@xxxyz/dsh-mcp-manager",
+    "name": "@xxxyz/dsh-mcp-manager",
+    "description": "DSH-standard MCP manager plugin: Settings UI + HTTP API + model-facing mcp_manager_* tools. Install with one command: dsh plugin --profile web add @xxxyz/dsh-mcp-manager@latest",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2.2.7",
+    "category": "community"
+  },
+  {
+    "id": "dsh-multi-chat",
+    "name": "dsh-multi-chat",
+    "description": "DSH 多窗口墙：在官方 DeepSeek Harness Web 界面里以多窗口网格并排运行、监控多个对话实例，一屏盯住所有 Agent 的实时进度；内置带口令认证的局域网网关，手机/平板也能看。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.0.3",
+    "category": "community"
+  },
+  {
+    "id": "dsh1024",
+    "name": "dsh1024",
+    "description": "The 1024 Store for DeepSeek Harness: in-app plugin market and tracked installer CLI.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.5.0",
+    "category": "community"
+  },
+  {
+    "id": "@dougen/dsh-deepseek-usage",
+    "name": "@dougen/dsh-deepseek-usage",
+    "description": "DeepSeek 余额侧边栏插件：余额（官方 API）、当前档单价与峰谷时段指示灯，支持中/英文界面。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.9.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-git-worktree",
+    "name": "dsh-git-worktree",
+    "description": "Experimental Git worktree Session Targets for DeepSeek Harness with isolated sessions, review checkpoints, human-confirmed delivery, and safe recovery.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.9.0",
+    "category": "community"
+  },
+  {
+    "id": "@banana-peeljj12/dsh-trellis",
+    "name": "@banana-peeljj12/dsh-trellis",
+    "description": "Self-contained Trellis workflow trigger for DeepSeek Harness: per-turn breadcrumb injection via agent/pre-step, a bundled skill provider, and DSH-native task/phase state resolution. No Trellis AGPL code is vendored; workflow semantics are rewritten and li",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-ears",
+    "name": "dsh-ears",
+    "description": "Voice input plugin for DeepSeek Harness",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-layered-memory",
+    "name": "dsh-layered-memory",
+    "description": "L0~L3 分层蒸馏记忆插件 for DeepSeek Harness：自动捕获对话（L0）、抽取原子记忆（L1）、整合场景块（L2）、蒸馏核心画像/团队方法论（L3），并在模型步骤前自动召回注入。移植自 MemoryCore (TencentDB Agent Memory) 的管线设计。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.11.0",
+    "category": "community"
+  },
+  {
+    "id": "@syncended/dsh-messenger",
+    "name": "@syncended/dsh-messenger",
+    "description": "Messenger bridge plugin for DeepSeek Harness, starting with Telegram",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.14.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-ringcentral",
+    "name": "dsh-ringcentral",
+    "description": "RingCentral Team Messaging IM channel plugin for deepseek-harness (dsh)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-om",
+    "name": "dsh-plugin-om",
+    "description": "[![npm version](https://img.shields.io/npm/v/dsh-plugin-om.svg)](https://www.npmjs.com/package/dsh-plugin-om)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.0.38",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-guide",
+    "name": "dsh-plugin-guide",
+    "description": "The dsh-plugin-guide knowledge base plus the dsh-plugin-dev CLI toolchain: official docs, Cordis primer, community deep-dives, and battle-tested pitfalls registered as an on-demand agent skill, with a scaffolder, static checker, and pack verifier for buil",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.10",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-observatory",
+    "name": "dsh-plugin-observatory",
+    "description": "Independent DSH plugin compatibility audit and bounded Loader lifecycle observation",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-studio",
+    "name": "dsh-plugin-studio",
+    "description": "DSH plugin manager: official/community grouped plugin list with localized descriptions, one-click enable/disable and uninstall, plus a GitHub dsh-plugin market tab.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-console",
+    "name": "dsh-plugin-console",
+    "description": "DSH Plugin Console: a verified community catalog, profile manager, and Harness updater for DeepSeek Harness",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-mgr",
+    "name": "dsh-plugin-mgr",
+    "description": "DSH plugin that manages installed plugins in Settings → Plugins: list, enable/disable via patch layer, update check, uninstall.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.8",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-uisfx",
+    "name": "dsh-plugin-uisfx",
+    "description": "dsh plugin: semantic UI sound effects powered by uisfx — per-scenario cues with a settings UI",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "@mkaliezz/dsh-docs",
+    "name": "@mkaliezz/dsh-docs",
+    "description": "DSH plugin: dsh-docs",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-electro-lab",
+    "name": "dsh-electro-lab",
+    "description": "DSH plugin: electrical & electronics problem solving",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.10.0",
+    "category": "community"
+  },
+  {
+    "id": "@huanlin/dsh-plugin-mineru",
+    "name": "@huanlin/dsh-plugin-mineru",
+    "description": "DSH plugin exposing MinerU document parsing tools to the model, with a web UI settings page for the API base URL.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugins-store",
+    "name": "dsh-plugins-store",
+    "description": "Native DSH browser integration for the DSH Plugin Store",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.3",
+    "category": "community"
+  },
+  {
+    "id": "@choate/dsh-plugin-token-stat",
+    "name": "@choate/dsh-plugin-token-stat",
+    "description": "DSH plugin: append each answer's token usage to the conversation",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.2",
+    "category": "community"
+  },
+  {
+    "id": "@mkaliezz/dsh-repo-map",
+    "name": "@mkaliezz/dsh-repo-map",
+    "description": "DSH plugin: dsh-repo-map",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.2",
+    "category": "community"
+  },
+  {
+    "id": "@jw-king/dsh-plugin-parallel",
+    "name": "@jw-king/dsh-plugin-parallel",
+    "description": "[![npm 版本](https://img.shields.io/npm/v/@jw-king/dsh-plugin-parallel.svg)](https://www.npmjs.com/package/@jw-king/dsh-plugin-parallel) [![许可证: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![DSH 规范](https",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.6",
+    "category": "community"
+  },
+  {
+    "id": "dsh-context-milvus",
+    "name": "dsh-context-milvus",
+    "description": "DSH plugin for semantic code search via Milvus vector database",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.5",
+    "category": "community"
+  },
+  {
+    "id": "@mkaliezz/dsh-dev-server",
+    "name": "@mkaliezz/dsh-dev-server",
+    "description": "DSH plugin: dsh-dev-server",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.2",
+    "category": "community"
+  },
+  {
+    "id": "@hqzhao95/dscode",
+    "name": "@hqzhao95/dscode",
+    "description": "dscode - DeepSeek Harness coding TUI, distributed as a dsh plugin (grok-leader bridge + launcher)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.0.12",
+    "category": "community"
+  },
+  {
+    "id": "dsh-aimail",
+    "name": "dsh-aimail",
+    "description": "AIMail plugin for dsh — install via: dsh plugin --profile web add dsh-aimail",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.11",
+    "category": "community"
+  },
+  {
+    "id": "@mkaliezz/dsh-error-explainer",
+    "name": "@mkaliezz/dsh-error-explainer",
+    "description": "DSH plugin: dsh-error-explainer",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.2",
+    "category": "community"
+  },
+  {
+    "id": "@goodandready/dsh-time-machine",
+    "name": "@goodandready/dsh-time-machine",
+    "description": "DSH plugin for smart checkpoints, workspace safety guards, and instant rollback",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.14",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-wallpaper-engine-mac",
+    "name": "dsh-plugin-wallpaper-engine-mac",
+    "description": "macOS-enhanced fork of dsh-plugin-wallpaper-engine: WaifuX + loose-media support on top of the original Windows Wallpaper Engine implementation by elysia395.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.10",
+    "category": "community"
+  },
+  {
+    "id": "@rezti/dsh-rez-suite",
+    "name": "@rezti/dsh-rez-suite",
+    "description": "ReZ-TI one-package install for DeepSeek Harness. Update with: dsh plugin --profile web add @rezti/dsh-rez-suite@0.1.62",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.62",
+    "category": "community"
+  },
+  {
+    "id": "@mkaliezz/dsh-api-client",
+    "name": "@mkaliezz/dsh-api-client",
+    "description": "DSH plugin: dsh-api-client",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.2",
+    "category": "community"
+  },
+  {
+    "id": "@goodandready/dsh-context-lens",
+    "name": "@goodandready/dsh-context-lens",
+    "description": "DSH plugin for AST context compression, test log filtering, and token budget guard",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.16",
+    "category": "community"
+  },
+  {
+    "id": "@oh-story/dsh",
+    "name": "@oh-story/dsh",
+    "description": "A DSH plugin for fiction, short-drama, interactive-game, and video-recap production",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.9",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-diepi",
+    "name": "dsh-plugin-diepi",
+    "description": "Community DSH plugin for constrained, auditable diePi research backtests",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-ops-core",
+    "name": "dsh-plugin-ops-core",
+    "description": "Shared engine for dsh-plugin-ops: profile readers, scan rules, fault memory, fix planner, panel API",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.0",
+    "category": "community"
+  },
+  {
+    "id": "@linziyanleo/dsh-custom-provider",
+    "name": "@linziyanleo/dsh-custom-provider",
+    "description": "DSH plugin for static OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages providers",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.4",
+    "category": "community"
+  },
+  {
+    "id": "@huanlin/dsh-plugin-sleep",
+    "name": "@huanlin/dsh-plugin-sleep",
+    "description": "DSH plugin exposing a single `sleep` tool that lets the model pause for a configurable number of milliseconds, honoring cancellation.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.5",
+    "category": "community"
+  },
+  {
+    "id": "@goodandready/dsh-shadow-auditor",
+    "name": "@goodandready/dsh-shadow-auditor",
+    "description": "DSH plugin for background security audits, secret leakage detection, and command safety",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.8",
+    "category": "community"
+  },
+  {
+    "id": "dsh-dead-links",
+    "name": "dsh-dead-links",
+    "description": "DSH plugin: Markdown dead-link checker tool (dead_links), zero-dependency.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-model-health",
+    "name": "dsh-model-health",
+    "description": "DSH plugin that lists all configured models with availability/latency testing, by reading $DSH_HOME/settings.yaml.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.9",
+    "category": "community"
+  },
+  {
+    "id": "dsh-experience-plugin",
+    "name": "dsh-experience-plugin",
+    "description": "DSH plugin: model reasoning levels plus CLI request mimic, with a unified Daily Optimization settings section.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.7.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-browser-control",
+    "name": "dsh-browser-control",
+    "description": "DSH plugin for controlling browsers (CDP / Playwright)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@jianxx/dsh-cc-plugin-loader",
+    "name": "@jianxx/dsh-cc-plugin-loader",
+    "description": "Load Claude Code plugin.json manifests as in-memory dsh plugin mounts",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.1",
+    "category": "community"
+  },
+  {
+    "id": "@michengai/dsh-codex-suite",
+    "name": "@michengai/dsh-codex-suite",
+    "description": "DSH Codex UI 兼容聚合包：保留旧版 dsh plugin add 安装方式",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.16",
+    "category": "community"
+  },
+  {
+    "id": "dsh-session-fork",
+    "name": "dsh-session-fork",
+    "description": "dsh plugin: git-like conversation forking (branch refs on sessions)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "@huanlin/dsh-plugin-aigc-canvas",
+    "name": "@huanlin/dsh-plugin-aigc-canvas",
+    "description": "DSH plugin: an infinite free canvas for the better-sidebar plus provider-agnostic generation. Exposes aigc_get_provider_info / aigc_http_request (endpoint + apiKey auto-attached) / aigc_provider_set_instructions / aigc_canvas_place / aigc_canvas_link / ai",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.9",
+    "category": "community"
+  },
+  {
+    "id": "dsh-tool-memory-manager",
+    "name": "dsh-tool-memory-manager",
+    "description": "DSH plugin for managing tool usage memories",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-ops-bundle",
+    "name": "dsh-plugin-ops-bundle",
+    "description": "Embedded dsh bundle for dsh-plugin-ops: a settings-page health panel (scan, plugin rows, diagnosis chat) over the shared engine",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.0",
+    "category": "community"
+  },
+  {
+    "id": "noatmark-dsh-plugin",
+    "name": "noatmark-dsh-plugin",
+    "description": "NoAtMark text hygiene as a DeepSeek Harness (dsh) plugin — sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV formula injection.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-undo-plugin",
+    "name": "dsh-undo-plugin",
+    "description": "dsh plugin: conversation undo/rollback and archive tasks for DeepSeek Harness",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-air",
+    "name": "dsh-air",
+    "description": "Lightweight DSH plugin for history recall and BTW side conversations.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.2",
+    "category": "community"
+  },
+  {
+    "id": "@laoyuehanni/dsh-git-worktree",
+    "name": "@laoyuehanni/dsh-git-worktree",
+    "description": "DSH plugin: branch visibility and git worktree isolation for Web UI sessions",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.4",
+    "category": "community"
+  },
+  {
+    "id": "@chaoset/session-archive",
+    "name": "@chaoset/session-archive",
+    "description": "DSH plugin: browse archived sessions, inspect their content, batch-restore or permanently delete them with multi-select",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.11",
+    "category": "community"
+  },
+  {
+    "id": "dsh-opencode-go-models",
+    "name": "dsh-opencode-go-models",
+    "description": "DSH plugin to sync opencode-go model catalog with precise multi-modal support",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.5",
+    "category": "community"
+  },
+  {
+    "id": "dsh-honcho-memory",
+    "name": "dsh-honcho-memory",
+    "description": "DSH plugin: official-model Honcho v3 memory plus a perspective-safe shared knowledge base",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.5.3",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-rdsh",
+    "name": "dsh-plugin-rdsh",
+    "description": "Reserved for remote-dsh (rdsh) — DSH plugin for remote access. Placeholder.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.0.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-crosspost",
+    "name": "dsh-crosspost",
+    "description": "dsh-crosspost — a content-automation DSH plugin.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugins",
+    "name": "dsh-plugins",
+    "description": "Search and install DeepSeek Harness plugins from the DSH plugin registry",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.2",
+    "category": "community"
+  },
+  {
+    "id": "@mkaliezz/dsh-test-runner",
+    "name": "@mkaliezz/dsh-test-runner",
+    "description": "DSH plugin: dsh-test-normalizer (npm package: @mkaliezz/dsh-test-runner)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.2",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-plus/shared",
+    "name": "@dsh-plus/shared",
+    "description": "dsh-plus workspace shared pure helpers (not a dsh plugin)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.17",
+    "category": "community"
+  },
+  {
+    "id": "dsh-case",
+    "name": "dsh-case",
+    "description": "DSH plugin: case/naming conversion tool (case_convert).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@yiln-dsh/dsh-plugin-web-daemon",
+    "name": "@yiln-dsh/dsh-plugin-web-daemon",
+    "description": "DSH plugin that manages `dsh web` as a real systemd unit, exposes live server CPU, memory, network, and filesystem metrics in the Web GUI, and resumes attached sessions after restart.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.7.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-thread",
+    "name": "dsh-thread",
+    "description": "Thread session memory for dsh — lossless event capture + status-card injection (dsh plugin, standalone repo).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.2.0",
+    "category": "community"
+  },
+  {
+    "id": "openharness-rule-for-dsh-plugin",
+    "name": "openharness-rule-for-dsh-plugin",
+    "description": "DSH plugin that injects a system-prompt rule block for assisting with DeepSeek Harness plugin development: what you CAN / SHOULD / MUST NOT / SHOULD NOT do.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.2",
+    "category": "community"
+  },
+  {
+    "id": "@harrylabsj/kiwi-dsh-plugin",
+    "name": "@harrylabsj/kiwi-dsh-plugin",
+    "description": "Kiwi Buyer plugin for DeepSeek Harness — kiwi-buyer-mcp as an MCP plugin + kiwi-buyer skill. Install: dsh plugin --profile web add @harrylabsj/kiwi-dsh-plugin",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-web3",
+    "name": "dsh-web3",
+    "description": "DeepSeek Harness (DSH) plugin: agent-safe EVM wallet with encrypted vault, signing policy, model tools, bundled skill, and web UI.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-wsl-tray",
+    "name": "dsh-wsl-tray",
+    "description": "DSH plugin: Windows desktop shortcut and system-tray launcher for DSH running in WSL",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.4",
+    "category": "community"
+  },
+  {
+    "id": "@mkaliezz/dsh-task-board",
+    "name": "@mkaliezz/dsh-task-board",
+    "description": "DSH plugin: dsh-evidence-task-board (npm package: @mkaliezz/dsh-task-board)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-gap-feed",
+    "name": "dsh-gap-feed",
+    "description": "dsh plugin: during long agent thinking, posts a hot-news or reminder message directly into the conversation stream.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.9",
+    "category": "community"
+  },
+  {
+    "id": "dsh-timeline",
+    "name": "dsh-timeline",
+    "description": "DeepSeek Harness (DSH) plugin: timeline navigation, starred folders, conversation export, prompt library, and quick notes in one.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.5",
+    "category": "community"
+  },
+  {
+    "id": "dsh-ai-solution-council",
+    "name": "dsh-ai-solution-council",
+    "description": "Independent DSH plugin for isolated parallel codebase exploration and serial solution review",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-lcx-codex",
+    "name": "dsh-lcx-codex",
+    "description": "Model-scoped DSH plugin: GPT Responses lifecycle, Native V2 compaction and Hosted/Alpha Search; Grok native Web/X Search",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.3",
+    "category": "community"
+  },
+  {
+    "id": "@xcr1234/dsh-plugin-dbhub",
+    "name": "@xcr1234/dsh-plugin-dbhub",
+    "description": "DSH plugin: manage dbhub database MCP servers from the settings panel; starts dbhub in-process (no npx) and exposes its tools via dsh-mcp-client.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.0.0",
+    "category": "community"
+  },
+  {
+    "id": "@cromus-ai/dsh-plugin",
+    "name": "@cromus-ai/dsh-plugin",
+    "description": "Cromus DSH plugin — score, validate, and cost-estimate AI skills from DeepSeek Harness.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.0.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-fmt",
+    "name": "dsh-fmt",
+    "description": "DSH plugin: format/validate JSON, YAML, TOML and SQL text.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-wewrite",
+    "name": "dsh-wewrite",
+    "description": "WeChat official account AI writing pipeline as a DeepSeek Harness (DSH) plugin",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.5.3",
+    "category": "community"
+  },
+  {
+    "id": "@objectivex666/dsh-settings-search",
+    "name": "@objectivex666/dsh-settings-search",
+    "description": "DSH settings panel search plugin – instantly filter setting sections and general items with navigation guidance. Installable via `dsh plugin add`.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.9.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-pkg-info",
+    "name": "dsh-pkg-info",
+    "description": "DSH plugin: query package metadata from the npm and PyPI registries (pkg_info).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-gate",
+    "name": "dsh-plugin-gate",
+    "description": "Installation safety gate & data-protection guard for DeepSeek Harness: 60 static signature rules scan plugin sources for malicious install scripts, credential theft, obfuscation and network callbacks before 'dsh plugin add', with scan baselines (gate_diff",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.3.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plug-manager",
+    "name": "dsh-plug-manager",
+    "description": "DeepSeek Harness 插件管理器：发现 GitHub dsh-plugin topic 下的插件仓库，通过 `dsh plugin` 安装/移除/更新 profile 插件，并在 设置 → 插件 → 插件市场 标签页中浏览管理。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.7",
+    "category": "community"
+  },
+  {
+    "id": "talon-ui",
+    "name": "talon-ui",
+    "description": "Talon: a terminal UI for DeepSeek Harness agents (dsh plugin)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.0",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-model-sync",
+    "name": "@aiwayds/dsh-model-sync",
+    "description": "dsh plugin: keep llm-pi-ai provider routes' model lists in step with the pi.dev gateway, written through the official settings seam",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.0",
+    "category": "community"
+  },
+  {
+    "id": "@chaoset/dsh-any-connect",
+    "name": "@chaoset/dsh-any-connect",
+    "description": "DSH plugin: bring models offered by WorkBuddy-style desktop agents into DeepSeek Harness — zero configuration, per-model thinking effort, and billing rate at a glance",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.15",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-scorecard",
+    "name": "dsh-plugin-scorecard",
+    "description": "DSH plugin health scorecard: quality & security audit, rankings, search, score history and open-data export across the dsh-plugin ecosystem, with a workspace-persisted incrementally-synced catalog. 插件体检评分卡：质量/安全审计、榜单、搜索、历史评分曲线与开放数据导出（目录增量同步）。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.2",
+    "category": "community"
+  },
+  {
+    "id": "@kt11/dsh-deepseek-balance",
+    "name": "@kt11/dsh-deepseek-balance",
+    "description": "dsh plugin: DeepSeek API balance and daily spend card in the sidebar footer",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-mission-control",
+    "name": "dsh-plugin-mission-control",
+    "description": "DeepSeek-Harness (dsh) plugin that streams sessions, turns, and tool activity to a JARVIS Mission Control board",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.1",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-plugin-hub/example-hello",
+    "name": "@dsh-plugin-hub/example-hello",
+    "description": "Minimal DSH bundle used to verify npm-first publishing through DSH Plugin Hub.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-kit",
+    "name": "dsh-plugin-kit",
+    "description": "Quality-assurance toolkit for DSH plugin bundles: declarative verify runs and template-driven client-bundle generation.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-searxng-web",
+    "name": "dsh-searxng-web",
+    "description": "dsh plugin: back the native web_search / web_fetch tools with your self-hosted SearXNG instance - keyless, private, no third-party search vendor.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.9.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-novel",
+    "name": "dsh-novel",
+    "description": "Standard DSH plugin: novel workspace, PGlite canon, tools, skills, and content tab",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "lynkr-dsh-plugin",
+    "name": "lynkr-dsh-plugin",
+    "description": "DeepSeek Harness (dsh) plugin that registers Lynkr — a self-hosted, multi-provider LLM tier-routing gateway — as a custom OpenAI-compatible provider in settings.yaml.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-greeter",
+    "name": "dsh-plugin-greeter",
+    "description": "A DeepSeek Harness (dsh) plugin that greets the user at the start of every session with varied wording, learns their name on first use, and greets them personally afterward.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.11",
+    "category": "community"
+  },
+  {
+    "id": "@jieai/dsh-malong-bridge",
+    "name": "@jieai/dsh-malong-bridge",
+    "description": "LiuHe (Six Harmonies) tool suite as a DeepSeek Harness (dsh) plugin bundle — 44 MCP tools with dynamic workspace injection",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.8",
+    "category": "community"
+  },
+  {
+    "id": "dsh-http",
+    "name": "dsh-http",
+    "description": "DSH plugin: structured HTTP request tool (http_request) built on the Node built-in fetch.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-smooth-cursor",
+    "name": "dsh-smooth-cursor",
+    "description": "Smooth comet-mode animated caret for the DSH chat composer — a standalone installable DSH plugin (ported from the Obsidian Animated Cursor plugin)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.9",
+    "category": "community"
+  },
+  {
+    "id": "dsh-clipboard",
+    "name": "dsh-clipboard",
+    "description": "DSH plugin: write text to the system clipboard (pbcopy / clip / xclip / xsel).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-llm-proxy",
+    "name": "@aiwayds/dsh-llm-proxy",
+    "description": "dsh plugin: SYSTEM proxy (env) + LLM traffic-splitting proxy via a process-global undici routing dispatcher",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.5.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-simple-greet",
+    "name": "dsh-simple-greet",
+    "description": "A minimal DSH plugin that greets people",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.3",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-mixxed/dsh-client-ui-filesystem",
+    "name": "@dsh-mixxed/dsh-client-ui-filesystem",
+    "description": "Out-of-tree dsh plugin: '@' project file/directory suggestions and plain-text references in the chat composer.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.3",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-vault",
+    "name": "@aiwayds/dsh-vault",
+    "description": "dsh-plugin: encrypted backup / restore / migration of the dsh home config through a private GitHub repo",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.5.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-jwt",
+    "name": "dsh-jwt",
+    "description": "DSH plugin: decode and inspect JWT tokens (debug only, no signature verification).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@eco-dsh/eco-permission-gate",
+    "name": "@eco-dsh/eco-permission-gate",
+    "description": "dsh plugin: L1-L4 risk permission gate (port of eco-agent permissions.py)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-boom",
+    "name": "dsh-plugin-boom",
+    "description": "dsh-plugin-boom — a DeepSeek Harness plugin (tool template).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "ds-balance",
+    "name": "ds-balance",
+    "description": "DeepSeek API balance + per-call cost tracker — a dsh plugin (cordis host half + sidebar client half)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.4",
+    "category": "community"
+  },
+  {
+    "id": "dsh-lan-access",
+    "name": "dsh-lan-access",
+    "description": "DSH plugin: bind the Web GUI to 0.0.0.0 for LAN access and polyfill crypto.randomUUID for non-secure (LAN HTTP) contexts. Trusted networks only.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.3",
+    "category": "community"
+  },
+  {
+    "id": "dsh-nuphus-mcp",
+    "name": "dsh-nuphus-mcp",
+    "description": "DeepSeek Harness (DSH) plugin: mount the nuphus-mcp desktop automation MCP server as native tools (mcp__nuphus-mcp__*).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.1",
+    "category": "community"
+  },
+  {
+    "id": "dshplugin-registry",
+    "name": "dshplugin-registry",
+    "description": "DSH Plugin Registry inside DeepSeek Harness — search, compare, and inspect source-backed plugin information before installation.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@abruzz1/dsh-plugin-test",
+    "name": "@abruzz1/dsh-plugin-test",
+    "description": "TEST PUBLISH of @memorylake/dsh-plugin — do not depend on this package",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-feishu",
+    "name": "@aiwayds/dsh-feishu",
+    "description": "dsh plugin: drive an existing dsh session from Feishu/Lark — round cards, interactive resume, ask-user cards, steer (outbound-only WebSocket bot)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.10.0",
+    "category": "community"
+  },
+  {
+    "id": "auto-dshp",
+    "name": "auto-dshp",
+    "description": "Autonomous DSH Plugin Engineering",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.0.1",
+    "category": "community"
+  },
+  {
+    "id": "@jcy2387/dsh-conversation-ui",
+    "name": "@jcy2387/dsh-conversation-ui",
+    "description": "DeepSeek Harness (dsh) plugin: Codex-style progress, tool activity, and final answers.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.3",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-security-review",
+    "name": "dsh-plugin-security-review",
+    "description": "Static bundle form of the DSH plugin-install security gate: reviews cordis_define/cordis_run with a fail-safe policy, plus review/audit tools and a browser approval popup (agree / agree+whitelist / reject; agree+whitelist writes the plugin family into tru",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.8.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-dev-kb",
+    "name": "dsh-plugin-dev-kb",
+    "description": "dsh 插件开发知识库：DeepSeek Harness 官方文档站完整 Markdown 镜像（中英双语 188 页）+ 62 篇仓库补充开发参考 + 主题导航与 253 文件全量搜索索引；以 dsh-plugin-dev-kb 技能让 agent 在插件开发任务中自动加载定位文档。纯数据插件，零运行时依赖。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.3.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-ess-proposal",
+    "name": "dsh-ess-proposal",
+    "description": "DSH plugin: Generate solar + energy storage proposals from electricity bills",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.0.2",
+    "category": "community"
+  },
+  {
+    "id": "@yinging/dsh-plugin-pub-review",
+    "name": "@yinging/dsh-plugin-pub-review",
+    "description": "dsh-plugin-pub-review: publish-readiness review for DeepSeek Harness plugins — official docs freshness check (docs-check), 30+ static checks with a Ready/Not-Ready verdict (plugin-review), and publish preflight + command guidance (plugin-publish).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.3",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-cc/plugin-loader",
+    "name": "@dsh-cc/plugin-loader",
+    "description": "Load Claude Code plugin.json manifests as in-memory dsh plugin mounts",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-client-ui-aqua",
+    "name": "dsh-client-ui-aqua",
+    "description": "Aqua: a highly customizable glassmorphism theme for the DSH Web UI - blur, frost, fluid or video wallpaper, unified glass, and motion. Install with: dsh plugin --profile web add dsh-client-ui-aqua",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.3.1",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-llm-net-retry",
+    "name": "@aiwayds/dsh-llm-net-retry",
+    "description": "dsh plugin: bounded retry for gateway network_error failures the stock retry policy cannot classify (e.g. OpenCode Zen finish_reason: network_error)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.0",
+    "category": "community"
+  },
+  {
+    "id": "@eco-dsh/eco-audit-chain",
+    "name": "@eco-dsh/eco-audit-chain",
+    "description": "dsh plugin: SM3 tamper-evident execution audit chain (port of eco-agent trace_audit.py)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "local-ocr-cli",
+    "name": "local-ocr-cli",
+    "description": "Fully-local OCR CLI for text-only LLMs: PaddleOCR-VL first-tier engine with tesseract fallback, dsh plugin included",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.10",
+    "category": "community"
+  },
+  {
+    "id": "dsh-plugin-installer",
+    "name": "dsh-plugin-installer",
+    "description": "DSH 插件商店 + 安装排障技能一体包：Web GUI「插件商店」页签浏览插件目录（名称/介绍/原链接），一键触发安装；内置 dsh-plugin-installer 技能作为安装后端引擎。",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "2.0.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-xmemo",
+    "name": "dsh-xmemo",
+    "description": "Native DeepSeek Harness (dsh) plugin: hybrid local and XMemo cloud memory for Cordis-based agents.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@mindmemos/deepseek-harness-plugin",
+    "name": "@mindmemos/deepseek-harness-plugin",
+    "description": "DeepSeek Harness (dsh) plugin that recalls and writes MindMemOS memories through the mindmemos CLI.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-llm-stats",
+    "name": "@aiwayds/dsh-llm-stats",
+    "description": "dsh plugin: persistent whole-machine LLM usage ledger with a markdown /llm-stats report (GFM tables + emoji: tokens, cache hit, model/tool time, per-day bars)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.6.0",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-cron",
+    "name": "@aiwayds/dsh-cron",
+    "description": "dsh plugin: cron scheduling — bounded tasks with calendar & interval rules, delivered to live agents",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "@weaxs/dsh-stock-analysis",
+    "name": "@weaxs/dsh-stock-analysis",
+    "description": "DeepSeek Harness (dsh) plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.12",
+    "category": "community"
+  },
+  {
+    "id": "@lcthe/dsh-usage-monitor",
+    "name": "@lcthe/dsh-usage-monitor",
+    "description": "DSH plugin: usage and credit balance monitor — auto-query provider balances from configured API keys.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.1.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-daily-local-memory",
+    "name": "dsh-daily-local-memory",
+    "description": "dsh plugin: local-memory (developer preview)",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@qiqiangvae/dsh-obsidian",
+    "name": "@qiqiangvae/dsh-obsidian",
+    "description": "Self-organizing AI second brain for Obsidian, as a single DeepSeek Harness plugin. Merged fork of dsh-plugin-wiki-skills + dsh-plugin-wiki-tools, targeting parity with claude-obsidian.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.2",
+    "category": "community"
+  },
+  {
+    "id": "@steven-wu/dsh-cost-meter",
+    "name": "@steven-wu/dsh-cost-meter",
+    "description": "dsh plugin: live USD cost badge (whole-session + per-turn) from provider token usage and a configurable pricing table.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  },
+  {
+    "id": "@huangzhaoyu/zhaoyu-restart",
+    "name": "@huangzhaoyu/zhaoyu-restart",
+    "description": "One-click silent DSH restart button in the composer input bar. DeepSeek Harness plugin (dsh-plugin).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "1.0.2",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-mixxed/dsh-client-ui-filesystem-manager",
+    "name": "@dsh-mixxed/dsh-client-ui-filesystem-manager",
+    "description": "Out-of-tree dsh plugin: a 'Files' tab in the conversation window with a VSCode-style file tree and viewer over the session workspace.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.4",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-ask-router",
+    "name": "@aiwayds/dsh-ask-router",
+    "description": "dsh plugin: routes ask-user questions to every interaction surface bound to the asking session (TUI panel, Feishu card, web, ...) — first answer wins",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-router-codebuddy",
+    "name": "dsh-router-codebuddy",
+    "description": "DSH plugin: CodeBuddy supplier for dsh-router. Provides the codebuddy supplier (OAuth login, OpenAI-compatible chat gateway) to dsh-router through the router.suppliers cordis service.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.14",
+    "category": "community"
+  },
+  {
+    "id": "@omicverse/dsh-omicos",
+    "name": "@omicverse/dsh-omicos",
+    "description": "OmicOS as a deepseek-harness (dsh) plugin — Mode A: omicos bioinformatics tools + background jobs + login commands for the dsh agent (DSH-PLUGIN.md).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.1",
+    "category": "community"
+  },
+  {
+    "id": "dsh-tesseract-ocr",
+    "name": "dsh-tesseract-ocr",
+    "description": "dsh plugin: recognize attached images locally with Tesseract OCR and send only the recognized text to the model. Text models never receive image bytes; vision passthrough is opt-in.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.7.0",
+    "category": "community"
+  },
+  {
+    "id": "@dsh-suite/plugin-notify",
+    "name": "@dsh-suite/plugin-notify",
+    "description": "DSH plugin: send IM webhook + local notifications when a turn completes, errors, or requests approval (Feishu/WeCom/DingTalk/Slack/Discord/custom).",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.2.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-windows-ocr",
+    "name": "dsh-windows-ocr",
+    "description": "dsh plugin: recognize attached images with the built-in Windows OCR engine (Windows.Media.Ocr) and send only the recognized text to the model. Text models never receive image bytes; vision passthrough is opt-in.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.7.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-url-tools",
+    "name": "dsh-url-tools",
+    "description": "DSH plugin: URL parse/clean/decode/encode/expand tool (url_tool), zero-dependency pure ESM.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "@aiwayds/dsh-mcp-adapter",
+    "name": "@aiwayds/dsh-mcp-adapter",
+    "description": "dsh plugin: token-efficient prompt-side shim for the official MCP client — folds mcp__* tool schemas out of every assembled prompt and exposes two constant meta-tools (mcp_list / mcp_call) instead",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.4.2",
+    "category": "community"
+  },
+  {
+    "id": "dsh-auto-mode",
+    "name": "dsh-auto-mode",
+    "description": "DSH plugin: auto mode that routes permission-gated tool calls through an LLM review before approving, blocking, or asking for confirmation.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "@maxwell-feng/dsh-tesseract-ocr",
+    "name": "@maxwell-feng/dsh-tesseract-ocr",
+    "description": "dsh plugin: recognize attached images locally with Tesseract OCR and send only the recognized text to the model. Text models never receive image bytes; vision passthrough is opt-in.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.3.0",
+    "category": "community"
+  },
+  {
+    "id": "dsh-stock-analysis",
+    "name": "dsh-stock-analysis",
+    "description": "DeepSeek Harness (dsh) plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.12",
+    "category": "community"
+  },
+  {
+    "id": "dsh-reasoning-efforts",
+    "name": "dsh-reasoning-efforts",
+    "description": "DSH plugin: auto-detect thinking levels (reasoningEfforts) for custom models in llm-pi-ai settings.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.1",
+    "category": "community"
+  },
+  {
+    "id": "@huiliyi37/dsh-tianshu-tui",
+    "name": "@huiliyi37/dsh-tianshu-tui",
+    "description": "dsh-tianshu-tui: an interactive terminal UI plugin for the official DeepSeek Harness — streaming markdown/tool cards, 16+ themes, slash commands, session tabs, LSP diagnostics, cost tracking, self-update (`dsh plugin --profile tui add @huiliyi37/dsh-tians",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.2",
+    "category": "community"
+  },
+  {
+    "id": "@4t145/create-dsh-plugin",
+    "name": "@4t145/create-dsh-plugin",
+    "description": "Scaffold a new DeepSeek Harness (DSH) plugin project in TypeScript, ready for npx.",
+    "author": "unknown",
+    "source": "npm",
+    "latestVersion": "0.1.0",
+    "category": "community"
+  }
+]

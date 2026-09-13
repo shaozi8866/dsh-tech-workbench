@@ -1,0 +1,2020 @@
+[
+  {
+    "id": "@anionex/dsh-vision-toolkit",
+    "name": "@anionex/dsh-vision-toolkit",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/%40anionex%2Fdsh-vision-toolkit",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "deepseek-harness-wallet",
+    "name": "deepseek-harness-wallet",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/deepseek-harness-wallet",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "多引擎",
+      "本地优先",
+      "API"
+    ]
+  },
+  {
+    "id": "@anionex/dsh-turn-rewind",
+    "name": "@anionex/dsh-turn-rewind",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40anionex%2Fdsh-turn-rewind",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "dsh-notifier",
+    "name": "dsh-notifier",
+    "description": "统一通知推送插件：一个 notify() API 打天下 + 多渠道 adapter；远程审批/远程会话支持 telegram/feishu/qq/wxpusher/wechat/dingtalk 六通道双向回传；移动指挥中心（长任务心跳 ",
+    "homepage": "https://www.npmjs.com/package/dsh-notifier",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "多引擎",
+      "Web UI",
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-rewind-plugin",
+    "name": "dsh-rewind-plugin",
+    "description": "插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）",
+    "homepage": "https://www.npmjs.com/package/dsh-rewind-plugin",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@openviking/dsh-memory-plugin",
+    "name": "@openviking/dsh-memory-plugin",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40openviking%2Fdsh-memory-plugin",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "@dsh-market/plugin",
+    "name": "@dsh-market/plugin",
+    "description": "插件端：cordis 侧边栏插件（浏览/搜索/猜你喜欢/一键安装/已装管理），核心逻辑来自 @dsh-market/core",
+    "homepage": "https://www.npmjs.com/package/%40dsh-market%2Fplugin",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "@anweat/dsh-browser",
+    "name": "@anweat/dsh-browser",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/%40anweat%2Fdsh-browser",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先",
+      "API"
+    ]
+  },
+  {
+    "id": "@michengai/dsh-automation",
+    "name": "@michengai/dsh-automation",
+    "description": "在独立 DSH Session 中按计划执行编码任务，支持 Web 设置页与 Agent 双入口管理",
+    "homepage": "https://www.npmjs.com/package/%40michengai%2Fdsh-automation",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-web-plugin-manager",
+    "name": "dsh-web-plugin-manager",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-web-plugin-manager",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@mars-sea/dsh-commandcode-provider",
+    "name": "@mars-sea/dsh-commandcode-provider",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40mars-sea%2Fdsh-commandcode-provider",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "开源"
+    ]
+  },
+  {
+    "id": "dsh-update-checker",
+    "name": "dsh-update-checker",
+    "description": "DSH 通知推送插件，支持多渠道消息通知和任务提醒功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-update-checker",
+    "category": "通知提醒",
+    "icon": "🔔",
+    "tags": [
+      "Web UI",
+      "自动化"
+    ]
+  },
+  {
+    "id": "@a9i5k4/dsh-auto-memory",
+    "name": "@a9i5k4/dsh-auto-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40a9i5k4%2Fdsh-auto-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "免费",
+      "本地优先",
+      "自动化"
+    ]
+  },
+  {
+    "id": "dsh-plugin-writing-guard",
+    "name": "dsh-plugin-writing-guard",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-writing-guard",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-free-vision",
+    "name": "dsh-free-vision",
+    "description": "免费视觉插件：纯文本模型看图能力，优先免费模型（通义千问 / 硅基流动 / 豆包）",
+    "homepage": "https://www.npmjs.com/package/dsh-free-vision",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "免费"
+    ]
+  },
+  {
+    "id": "@dsh-market/core",
+    "name": "@dsh-market/core",
+    "description": "插件端核心层：纯 Node 模块，零",
+    "homepage": "https://www.npmjs.com/package/%40dsh-market%2Fcore",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-web-search-pro",
+    "name": "dsh-web-search-pro",
+    "description": "站/YouTube/V2EX/小红书/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, and Playwright rendering.",
+    "homepage": "https://www.npmjs.com/package/dsh-web-search-pro",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "多引擎",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-tavern",
+    "name": "dsh-tavern",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-tavern",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "dsh-easyrewrite",
+    "name": "dsh-easyrewrite",
+    "description": "内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit",
+    "homepage": "https://www.npmjs.com/package/dsh-easyrewrite",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@ychris12138/dsh-usage-stats",
+    "name": "@ychris12138/dsh-usage-stats",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40ychris12138%2Fdsh-usage-stats",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@zhangfengshun/dsh-remote-ssh",
+    "name": "@zhangfengshun/dsh-remote-ssh",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40zhangfengshun%2Fdsh-remote-ssh",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-edge",
+    "name": "dsh-edge",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-edge",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-ui-tweaks",
+    "name": "dsh-ui-tweaks",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-ui-tweaks",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-plugin-shop-catalog",
+    "name": "dsh-plugin-shop-catalog",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-shop-catalog",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "@vascent/dsh-tui",
+    "name": "@vascent/dsh-tui",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40vascent%2Fdsh-tui",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-zotero",
+    "name": "dsh-zotero",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-zotero",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "@dsh-market/schema",
+    "name": "@dsh-market/schema",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-market%2Fschema",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "@fslong/dsh-yishi",
+    "name": "@fslong/dsh-yishi",
+    "description": "为 AI Agent 提供类人记忆系统的",
+    "homepage": "https://www.npmjs.com/package/%40fslong%2Fdsh-yishi",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "本地优先",
+      "可视化"
+    ]
+  },
+  {
+    "id": "deepseek-harness-acp",
+    "name": "deepseek-harness-acp",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/deepseek-harness-acp",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "dsh-megamesh",
+    "name": "dsh-megamesh",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-megamesh",
+    "category": "其他",
+    "icon": "📦",
+    "tags": [
+      "多引擎"
+    ]
+  },
+  {
+    "id": "@lyd123qw2008/dsh-tool-control-chrome",
+    "name": "@lyd123qw2008/dsh-tool-control-chrome",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/%40lyd123qw2008%2Fdsh-tool-control-chrome",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "@hytime/dsh-thinking-effort",
+    "name": "@hytime/dsh-thinking-effort",
+    "description": "为 DSH 的 pi-ai 第三方模型补充可配置的思考强度档位，并设置子 agent 默认思考强度",
+    "homepage": "https://www.npmjs.com/package/%40hytime%2Fdsh-thinking-effort",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": []
+  },
+  {
+    "id": "dsh-openwolf",
+    "name": "dsh-openwolf",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-openwolf",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@seaveyon/harness-switch",
+    "name": "@seaveyon/harness-switch",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40seaveyon%2Fharness-switch",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": [
+      "Web UI",
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-conversation-navigator",
+    "name": "dsh-conversation-navigator",
+    "description": "会话导航插件:按轮折叠的对话大纲面板,支持节点点击跳转、滚动位置高亮与轨迹视图同款配色",
+    "homepage": "https://www.npmjs.com/package/dsh-conversation-navigator",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@chenkai114/dsh-daemon",
+    "name": "@chenkai114/dsh-daemon",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/%40chenkai114%2Fdsh-daemon",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "Web UI",
+      "API",
+      "自动化"
+    ]
+  },
+  {
+    "id": "@xgone/dsh-remote",
+    "name": "@xgone/dsh-remote",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40xgone%2Fdsh-remote",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "本地优先",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@jieai/dsh-plugin-vet",
+    "name": "@jieai/dsh-plugin-vet",
+    "description": "DSH 安全权限插件，提供认证、授权和权限管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40jieai%2Fdsh-plugin-vet",
+    "category": "安全权限",
+    "icon": "🔒",
+    "tags": []
+  },
+  {
+    "id": "@syncended/dsh-automations",
+    "name": "@syncended/dsh-automations",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/%40syncended%2Fdsh-automations",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ]
+  },
+  {
+    "id": "@enderfga/claw-orchestrator",
+    "name": "@enderfga/claw-orchestrator",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40enderfga%2Fclaw-orchestrator",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "@a9i5k4/dsh-literature",
+    "name": "@a9i5k4/dsh-literature",
+    "description": "文献侧窗：在 DeepSeek Harness 侧边栏识别 DOI/arXiv/标题、抓取元数据与全文、写入本地文献库或导出目录，并提供内置 PDF 阅读器（缩放/翻页/目录/搜索/高亮/笔记）",
+    "homepage": "https://www.npmjs.com/package/%40a9i5k4%2Fdsh-literature",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "@dsh-plugin/dsh-auxiliary",
+    "name": "@dsh-plugin/dsh-auxiliary",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-plugin%2Fdsh-auxiliary",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": []
+  },
+  {
+    "id": "dsh-context-compass",
+    "name": "dsh-context-compass",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-context-compass",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "@xmoon76/dsh-pi-tui",
+    "name": "@xmoon76/dsh-pi-tui",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40xmoon76%2Fdsh-pi-tui",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-ssh-ops",
+    "name": "dsh-ssh-ops",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-ssh-ops",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-spend",
+    "name": "dsh-spend",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-spend",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "多引擎",
+      "Web UI",
+      "自动化"
+    ]
+  },
+  {
+    "id": "dsh-privmask",
+    "name": "dsh-privmask",
+    "description": "本地脱敏插件：在 llm/stream 出口拦截发往云端大模型的请求，将密钥、PII、中文实体（姓名/身份证/公司/机关/地址等）替换为占位符后再发送；用户输入与工具结果在写入本地会话日志前同样遮罩，模型回复经入站还原以原值落盘与显示",
+    "homepage": "https://www.npmjs.com/package/dsh-privmask",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "deepseek-acp",
+    "name": "deepseek-acp",
+    "description": "DSH 消息编辑插件，支持消息撤回、重编辑和历史记录管理。",
+    "homepage": "https://www.npmjs.com/package/deepseek-acp",
+    "category": "消息编辑",
+    "icon": "✏️",
+    "tags": []
+  },
+  {
+    "id": "deepseek-flow",
+    "name": "deepseek-flow",
+    "description": "DSH 数据同步插件，支持数据备份、恢复和多端同步功能。",
+    "homepage": "https://www.npmjs.com/package/deepseek-flow",
+    "category": "数据同步",
+    "icon": "🔄",
+    "tags": [
+      "可视化"
+    ]
+  },
+  {
+    "id": "dsh-audiogen",
+    "name": "dsh-audiogen",
+    "description": "音频 panel.",
+    "homepage": "https://www.npmjs.com/package/dsh-audiogen",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "多引擎",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-oc",
+    "name": "dsh-oc",
+    "description": "插件全家桶聚合安装器:一条命令装齐 壳/会话新窗口/深链/右侧工作台/逐轮产出物卡片/会话撤回(并为引擎补齐撤回所需 truncate 补丁;无功能代码,各功能为独立插件)",
+    "homepage": "https://www.npmjs.com/package/dsh-oc",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "dsh-dev-memory",
+    "name": "dsh-dev-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-dev-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@xxxyz/dsh-mcp-manager",
+    "name": "@xxxyz/dsh-mcp-manager",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40xxxyz%2Fdsh-mcp-manager",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": [
+      "Web UI",
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-multi-chat",
+    "name": "dsh-multi-chat",
+    "description": "多窗口墙：在官方",
+    "homepage": "https://www.npmjs.com/package/dsh-multi-chat",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh1024",
+    "name": "dsh1024",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh1024",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "@dougen/dsh-deepseek-usage",
+    "name": "@dougen/dsh-deepseek-usage",
+    "description": "余额侧边栏插件：余额（官方 API）、当前档单价与峰谷时段指示灯，支持中/英文界面",
+    "homepage": "https://www.npmjs.com/package/%40dougen%2Fdsh-deepseek-usage",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "Web UI",
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-git-worktree",
+    "name": "dsh-git-worktree",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-git-worktree",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@banana-peeljj12/dsh-trellis",
+    "name": "@banana-peeljj12/dsh-trellis",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40banana-peeljj12%2Fdsh-trellis",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "dsh-ears",
+    "name": "dsh-ears",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-ears",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-layered-memory",
+    "name": "dsh-layered-memory",
+    "description": "分层蒸馏记忆插件 for",
+    "homepage": "https://www.npmjs.com/package/dsh-layered-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "自动化",
+      "企业级"
+    ]
+  },
+  {
+    "id": "@syncended/dsh-messenger",
+    "name": "@syncended/dsh-messenger",
+    "description": "DSH 数据同步插件，支持数据备份、恢复和多端同步功能。",
+    "homepage": "https://www.npmjs.com/package/%40syncended%2Fdsh-messenger",
+    "category": "数据同步",
+    "icon": "🔄",
+    "tags": []
+  },
+  {
+    "id": "dsh-ringcentral",
+    "name": "dsh-ringcentral",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-ringcentral",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-om",
+    "name": "dsh-plugin-om",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-om",
+    "category": "更新管理",
+    "icon": "🔄",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-guide",
+    "name": "dsh-plugin-guide",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-guide",
+    "category": "更新管理",
+    "icon": "🔄",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-plugin-observatory",
+    "name": "dsh-plugin-observatory",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-observatory",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-studio",
+    "name": "dsh-plugin-studio",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-studio",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "dsh-plugin-console",
+    "name": "dsh-plugin-console",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-console",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-mgr",
+    "name": "dsh-plugin-mgr",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-mgr",
+    "category": "更新管理",
+    "icon": "🔄",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-uisfx",
+    "name": "dsh-plugin-uisfx",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-uisfx",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@mkaliezz/dsh-docs",
+    "name": "@mkaliezz/dsh-docs",
+    "description": "DSH 办公效率插件，提供文档处理、表格管理和办公自动化功能。",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-docs",
+    "category": "办公效率",
+    "icon": "📊",
+    "tags": []
+  },
+  {
+    "id": "dsh-electro-lab",
+    "name": "dsh-electro-lab",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-electro-lab",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "@huanlin/dsh-plugin-mineru",
+    "name": "@huanlin/dsh-plugin-mineru",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-mineru",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": [
+      "Web UI",
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-plugins-store",
+    "name": "dsh-plugins-store",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugins-store",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "@choate/dsh-plugin-token-stat",
+    "name": "@choate/dsh-plugin-token-stat",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40choate%2Fdsh-plugin-token-stat",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "@mkaliezz/dsh-repo-map",
+    "name": "@mkaliezz/dsh-repo-map",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-repo-map",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "@jw-king/dsh-plugin-parallel",
+    "name": "@jw-king/dsh-plugin-parallel",
+    "description": "版本](https://img.shields.io/npm/v/@jw-king/dsh-plugin-parallel.svg)](https://www.npmjs.com/package/@jw-king/dsh-plugin-pa",
+    "homepage": "https://www.npmjs.com/package/%40jw-king%2Fdsh-plugin-parallel",
+    "category": "更新管理",
+    "icon": "🔄",
+    "tags": [
+      "开源"
+    ]
+  },
+  {
+    "id": "dsh-context-milvus",
+    "name": "dsh-context-milvus",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-context-milvus",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "@mkaliezz/dsh-dev-server",
+    "name": "@mkaliezz/dsh-dev-server",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-dev-server",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "@hqzhao95/dscode",
+    "name": "@hqzhao95/dscode",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40hqzhao95%2Fdscode",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-aimail",
+    "name": "dsh-aimail",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-aimail",
+    "category": "其他",
+    "icon": "📦",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@mkaliezz/dsh-error-explainer",
+    "name": "@mkaliezz/dsh-error-explainer",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-error-explainer",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "@goodandready/dsh-time-machine",
+    "name": "@goodandready/dsh-time-machine",
+    "description": "DSH 安全权限插件，提供认证、授权和权限管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40goodandready%2Fdsh-time-machine",
+    "category": "安全权限",
+    "icon": "🔒",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-wallpaper-engine-mac",
+    "name": "dsh-plugin-wallpaper-engine-mac",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-wallpaper-engine-mac",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": []
+  },
+  {
+    "id": "@rezti/dsh-rez-suite",
+    "name": "@rezti/dsh-rez-suite",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/%40rezti%2Fdsh-rez-suite",
+    "category": "更新管理",
+    "icon": "🔄",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@mkaliezz/dsh-api-client",
+    "name": "@mkaliezz/dsh-api-client",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-api-client",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": [
+      "API"
+    ]
+  },
+  {
+    "id": "@goodandready/dsh-context-lens",
+    "name": "@goodandready/dsh-context-lens",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40goodandready%2Fdsh-context-lens",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "@oh-story/dsh",
+    "name": "@oh-story/dsh",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40oh-story%2Fdsh",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-diepi",
+    "name": "dsh-plugin-diepi",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-diepi",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-ops-core",
+    "name": "dsh-plugin-ops-core",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-ops-core",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "API"
+    ]
+  },
+  {
+    "id": "@linziyanleo/dsh-custom-provider",
+    "name": "@linziyanleo/dsh-custom-provider",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40linziyanleo%2Fdsh-custom-provider",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@huanlin/dsh-plugin-sleep",
+    "name": "@huanlin/dsh-plugin-sleep",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-sleep",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "@goodandready/dsh-shadow-auditor",
+    "name": "@goodandready/dsh-shadow-auditor",
+    "description": "DSH 安全权限插件，提供认证、授权和权限管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40goodandready%2Fdsh-shadow-auditor",
+    "category": "安全权限",
+    "icon": "🔒",
+    "tags": []
+  },
+  {
+    "id": "dsh-dead-links",
+    "name": "dsh-dead-links",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-dead-links",
+    "category": "更新管理",
+    "icon": "🔄",
+    "tags": [
+      "免费",
+      "轻量"
+    ]
+  },
+  {
+    "id": "dsh-model-health",
+    "name": "dsh-model-health",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-model-health",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "dsh-experience-plugin",
+    "name": "dsh-experience-plugin",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-experience-plugin",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "dsh-browser-control",
+    "name": "dsh-browser-control",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-browser-control",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": []
+  },
+  {
+    "id": "@jianxx/dsh-cc-plugin-loader",
+    "name": "@jianxx/dsh-cc-plugin-loader",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40jianxx%2Fdsh-cc-plugin-loader",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "@michengai/dsh-codex-suite",
+    "name": "@michengai/dsh-codex-suite",
+    "description": "兼容聚合包：保留旧版",
+    "homepage": "https://www.npmjs.com/package/%40michengai%2Fdsh-codex-suite",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-session-fork",
+    "name": "dsh-session-fork",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-session-fork",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@huanlin/dsh-plugin-aigc-canvas",
+    "name": "@huanlin/dsh-plugin-aigc-canvas",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-aigc-canvas",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "免费",
+      "API",
+      "自动化"
+    ]
+  },
+  {
+    "id": "dsh-tool-memory-manager",
+    "name": "dsh-tool-memory-manager",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-tool-memory-manager",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-ops-bundle",
+    "name": "dsh-plugin-ops-bundle",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-ops-bundle",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "noatmark-dsh-plugin",
+    "name": "noatmark-dsh-plugin",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/noatmark-dsh-plugin",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": []
+  },
+  {
+    "id": "dsh-undo-plugin",
+    "name": "dsh-undo-plugin",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-undo-plugin",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "dsh-air",
+    "name": "dsh-air",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-air",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "轻量"
+    ]
+  },
+  {
+    "id": "@laoyuehanni/dsh-git-worktree",
+    "name": "@laoyuehanni/dsh-git-worktree",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40laoyuehanni%2Fdsh-git-worktree",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@chaoset/session-archive",
+    "name": "@chaoset/session-archive",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40chaoset%2Fsession-archive",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "多引擎"
+    ]
+  },
+  {
+    "id": "dsh-opencode-go-models",
+    "name": "dsh-opencode-go-models",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-opencode-go-models",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "多引擎"
+    ]
+  },
+  {
+    "id": "dsh-honcho-memory",
+    "name": "dsh-honcho-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-honcho-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-rdsh",
+    "name": "dsh-plugin-rdsh",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-rdsh",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-crosspost",
+    "name": "dsh-crosspost",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/dsh-crosspost",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ]
+  },
+  {
+    "id": "dsh-plugins",
+    "name": "dsh-plugins",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugins",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": []
+  },
+  {
+    "id": "@mkaliezz/dsh-test-runner",
+    "name": "@mkaliezz/dsh-test-runner",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-test-runner",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "@dsh-plus/shared",
+    "name": "@dsh-plus/shared",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-plus%2Fshared",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-case",
+    "name": "dsh-case",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-case",
+    "category": "更新管理",
+    "icon": "🔄",
+    "tags": []
+  },
+  {
+    "id": "@yiln-dsh/dsh-plugin-web-daemon",
+    "name": "@yiln-dsh/dsh-plugin-web-daemon",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40yiln-dsh%2Fdsh-plugin-web-daemon",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-thread",
+    "name": "dsh-thread",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-thread",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "openharness-rule-for-dsh-plugin",
+    "name": "openharness-rule-for-dsh-plugin",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/openharness-rule-for-dsh-plugin",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "@harrylabsj/kiwi-dsh-plugin",
+    "name": "@harrylabsj/kiwi-dsh-plugin",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40harrylabsj%2Fkiwi-dsh-plugin",
+    "category": "其他",
+    "icon": "📦",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-web3",
+    "name": "dsh-web3",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-web3",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-wsl-tray",
+    "name": "dsh-wsl-tray",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-wsl-tray",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "@mkaliezz/dsh-task-board",
+    "name": "@mkaliezz/dsh-task-board",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-task-board",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": []
+  },
+  {
+    "id": "dsh-gap-feed",
+    "name": "dsh-gap-feed",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-gap-feed",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "dsh-timeline",
+    "name": "dsh-timeline",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-timeline",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-ai-solution-council",
+    "name": "dsh-ai-solution-council",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-ai-solution-council",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-lcx-codex",
+    "name": "dsh-lcx-codex",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-lcx-codex",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@xcr1234/dsh-plugin-dbhub",
+    "name": "@xcr1234/dsh-plugin-dbhub",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40xcr1234%2Fdsh-plugin-dbhub",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "@cromus-ai/dsh-plugin",
+    "name": "@cromus-ai/dsh-plugin",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40cromus-ai%2Fdsh-plugin",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "dsh-fmt",
+    "name": "dsh-fmt",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-fmt",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-wewrite",
+    "name": "dsh-wewrite",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-wewrite",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@objectivex666/dsh-settings-search",
+    "name": "@objectivex666/dsh-settings-search",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/%40objectivex666%2Fdsh-settings-search",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-pkg-info",
+    "name": "dsh-pkg-info",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-pkg-info",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-gate",
+    "name": "dsh-plugin-gate",
+    "description": "DSH 安全权限插件，提供认证、授权和权限管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-gate",
+    "category": "安全权限",
+    "icon": "🔒",
+    "tags": []
+  },
+  {
+    "id": "dsh-plug-manager",
+    "name": "dsh-plug-manager",
+    "description": "插件管理器：发现 GitHub dsh-plugin topic 下的插件仓库，通过 `dsh plugin` 安装/移除/更新 profile 插件，并在 设置 → 插件 → 插件市场 标签页中浏览管理",
+    "homepage": "https://www.npmjs.com/package/dsh-plug-manager",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "talon-ui",
+    "name": "talon-ui",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/talon-ui",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@aiwayds/dsh-model-sync",
+    "name": "@aiwayds/dsh-model-sync",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-model-sync",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": []
+  },
+  {
+    "id": "@chaoset/dsh-any-connect",
+    "name": "@chaoset/dsh-any-connect",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40chaoset%2Fdsh-any-connect",
+    "category": "其他",
+    "icon": "📦",
+    "tags": [
+      "免费"
+    ]
+  },
+  {
+    "id": "dsh-plugin-scorecard",
+    "name": "dsh-plugin-scorecard",
+    "description": "插件体检评分卡：质量/安全审计、榜单、搜索、历史评分曲线与开放数据导出（目录增量同步）",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-scorecard",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@kt11/dsh-deepseek-balance",
+    "name": "@kt11/dsh-deepseek-balance",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40kt11%2Fdsh-deepseek-balance",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-plugin-mission-control",
+    "name": "dsh-plugin-mission-control",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-mission-control",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@dsh-plugin-hub/example-hello",
+    "name": "@dsh-plugin-hub/example-hello",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-plugin-hub%2Fexample-hello",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-kit",
+    "name": "dsh-plugin-kit",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-kit",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "dsh-searxng-web",
+    "name": "dsh-searxng-web",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-searxng-web",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-novel",
+    "name": "dsh-novel",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-novel",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "lynkr-dsh-plugin",
+    "name": "lynkr-dsh-plugin",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/lynkr-dsh-plugin",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": [
+      "多引擎"
+    ]
+  },
+  {
+    "id": "dsh-plugin-greeter",
+    "name": "dsh-plugin-greeter",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-greeter",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@jieai/dsh-malong-bridge",
+    "name": "@jieai/dsh-malong-bridge",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40jieai%2Fdsh-malong-bridge",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-http",
+    "name": "dsh-http",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-http",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-smooth-cursor",
+    "name": "dsh-smooth-cursor",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-smooth-cursor",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "dsh-clipboard",
+    "name": "dsh-clipboard",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-clipboard",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": []
+  },
+  {
+    "id": "@aiwayds/dsh-llm-proxy",
+    "name": "@aiwayds/dsh-llm-proxy",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-llm-proxy",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": []
+  },
+  {
+    "id": "dsh-simple-greet",
+    "name": "dsh-simple-greet",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-simple-greet",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "@dsh-mixxed/dsh-client-ui-filesystem",
+    "name": "@dsh-mixxed/dsh-client-ui-filesystem",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-mixxed%2Fdsh-client-ui-filesystem",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@aiwayds/dsh-vault",
+    "name": "@aiwayds/dsh-vault",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-vault",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "dsh-jwt",
+    "name": "dsh-jwt",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-jwt",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "@eco-dsh/eco-permission-gate",
+    "name": "@eco-dsh/eco-permission-gate",
+    "description": "DSH 安全权限插件，提供认证、授权和权限管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40eco-dsh%2Feco-permission-gate",
+    "category": "安全权限",
+    "icon": "🔒",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-boom",
+    "name": "dsh-plugin-boom",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-boom",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "ds-balance",
+    "name": "ds-balance",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/ds-balance",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "API"
+    ]
+  },
+  {
+    "id": "dsh-lan-access",
+    "name": "dsh-lan-access",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-lan-access",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-nuphus-mcp",
+    "name": "dsh-nuphus-mcp",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/dsh-nuphus-mcp",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ]
+  },
+  {
+    "id": "dshplugin-registry",
+    "name": "dshplugin-registry",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dshplugin-registry",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": []
+  },
+  {
+    "id": "@abruzz1/dsh-plugin-test",
+    "name": "@abruzz1/dsh-plugin-test",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40abruzz1%2Fdsh-plugin-test",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "@aiwayds/dsh-feishu",
+    "name": "@aiwayds/dsh-feishu",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-feishu",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "auto-dshp",
+    "name": "auto-dshp",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/auto-dshp",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ]
+  },
+  {
+    "id": "@jcy2387/dsh-conversation-ui",
+    "name": "@jcy2387/dsh-conversation-ui",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40jcy2387%2Fdsh-conversation-ui",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-security-review",
+    "name": "dsh-plugin-security-review",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-security-review",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": []
+  },
+  {
+    "id": "dsh-plugin-dev-kb",
+    "name": "dsh-plugin-dev-kb",
+    "description": "插件开发知识库：DeepSeek Harness 官方文档站完整 Markdown 镜像（中英双语 188 页）+ 62 篇仓库补充开发参考 + 主题导航与 253 文件全量搜索索引；以 dsh-plugin-dev-kb 技能让 agen",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-dev-kb",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ]
+  },
+  {
+    "id": "dsh-ess-proposal",
+    "name": "dsh-ess-proposal",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/dsh-ess-proposal",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "@yinging/dsh-plugin-pub-review",
+    "name": "@yinging/dsh-plugin-pub-review",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40yinging%2Fdsh-plugin-pub-review",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@dsh-cc/plugin-loader",
+    "name": "@dsh-cc/plugin-loader",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-cc%2Fplugin-loader",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "dsh-client-ui-aqua",
+    "name": "dsh-client-ui-aqua",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-client-ui-aqua",
+    "category": "写作辅助",
+    "icon": "✍️",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@aiwayds/dsh-llm-net-retry",
+    "name": "@aiwayds/dsh-llm-net-retry",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-llm-net-retry",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": []
+  },
+  {
+    "id": "@eco-dsh/eco-audit-chain",
+    "name": "@eco-dsh/eco-audit-chain",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%40eco-dsh%2Feco-audit-chain",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  },
+  {
+    "id": "local-ocr-cli",
+    "name": "local-ocr-cli",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/local-ocr-cli",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "dsh-plugin-installer",
+    "name": "dsh-plugin-installer",
+    "description": "插件商店 + 安装排障技能一体包：Web GUI「插件商店」页签浏览插件目录（名称/介绍/原链接），一键触发安装；内置 dsh-plugin-installer 技能作为安装后端引擎",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-installer",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-xmemo",
+    "name": "dsh-xmemo",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-xmemo",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "@mindmemos/deepseek-harness-plugin",
+    "name": "@mindmemos/deepseek-harness-plugin",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40mindmemos%2Fdeepseek-harness-plugin",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": []
+  },
+  {
+    "id": "@aiwayds/dsh-llm-stats",
+    "name": "@aiwayds/dsh-llm-stats",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-llm-stats",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "@aiwayds/dsh-cron",
+    "name": "@aiwayds/dsh-cron",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-cron",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": []
+  },
+  {
+    "id": "@weaxs/dsh-stock-analysis",
+    "name": "@weaxs/dsh-stock-analysis",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40weaxs%2Fdsh-stock-analysis",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "@lcthe/dsh-usage-monitor",
+    "name": "@lcthe/dsh-usage-monitor",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40lcthe%2Fdsh-usage-monitor",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "API",
+      "自动化"
+    ]
+  },
+  {
+    "id": "dsh-daily-local-memory",
+    "name": "dsh-daily-local-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-daily-local-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "@qiqiangvae/dsh-obsidian",
+    "name": "@qiqiangvae/dsh-obsidian",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40qiqiangvae%2Fdsh-obsidian",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "@steven-wu/dsh-cost-meter",
+    "name": "@steven-wu/dsh-cost-meter",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40steven-wu%2Fdsh-cost-meter",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "@huangzhaoyu/zhaoyu-restart",
+    "name": "@huangzhaoyu/zhaoyu-restart",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40huangzhaoyu%2Fzhaoyu-restart",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "@dsh-mixxed/dsh-client-ui-filesystem-manager",
+    "name": "@dsh-mixxed/dsh-client-ui-filesystem-manager",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-mixxed%2Fdsh-client-ui-filesystem-manager",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": []
+  },
+  {
+    "id": "@aiwayds/dsh-ask-router",
+    "name": "@aiwayds/dsh-ask-router",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-ask-router",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-router-codebuddy",
+    "name": "dsh-router-codebuddy",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-router-codebuddy",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "API"
+    ]
+  },
+  {
+    "id": "@omicverse/dsh-omicos",
+    "name": "@omicverse/dsh-omicos",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/%40omicverse%2Fdsh-omicos",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": []
+  },
+  {
+    "id": "dsh-tesseract-ocr",
+    "name": "dsh-tesseract-ocr",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-tesseract-ocr",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "@dsh-suite/plugin-notify",
+    "name": "@dsh-suite/plugin-notify",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-suite%2Fplugin-notify",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "本地优先",
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-windows-ocr",
+    "name": "dsh-windows-ocr",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-windows-ocr",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "dsh-url-tools",
+    "name": "dsh-url-tools",
+    "description": "DSH 开发工具插件，提供调试、测试和代码辅助功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-url-tools",
+    "category": "开发工具",
+    "icon": "🛠️",
+    "tags": [
+      "免费",
+      "轻量"
+    ]
+  },
+  {
+    "id": "@aiwayds/dsh-mcp-adapter",
+    "name": "@aiwayds/dsh-mcp-adapter",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-mcp-adapter",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": []
+  },
+  {
+    "id": "dsh-auto-mode",
+    "name": "dsh-auto-mode",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/dsh-auto-mode",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ]
+  },
+  {
+    "id": "@maxwell-feng/dsh-tesseract-ocr",
+    "name": "@maxwell-feng/dsh-tesseract-ocr",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/%40maxwell-feng%2Fdsh-tesseract-ocr",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "本地优先"
+    ]
+  },
+  {
+    "id": "dsh-stock-analysis",
+    "name": "dsh-stock-analysis",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-stock-analysis",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": []
+  },
+  {
+    "id": "dsh-reasoning-efforts",
+    "name": "dsh-reasoning-efforts",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/dsh-reasoning-efforts",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ]
+  },
+  {
+    "id": "@huiliyi37/dsh-tianshu-tui",
+    "name": "@huiliyi37/dsh-tianshu-tui",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40huiliyi37%2Fdsh-tianshu-tui",
+    "category": "费用统计",
+    "icon": "💰",
+    "tags": [
+      "Web UI"
+    ]
+  },
+  {
+    "id": "@4t145/create-dsh-plugin",
+    "name": "@4t145/create-dsh-plugin",
+    "description": "DSH 功能扩展插件，提供相关能力增强。",
+    "homepage": "https://www.npmjs.com/package/%404t145%2Fcreate-dsh-plugin",
+    "category": "其他",
+    "icon": "📦",
+    "tags": []
+  }
+]

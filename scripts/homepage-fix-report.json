@@ -1,0 +1,2147 @@
+{
+  "generatedAt": "2026-09-13T05:39:21.564Z",
+  "stats": {
+    "total": 248,
+    "valid": 50,
+    "invalid": 198,
+    "timeout": 0,
+    "error": 0,
+    "fixed": 198
+  },
+  "results": [
+    {
+      "id": "@anysearch/anysearch-dsh",
+      "name": "AnySearch 搜索",
+      "originalHomepage": "https://anysearch.com",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-free-search",
+      "name": "免费网页搜索",
+      "originalHomepage": "https://github.com/liustack/dsh-free-search",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/DDDMUC/dsh-free-search#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-builtin-browser",
+      "name": "内置真实浏览器",
+      "originalHomepage": "https://github.com/liustack/dsh-builtin-browser",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/wqty123/dsh-browser",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@liustack/modsearch",
+      "name": "ModSearch 编码搜索",
+      "originalHomepage": "https://github.com/liustack/modsearch",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-agent-browser",
+      "name": "Agent 浏览器工具",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-agent-browser",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/shantanugoel/dsh-browser-control#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@changfenhuang/dsh-genui",
+      "name": "GenUI 交互组件",
+      "originalHomepage": "https://omdsh-dev.github.io/dsh-genui/",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@dely0/dsh-personal-workbench",
+      "name": "个人工作台",
+      "originalHomepage": "https://github.com/dely0/dsh-personal-workbench",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-tech-skin",
+      "name": "科技风皮肤",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tech-skin",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-tech-skin",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-tech-workbench",
+      "name": "Meta管理工作台",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tech-workbench",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-tech-workbench",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-dream-skin",
+      "name": "Dream Skin 换肤",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-dream-skin",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/RevolutionLA/dsh-dream-skin#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@nonamelego/dsh-catppuccin",
+      "name": "Catppuccin 主题",
+      "originalHomepage": "https://github.com/nonamelego/dsh-catppuccin",
+      "status": "redirect",
+      "statusCode": 301,
+      "finalUrl": "https://github.com/NoNameLeGo/dsh-catppuccin-theme"
+    },
+    {
+      "id": "dsh-plugin-wallpaper-engine",
+      "name": "Wallpaper Engine 壁纸",
+      "originalHomepage": "https://github.com/meyaomiao/dsh-plugin-wallpaper-engine",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/elysia395/dsh-wallpaper-engine#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-pet",
+      "name": "桌面宠物",
+      "originalHomepage": "https://github.com/kendu76/dsh-pet",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/PC2005-cloud/dsh-pet#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-dafeiyu",
+      "name": "大肥鱼陪伴",
+      "originalHomepage": "https://github.com/meyaomiao/dsh-dafeiyu",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/QCYTSN/dsh-dafeiyu#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "whale-on-desk",
+      "name": "像素鲸鱼桌面伙伴",
+      "originalHomepage": "https://github.com/meyaomiao/whale-on-desk",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://cookiesheep.github.io/whale-on-desk",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-whale-widget",
+      "name": "小鲸鱼余额挂件",
+      "originalHomepage": "https://github.com/meyaomiao/dsh-whale-widget",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@aiwayds/dsh-tui-pi",
+      "name": "Pi 风格终端UI",
+      "originalHomepage": "https://github.com/aiwayds/dsh-tui-pi",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/fan56/dsh-tui-pi#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-vscode-mode",
+      "name": "VSCode 编码体验",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-vscode-mode",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/Lenonss/DSH_VsCodeMode",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-music-player",
+      "name": "音乐播放器",
+      "originalHomepage": "https://github.com/kendu76/dsh-music-player",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@liustack/modlens",
+      "name": "ModLens 视觉插件",
+      "originalHomepage": "https://github.com/liustack/modlens",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@kobenfang/dsh-eyes",
+      "name": "Eyes 视觉技能",
+      "originalHomepage": "https://github.com/kobenfang/dsh-eyes",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/%40kobenfang%2Fdsh-eyes",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "@goodandready/dsh-vision-bridge",
+      "name": "视觉桥接枢纽",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-vision-bridge",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-image-gen",
+      "name": "图像生成",
+      "originalHomepage": "https://github.com/liustack/dsh-image-gen",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/shanliuling/dsh-image-gen#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@flowingspring/dsh-voco",
+      "name": "语音对话",
+      "originalHomepage": "https://github.com/flowingspring/dsh-voco",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/lgquan/dsh-voco#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-agent-voice",
+      "name": "Agent 语音",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-agent-voice",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/meliodascz89/dsh-agent-voice#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@wenbin_wb/dsh-bridge",
+      "name": "移动端桥接",
+      "originalHomepage": "https://github.com/wenbin-wb/dsh-bridge",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-pocket",
+      "name": "口袋 DSH",
+      "originalHomepage": "https://github.com/meyaomiao/dsh-pocket",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/shaobeichen/dsh-pocket",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-mobile",
+      "name": "移动端适配",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-mobile",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/saya-ch/dsh-mobile#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-remote",
+      "name": "远程工作助手",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-remote",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/flymysql/dsh-remote",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "ds-harness-remote",
+      "name": "加密远程访问",
+      "originalHomepage": "https://www.npmjs.com/package/ds-harness-remote",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/liguobao/ds-harness-remote#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-remote-plugin",
+      "name": "DSH Remote 官方插件",
+      "originalHomepage": "https://github.com/deepseek-ai/dsh-remote-plugin",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/Blank-not-black/dsh-Remote",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "pi2dsh",
+      "name": "Pi 生态桥接",
+      "originalHomepage": "https://github.com/omdsh-dev/pi2dsh",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/weijiafu14/pi2dsh#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-univer-office",
+      "name": "Univer Office 办公",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-univer-office",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/dream-num/dsh-univer-office",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@xmanrui/dsh-im",
+      "name": "多渠道 IM 接入",
+      "originalHomepage": "https://github.com/xmanrui/dsh-im",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-feishu-bot",
+      "name": "飞书 Bot 接入",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-feishu-bot",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/PlutoKeating/dsh-lark-bot#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-lark-bot",
+      "name": "Lark Bot 接入",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-lark-bot",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/PlutoKeating/dsh-lark-bot#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-office-tools",
+      "name": "Office 工具集",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-office-tools",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/kw78/dsh-office-tools#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-excel-chat",
+      "name": "Excel 对话",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-excel-chat",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/hccccc01333/dsh-excel-chat",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-office",
+      "name": "Agent Office 仪表板",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-office",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Fayelin12/dsh-office#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-wecom",
+      "name": "企业微信 Bot",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-wecom",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/TtTRz/dsh-wecom#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-wechat",
+      "name": "微信桥接",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-wechat",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/pan17/dsh-wechat#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@kriskwok/dsh-feishu-gateway",
+      "name": "飞书网关",
+      "originalHomepage": "https://github.com/kriskwok/dsh-feishu-gateway",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@huanlin/dsh-plugin-better-sidebar-plugin-office",
+      "name": "Office 文件预览",
+      "originalHomepage": "https://github.com/huanlin/dsh-plugin-better-sidebar-plugin-office",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-better-sidebar-plugin-office",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-fund-research",
+      "name": "基金研究",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-fund-research",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-fund-research#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-xueqiu",
+      "name": "雪球行情面板",
+      "originalHomepage": "https://github.com/meyaomiao/dsh-xueqiu",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/wanderer-yk/dsh-xueqiu#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-cost-meter",
+      "name": "会话费用统计",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-cost-meter",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/Han-1413141/dsh-cost-meter#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@kenz1117/dsh-ui-usage-billing",
+      "name": "用量计费仪表板",
+      "originalHomepage": "https://github.com/kenz1117/dsh-ui-usage-billing",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-quant",
+      "name": "量化交易 OS",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-quant",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-quant",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "clawock-dsh",
+      "name": "投资决策助手",
+      "originalHomepage": "https://www.npmjs.com/package/clawock-dsh",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://kcnyu.github.io/clawock/",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-server-deck",
+      "name": "服务器卡片仪表板",
+      "originalHomepage": "https://github.com/meyaomiao/dsh-server-deck",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-win32",
+      "name": "Windows 适配修复",
+      "originalHomepage": "https://github.com/deepseek-ai/dsh-win32",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/sjh9714/dsh-win32#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@gehennawu/dsh-service",
+      "name": "Web 运维面板",
+      "originalHomepage": "https://github.com/gehennawu/dsh-service",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-plugin-ops",
+      "name": "插件运维",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-ops",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/f-infinite-z/dsh-plugin-ops#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-mnemon",
+      "name": "三层记忆控制平面",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-mnemon",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-memory-eternal",
+      "name": "记忆核心",
+      "originalHomepage": "https://github.com/siweina/dsh-memory-eternal",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/EternalNight996/dsh-memory-eternal",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-context",
+      "name": "上下文洞察管理",
+      "originalHomepage": "https://github.com/bowenliang123/dsh-context",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-session-manager",
+      "name": "会话管理器",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-session-manager",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/hkkz9522/dsh-session-manager",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@morlay/session-rdb",
+      "name": "RDB 持久化会话",
+      "originalHomepage": "https://github.com/morlay/session-rdb",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/morlay/session-rdb.git",
+      "fixMethod": "npm registry repository"
+    },
+    {
+      "id": "@morlay/session-branch",
+      "name": "会话分支管理",
+      "originalHomepage": "https://github.com/morlay/session-branch",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/morlay/better-session.git",
+      "fixMethod": "npm registry repository"
+    },
+    {
+      "id": "@morlay/ui-conversation-message-actions",
+      "name": "消息操作增强",
+      "originalHomepage": "https://github.com/morlay/ui-conversation-message-actions",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/morlay/better-session.git",
+      "fixMethod": "npm registry repository"
+    },
+    {
+      "id": "@michengai/dsh-archive-manager",
+      "name": "归档管理器",
+      "originalHomepage": "https://github.com/michengai/dsh-archive-manager",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "meow-memory",
+      "name": "跨会话项目记忆",
+      "originalHomepage": "https://www.npmjs.com/package/meow-memory",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Phant0Meow/dsh-meow-memory#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@lemoncat7/dsh-knowledge",
+      "name": "知识库管理",
+      "originalHomepage": "https://github.com/lemoncat7/dsh-knowledge",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "billion-context-dsh",
+      "name": "十亿上下文管理",
+      "originalHomepage": "https://www.npmjs.com/package/billion-context-dsh",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/billion-context-dsh",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "@roarpeng/graphflow",
+      "name": "GraphFlow 记忆",
+      "originalHomepage": "https://github.com/Roarpeng/GraphFlow",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-strata",
+      "name": "会话分层",
+      "originalHomepage": "https://github.com/jsdvjx/dsh-strata",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-omni-router",
+      "name": "Omni 可靠性路由",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-omni-router",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-omni-router",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-plugin-model-proxy",
+      "name": "模型代理路由",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-plugin-model-proxy",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-plugin-model-proxy",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-llm-fallbacks",
+      "name": "LLM 自动降级",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-llm-fallbacks",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/omdsh-dev/dsh-llm-fallbacks#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-subscriptions",
+      "name": "多平台订阅接入",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-subscriptions",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@goodandready/dsh-key-rotation",
+      "name": "API Key 轮询",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-key-rotation",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-agy-link",
+      "name": "Antigravity 模型接入",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-agy-link",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/amlyczz/dsh-agy-link#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-coding-subscription-oauth",
+      "name": "编码订阅 OAuth",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-coding-subscription-oauth",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/lninghaha/dsh-coding-subscription-oauth#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-codex-subscription",
+      "name": "Codex 订阅接入",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-codex-subscription",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/WSL043/dsh-codex-subscription",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-codex-connect",
+      "name": "Codex 模型连接",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-codex-connect",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/franksong2702/dsh-codex-connect#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@eddyskywalker/dsh-chatgpt-subscription",
+      "name": "ChatGPT 订阅接入",
+      "originalHomepage": "https://github.com/eddyskywalker/dsh-chatgpt-subscription",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/Aa728848/dsh-chatgpt-subscription#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-routing-suite",
+      "name": "智能路由套件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-routing-suite",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/dragonbaba/dsh-routing-suite#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin",
+      "name": "社区插件市场",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-plugin",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://dsh-plugin.org",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dshmarket",
+      "name": "可视化插件市场",
+      "originalHomepage": "https://github.com/omdsh-dev/dshmarket",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://dshmarket.com",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-find-plugin",
+      "name": "插件发现",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-find-plugin",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/awesome-dsh-plugin/dsh-find-plugin#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-catalog",
+      "name": "插件目录",
+      "originalHomepage": "https://github.com/deepseek-ai/dsh-plugin-catalog",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://awesome-dsh-plugin.com",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-shop",
+      "name": "插件商店",
+      "originalHomepage": "https://github.com/LivXue/dsh-plugin-shop",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dshhub-market",
+      "name": "口令插件市场",
+      "originalHomepage": "https://github.com/omdsh-dev/dshhub-market",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.dshhub.co",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@1e0zj/dsh-plugin-mall",
+      "name": "插件商城",
+      "originalHomepage": "https://github.com/1e0zj/dsh-plugin-mall",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "upstream-radar",
+      "name": "依赖兼容性监控",
+      "originalHomepage": "https://github.com/omdsh-dev/upstream-radar",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/MicroMilo/upstream-radar#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-updates",
+      "name": "插件更新通知",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-plugin-updates",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://awesome-dsh-plugin.com",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-webui-auth",
+      "name": "WebUI 认证",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-webui-auth",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-webui-auth",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-config-manager",
+      "name": "配置管理器",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-config-manager",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/xiajiajun516/dsh-config-manager#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-harmony",
+      "name": "DSH 补丁库",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-harmony",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/memorax-ai/dsh-harmony#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-novel-writer",
+      "name": "小说写作助手",
+      "originalHomepage": "https://github.com/siweina/dsh-novel-writer",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-qingagent",
+      "name": "AI 写作助手",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-qingagent",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/void2anything/dsh-qingagent#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "lunheng-article-pipeline",
+      "name": "论衡长文流水线",
+      "originalHomepage": "https://www.npmjs.com/package/lunheng-article-pipeline",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/zuoyunlai/lunheng-article-pipeline-dsh#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "gongwen-skill",
+      "name": "公文处理专家",
+      "originalHomepage": "https://www.npmjs.com/package/gongwen-skill",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/linhut/gongwen-skill#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@sunjuntao/dsh-prompt-library",
+      "name": "提示词库",
+      "originalHomepage": "https://github.com/sunjuntao/dsh-prompt-library",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/master1Sun/dsh-prompt-library#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-vibe-math",
+      "name": "多智能体数学解题",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-vibe-math",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/ChongCyrus/Vibe-Mathematics#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@waterwx/dsh-novel-forge",
+      "name": "小说锻造工作台",
+      "originalHomepage": "https://github.com/waterwx/dsh-novel-forge",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/watersxya/dsh-novel-forge",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-mcp-connector",
+      "name": "MCP 连接器",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-mcp-connector",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/duhu2000/dsh-mcp-connector#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-mcp-panel",
+      "name": "MCP 管理控制台",
+      "originalHomepage": "https://github.com/deepseek-ai/dsh-mcp-panel",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-mcp-panel#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@microi.net/cli",
+      "name": "Microi 吾码 CLI",
+      "originalHomepage": "https://github.com/microi-net/cli",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://microi.net/doc/v8-engine/vs-code-plugin.html",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "huaweicloud-devkit",
+      "name": "华为云开发工具包",
+      "originalHomepage": "https://www.npmjs.com/package/huaweicloud-devkit",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/huaweicloud/huaweicloud-devkit#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@tt-a1i/archify-dsh",
+      "name": "Archify 架构分析",
+      "originalHomepage": "https://github.com/tt-a1i/archify-dsh",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-better-edit",
+      "name": "增强编辑工具",
+      "originalHomepage": "https://github.com/Rianico/dsh-better-edit",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-chat-import",
+      "name": "对话历史导入",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-chat-import",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/Nwflower/dsh-chat-import",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-movein",
+      "name": "Claude Code 迁移",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-movein",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/sjh9714/dsh-movein#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-client-auto-continue",
+      "name": "自动继续",
+      "originalHomepage": "https://github.com/omdsh-dev/dsh-client-auto-continue",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/HsiangNianian/dsh-auto-continue",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-ima-sync",
+      "name": "IMA 进度同步",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-ima-sync",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/nan1010082085/dsh-plugin-ima-sync#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-session-log-repair",
+      "name": "会话日志修复",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-session-log-repair",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/jsoncode/dsh-session-log-repair#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "deepseek-harness-zh_pro",
+      "name": "中文增强插件",
+      "originalHomepage": "https://www.npmjs.com/package/deepseek-harness-zh_pro",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/magian1127/deepseek-harness-zh_pro#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-russian-lang",
+      "name": "俄语本地化",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-russian-lang",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@huanlin/dsh-plugin-better-locale",
+      "name": "多语言支持",
+      "originalHomepage": "https://github.com/huanlin/dsh-plugin-better-locale",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-better-locale",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "@lk251066/dsh-tui",
+      "name": "多会话终端工作台",
+      "originalHomepage": "https://github.com/lk251066/dsh-tui",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/lk251066/dsh-tui-pro#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-live-canvas",
+      "name": "实时预览画布",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-live-canvas",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "beauticode-dsh",
+      "name": "美化背景插件",
+      "originalHomepage": "https://www.npmjs.com/package/beauticode-dsh",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/starsstreaming/beautiCode#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-pdf-edit",
+      "name": "PDF 编辑器",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-pdf-edit",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Whatsmore-nf/dsh-pdf-edit#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@kazecreator/dsh-settings-pro",
+      "name": "设置增强插件",
+      "originalHomepage": "https://github.com/kazecreator/dsh-settings-pro",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-tauri",
+      "name": "Tauri 桌面壳基础",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tauri",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/dsh-tauri-desk/dsh-tauri-plugins#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-subscriptions",
+      "name": "多平台订阅接入",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-subscriptions",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/V1ki/dsh-plugin-subscriptions#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-tiddlywiki",
+      "name": "TiddlyWiki 知识库",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tiddlywiki",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/bbqisbbq/dsh-tiddlywiki#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-any-background",
+      "name": "自定义背景",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-any-background",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Tkingxiao/dsh-any-background#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "aqua-deepseek",
+      "name": "价格鱼缸浮窗",
+      "originalHomepage": "https://www.npmjs.com/package/aqua-deepseek",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/xiaoyu7044/aqua-deepseek#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-permission-rules",
+      "name": "权限规则引擎",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-permission-rules",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-permission-rules#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-codex-sync",
+      "name": "Codex 双向同步",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-codex-sync",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Walvez/dsh-codex-sync",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-smooth-stream",
+      "name": "流畅流式渲染",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-smooth-stream",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://laplace-bit.github.io/dsh-smooth-stream/",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-ssh-tui",
+      "name": "SSH 终端 TUI",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-ssh-tui",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/cyjyyd/dsh-ssh-tui#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-auth-gate",
+      "name": "应用层认证",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-auth-gate",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/TecFancy/dsh-auth-gate",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-browser",
+      "name": "浏览器自动化",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-browser",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/ben7am1n/dsh-browser#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-voice",
+      "name": "语音输入",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-voice",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-prompt-history",
+      "name": "提示词历史",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-prompt-history",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Xiaofei-fei/dsh-prompt-history#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-notify-me",
+      "name": "桌面消息提醒",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-notify-me",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/chromoany/dsh-notify-me#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "iterate-plugin",
+      "name": "迭代闭环插件",
+      "originalHomepage": "https://www.npmjs.com/package/iterate-plugin",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/jingzhao-l/iterate-skill/tree/main/harness/iterate-plugin",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-tauri-panel",
+      "name": "Tauri 面板扩展",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tauri-panel",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/dsh-tauri-desk/dsh-tauri-plugins#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-deepread",
+      "name": "AI 深度阅读",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-deepread",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/xiehuan123/dsh-deepread#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-usage-stats",
+      "name": "用量统计分析",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-usage-stats",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/lanlandeli/dsh-usage-stats#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@mrrisega/dsh-remote",
+      "name": "手机远程控制",
+      "originalHomepage": "https://github.com/mrrisega/dsh-remote",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@lemoncat7/dsh-ssh",
+      "name": "SSH 安全工具集",
+      "originalHomepage": "https://github.com/lemoncat7/dsh-ssh",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@dttxorg/deepseekeyes",
+      "name": "可审计视觉运行时",
+      "originalHomepage": "https://github.com/dttxorg/deepseekeyes",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-mimir",
+      "name": "研究助手套件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-mimir",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/1692775560/dsh-Mimir-Academic-research",
+      "fixMethod": "npm registry repository"
+    },
+    {
+      "id": "dsh-legal-suite",
+      "name": "法律行业套件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-legal-suite",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-legal-suite",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-workbench",
+      "name": "右侧文件工作台",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-workbench",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/lee259/dsh-workbench#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-mcp-sync",
+      "name": "MCP 同步工具",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-mcp-sync",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/nan1010082085/dsh-mcp-sync#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@hytime/dsh-client-ui-shortcuts",
+      "name": "键盘快捷键",
+      "originalHomepage": "https://github.com/hytime/dsh-client-ui-shortcuts",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-plugin-capabilities",
+      "name": "技能与MCP管理",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-capabilities",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/qinyre/dsh-plugin-capabilities#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@kubor/dsh-bloom-theme",
+      "name": "Bloom 玻璃主题",
+      "originalHomepage": "https://github.com/kubor/dsh-bloom-theme",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/webkubor/dsh-bloom-theme#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-settings-nav-organizer",
+      "name": "设置导航整理",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-settings-nav-organizer",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/zhengjy01/dsh-settings-nav-organizer#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-local-ai",
+      "name": "本地模型集成",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-local-ai",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-local-ai#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-vision-proxy",
+      "name": "视觉代理",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-vision-proxy",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Flyvhidbwo/dsh-vision-proxy#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-tauri-ui",
+      "name": "Tauri 界面扩展",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tauri-ui",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/dsh-tauri-desk/dsh-tauri-plugins#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-status-rotator",
+      "name": "状态栏梗图机",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-status-rotator",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/01Virex/dsh-status-rotator#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-tray-launcher",
+      "name": "Windows 托盘启动器",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tray-launcher",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/fancr-code/dsh-tray-launcher#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-tool-vision",
+      "name": "外置视觉模型",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tool-vision",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Scorp1o117/dsh-tool-vision",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-lanmode",
+      "name": "局域网访问",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-lanmode",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "deepseek-vl-support",
+      "name": "DeepSeek 视觉支持",
+      "originalHomepage": "https://www.npmjs.com/package/deepseek-vl-support",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/deepseek-vl-support",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-testkit",
+      "name": "插件测试工具包",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-testkit",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/iiwish/dsh-testkit#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@mstar-harness/dsh",
+      "name": "Morning Star 插件",
+      "originalHomepage": "https://www.npmjs.com/package/@mstar-harness/dsh",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/btspoony/mstar-harness#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-concurrency-guard",
+      "name": "并发请求监控",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-concurrency-guard",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/fu827707013/dsh-concurrency-guard",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-memento",
+      "name": "有界分层记忆",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-memento",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-memento#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-checkpoint-rewind",
+      "name": "检查点回溯",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-checkpoint-rewind",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-checkpoint-rewind#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-tauri-worktree",
+      "name": "Git Worktree 隔离",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tauri-worktree",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/dsh-tauri-desk/dsh-tauri-plugins#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@eternalnight/dsh-theme",
+      "name": "主题皮肤插件",
+      "originalHomepage": "https://github.com/eternalnight/dsh-theme",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/EternalNight996/dsh-theme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-full-remote",
+      "name": "完整远程访问",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-full-remote",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/JUANWANG-BUAA/dsh-full-remote#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-deepseek-balance-widget",
+      "name": "多厂商余额挂件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-deepseek-balance-widget",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/crazy-L118/dsh-deepseek-balance-widget#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@awiki/dsh-plugin",
+      "name": "AWiki 身份消息",
+      "originalHomepage": "https://www.npmjs.com/package/@awiki/dsh-plugin",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/AgentConnect/dsh-awiki#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-knowledge",
+      "name": "Cherry Studio 知识库",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-knowledge",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Soren-ABT/dsh-knowledge",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@isomoes/dsh-ikanban",
+      "name": "iKanban 看板",
+      "originalHomepage": "https://github.com/isomoes/dsh-ikanban",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/isomoes/ikanban#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@noob-stupid/dsh-plugin-console",
+      "name": "插件管理控制台",
+      "originalHomepage": "https://github.com/noob-stupid/dsh-plugin-console",
+      "status": "redirect",
+      "statusCode": 301,
+      "finalUrl": "https://github.com/Noob-stupid/dsh-plugin-hub"
+    },
+    {
+      "id": "dsh-dingo",
+      "name": "声音提醒插件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-dingo",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/february2015/dsh-dingo",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-auto-review",
+      "name": "AI 自动审核",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-auto-review",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-auto-review#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@crazy_th/dsh-computer-use",
+      "name": "Windows Computer Use",
+      "originalHomepage": "https://github.com/crazy-th/dsh-computer-use",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/ThreeBody6666/dsh-computer-use#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@huiliyi37/dsh-office",
+      "name": "Office 文档工具",
+      "originalHomepage": "https://github.com/huiliyi37/dsh-office",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/%40huiliyi37%2Fdsh-office",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "@goodandready/dsh-tts",
+      "name": "文本转语音",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-tts",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-harbor-evolution",
+      "name": "Harbor 会话演进",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-harbor-evolution",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/istarwyh/harbor-self-evolving#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@p-dsh-market/conversation-knowledge-map",
+      "name": "对话知识图谱",
+      "originalHomepage": "https://www.npmjs.com/package/@p-dsh-market/conversation-knowledge-map",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/%40p-dsh-market%2Fconversation-knowledge-map",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dshbase-catalog",
+      "name": "dshbase 目录查询",
+      "originalHomepage": "https://www.npmjs.com/package/dshbase-catalog",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dshbase-catalog",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-plugin-install",
+      "name": "插件安装工具",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-install",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/qinyre/dsh-plugin-install#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-session-pin",
+      "name": "会话置顶",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-session-pin",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-session-pin#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@aiwayds/dsh-dcp",
+      "name": "确定性上下文压缩",
+      "originalHomepage": "https://github.com/aiwayds/dsh-dcp",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/fan56/dsh-dcp",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@dsh-enhanced/acp",
+      "name": "ACP 协议代理",
+      "originalHomepage": "https://www.npmjs.com/package/@dsh-enhanced/acp",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/22-ai-00/dsh-enhanced",
+      "fixMethod": "npm registry repository"
+    },
+    {
+      "id": "dsh-plugin-lookatstudy",
+      "name": "学习课程生成",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-lookatstudy",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Kaiji-Z/dsh-plugin-lookatstudy#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-cron",
+      "name": "定时任务",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-cron",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-desktop-windows",
+      "name": "Windows 桌面版",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-desktop-windows",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/ReachGa0/dsh-desktop#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-model-sync",
+      "name": "模型目录同步",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-model-sync",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-plugin-vajraclaw",
+      "name": "高风险命令防护",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-vajraclaw",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://dr-os.io",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@goodandready/dsh-image-gen",
+      "name": "图像生成工具",
+      "originalHomepage": "https://github.com/GooDAnDReaDY/dsh-image-gen",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-gitbash-shell",
+      "name": "Git Bash Shell",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-gitbash-shell",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/KannaKuron/dsh-gitbash-shell",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-bloub-mood",
+      "name": "心情图标插件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-bloub-mood",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Yuuhann1999/dsh-bloub-mood#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "relay-dsh-plugin-codex",
+      "name": "Codex 会话后端",
+      "originalHomepage": "https://www.npmjs.com/package/relay-dsh-plugin-codex",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/yangbobo2021/relay-dsh-plugin-codex#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@khorsheed/dsh-ankh-guard",
+      "name": "自修改重启防护",
+      "originalHomepage": "https://github.com/khorsheed/dsh-ankh-guard",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-lsp-actions",
+      "name": "LSP 操作面板",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-lsp-actions",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-lsp-actions#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-image-pathify",
+      "name": "图片路径管理",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-image-pathify",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/dami9527/dsh-image-pathify#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@alpacachen/dsh-kanban",
+      "name": "看板插件",
+      "originalHomepage": "https://github.com/alpacachen/dsh-kanban",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-codex-timeline",
+      "name": "Codex 时间线",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-codex-timeline",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Wine-Red/dsh-codex-timeline#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-ai4scholar",
+      "name": "学术研究工具",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-ai4scholar",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://ai4scholar.net?src=dsh",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-quota-panel",
+      "name": "配额面板",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-quota-panel",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/wenzetan/dsh-quota-panel#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@alpacachen/dsh-automation",
+      "name": "持久化自动化",
+      "originalHomepage": "https://github.com/alpacachen/dsh-automation",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-selfupdater",
+      "name": "自更新插件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-selfupdater",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-selfupdater",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "@agi-fans/dsh-tui",
+      "name": "终端 UI 库",
+      "originalHomepage": "https://github.com/agi-fans/dsh-tui",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://omdsh.agi.fans/",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-crew",
+      "name": "角色 Agent 团队",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-crew",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/stuarthu/dsh-crew#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-archived-chats",
+      "name": "会话档案",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-archived-chats",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Ultronen/dsh-archived-chats",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-peak-indicator",
+      "name": "峰谷计价标记",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-peak-indicator",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/future007s/dsh-peak-indicator#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-marketplace",
+      "name": "内置插件市场",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-marketplace",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Scorp1o117/dsh-plugin-marketplace",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-wiki-tools",
+      "name": "Obsidian Wiki 工具",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-wiki-tools",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Lion-1209/dsh-plugin-wiki-tools#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@max-null/dsh-plugin-center",
+      "name": "插件中心",
+      "originalHomepage": "https://github.com/max-null/dsh-plugin-center",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-xray",
+      "name": "X 光诊断",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-xray",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/alloevil/dsh-xray#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-project-orchestrator",
+      "name": "项目编排工作台",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-project-orchestrator",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/zhangz-2018/dsh-project-orchestrator#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-map-tools",
+      "name": "地图路由工具",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-map-tools",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/HorusJiang/dsh-map-tools#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "picturereader",
+      "name": "统一图像理解",
+      "originalHomepage": "https://www.npmjs.com/package/picturereader",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/jing-hy/picturereader#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@perrylink/dsh-github",
+      "name": "GitHub CI 集成",
+      "originalHomepage": "https://github.com/perrylink/dsh-github",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "wallpaper-engine-dsh",
+      "name": "Wallpaper Engine 壁纸",
+      "originalHomepage": "https://www.npmjs.com/package/wallpaper-engine-dsh",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Weilv-D/wallpaper-engine-dsh#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@kiwifruit/dsh-jit-viewer",
+      "name": "文档预览浮层",
+      "originalHomepage": "https://github.com/kiwifruit/dsh-jit-viewer",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://www.npmjs.com/package/%40kiwifruit%2Fdsh-jit-viewer",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-output-styles",
+      "name": "输出样式切换",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-output-styles",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-output-styles#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-advisor",
+      "name": "顾问审查模式",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-advisor",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/omdsh-dev/dsh-advisor#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-milestone",
+      "name": "里程碑时间线",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-milestone",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-milestone",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-oc-file-links",
+      "name": "逐轮产出物卡片",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-oc-file-links",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-oc-file-links",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-composer-history",
+      "name": "输入历史",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-composer-history",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-composer-history#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@moguiyu/dsh-tool-tavily-search",
+      "name": "Tavily 搜索工具",
+      "originalHomepage": "https://github.com/moguiyu/dsh-tool-tavily-search",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://github.com/moguiyu/dsh-tavily#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-observe",
+      "name": "可观测性导出",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-observe",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-observe#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@agi-fans/oh-my-dsh",
+      "name": "oh-my-dsh TUI",
+      "originalHomepage": "https://github.com/agi-fans/oh-my-dsh",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "@lanbaolu/dsh-fail-soft",
+      "name": "坏插件隔离",
+      "originalHomepage": "https://github.com/lanbaolu/dsh-fail-soft",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-usage-billing",
+      "name": "用量消费统计",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-usage-billing",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-usage-billing",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-mpkg-wallpaper",
+      "name": "mpkg 壁纸引擎",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-mpkg-wallpaper",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/XHR666/dsh-mpkg-wallpaper",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-auto-classifier",
+      "name": "自动权限分类",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-auto-classifier",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PAKIKNOWLEDGE/dsh-auto-classifier#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-updater-npm",
+      "name": "npm 更新器",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-updater-npm",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/SiriusWJ/dsh-updater-npm#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-email",
+      "name": "邮件插件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-email",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/STARDUSTLC666/dsh-email#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-acp-server",
+      "name": "ACP 服务器",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-acp-server",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/dushaobindoudou/dsh-acp#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@hyzyn/dsh-safe",
+      "name": "启动保险丝",
+      "originalHomepage": "https://github.com/hyzyn/dsh-safe",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-chat-sync",
+      "name": "对话历史同步",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-chat-sync",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/nan1010082085/dsh-chat-sync#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-voice-mode",
+      "name": "全双工语音",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-voice-mode",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/qishuilalala/dsh-voice-mode#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-tool-normalizer",
+      "name": "工具归一化",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-tool-normalizer",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/merenguesL/dsh-tool-normalizer#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-vetting",
+      "name": "插件安全审查",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-vetting",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/truelove-dreamer/dsh-plugin-vetting#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-auth",
+      "name": "Caddy 认证",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-auth",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/hxy91819/dsh-auth#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-stock-watch",
+      "name": "A股盯盘插件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-stock-watch",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-stock-watch",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "@lemoncat7/dsh-partner",
+      "name": "AI 伙伴",
+      "originalHomepage": "https://github.com/lemoncat7/dsh-partner",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-daoing-memory",
+      "name": "自进化记忆",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-daoing-memory",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/daoing/dsh-daoing-memory",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "oh-my-knowledge",
+      "name": "OMK 知识管理",
+      "originalHomepage": "https://www.npmjs.com/package/oh-my-knowledge",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://oh-my-knowledge.pages.dev",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-quota",
+      "name": "会员配额挂件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-quota",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Minokun/dsh-quota#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-diagram",
+      "name": "Excalidraw 图表",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-diagram",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/hanzhangzzz/dsh-diagram#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-kb-rag",
+      "name": "文献知识库 RAG",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-kb-rag",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Breeze136/dsh-kb-rag#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@dshline/dshline",
+      "name": "dshline 终端",
+      "originalHomepage": "https://github.com/dshline/dshline",
+      "status": "invalid",
+      "statusCode": 404,
+      "fixedHomepage": "https://dshline.xyz",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-meme",
+      "name": "表情包插件",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-meme",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://yyh-001.github.io/dsh-meme/",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-balance",
+      "name": "额度悬浮窗",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-balance",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/Andrew111888/dsh-plugin-balance",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-ai-team",
+      "name": "AI 软件团队",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-ai-team",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/yunqiangwu/dsh-ai-team#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-f",
+      "name": "飞书流式卡片",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-f",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PlutoKeating/dsh-lark-bot#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-plugin-usage-meter",
+      "name": "用量费用仪表",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-plugin-usage-meter",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/fancr-code/dsh-plugin-usage-meter#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "@max-null/dsh-memory",
+      "name": "纯文本记忆",
+      "originalHomepage": "https://github.com/max-null/dsh-memory",
+      "status": "valid",
+      "statusCode": 200
+    },
+    {
+      "id": "dsh-research-report",
+      "name": "研究报告引擎",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-research-report",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/PerryLink/dsh-research-report#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-remote-desktop",
+      "name": "远程桌面",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-remote-desktop",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://www.npmjs.com/package/dsh-remote-desktop",
+      "fixMethod": "npm package page fallback"
+    },
+    {
+      "id": "dsh-retrace",
+      "name": "回溯编辑",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-retrace",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/yamingmou/dsh-retrace#readme",
+      "fixMethod": "npm registry homepage"
+    },
+    {
+      "id": "dsh-vision-router",
+      "name": "视觉路由",
+      "originalHomepage": "https://www.npmjs.com/package/dsh-vision-router",
+      "status": "invalid",
+      "statusCode": 403,
+      "fixedHomepage": "https://github.com/ysr666/dsh-vision-router",
+      "fixMethod": "npm registry homepage"
+    }
+  ]
+}

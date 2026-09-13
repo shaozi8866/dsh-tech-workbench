@@ -1,0 +1,2218 @@
+[
+  {
+    "id": "@anionex/dsh-vision-toolkit",
+    "name": "@anionex/dsh-vision-toolkit",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/%40anionex%2Fdsh-vision-toolkit",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DeepSeek Harness-native integration for agent-vision-toolkit: image Q&A, OCR, grounding, UI restoration, pixel diff, Artifacts, and Web UI."
+  },
+  {
+    "id": "deepseek-harness-wallet",
+    "name": "deepseek-harness-wallet",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/deepseek-harness-wallet",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "多引擎",
+      "本地优先",
+      "API"
+    ],
+    "originalDescription": "Local-first DeepSeek Harness control center for balance monitoring, usage accounting, time-aware custom third-party API pricing, a 365-day local token ledger, Z.ai Coding Plan quotas, official pricing"
+  },
+  {
+    "id": "@anionex/dsh-turn-rewind",
+    "name": "@anionex/dsh-turn-rewind",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40anionex%2Fdsh-turn-rewind",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "Turn-level conversation and workspace rewind for DeepSeek Harness, powered by a persistent Change Ledger"
+  },
+  {
+    "id": "dsh-notifier",
+    "name": "dsh-notifier",
+    "description": "统一通知推送插件：一个 notify() API 打天下 + 多渠道 adapter；远程审批/远程会话支持 telegram/feishu/qq/wxpusher/wechat/dingtalk 六",
+    "homepage": "https://www.npmjs.com/package/dsh-notifier",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "多引擎",
+      "Web UI",
+      "API"
+    ],
+    "originalDescription": "DSH 统一通知推送插件：一个 notify() API 打天下 + 多渠道 adapter；远程审批/远程会话支持 telegram/feishu/qq/wxpusher/wechat/dingtalk 六通道双向回传；移动指挥中心（长任务心跳 / 疑似卡住提醒 / 通知按钮停止任务）；开放事件源（其他插件经 notifier 服务推送 + dsh-notifier/sent 事件订阅）；QQ/"
+  },
+  {
+    "id": "dsh-rewind-plugin",
+    "name": "dsh-rewind-plugin",
+    "description": "插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）。",
+    "homepage": "https://www.npmjs.com/package/dsh-rewind-plugin",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ],
+    "originalDescription": "DSH 插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）。 · DSH plugin: genuinely effortless in-window conversation rewind — never forking a new session; ships a lightweight workspac"
+  },
+  {
+    "id": "@openviking/dsh-memory-plugin",
+    "name": "@openviking/dsh-memory-plugin",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40openviking%2Fdsh-memory-plugin",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "OpenViking memory and context bundle for DeepSeek Harness"
+  },
+  {
+    "id": "@dsh-market/plugin",
+    "name": "@dsh-market/plugin",
+    "description": "插件端：cordis 侧边栏插件（浏览/搜索/猜你喜欢/一键安装/已装管理），核心逻辑来自 @dsh-market/core",
+    "homepage": "https://www.npmjs.com/package/%40dsh-market%2Fplugin",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "DSH Market 插件端：cordis 侧边栏插件（浏览/搜索/猜你喜欢/一键安装/已装管理），核心逻辑来自 @dsh-market/core"
+  },
+  {
+    "id": "@anweat/dsh-browser",
+    "name": "@anweat/dsh-browser",
+    "description": "DSH 浏览器插件，提供内置浏览器、网页交互和自动化操作功能。",
+    "homepage": "https://www.npmjs.com/package/%40anweat%2Fdsh-browser",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先",
+      "API"
+    ],
+    "originalDescription": "Self-contained browser runtime plugin for DeepSeek Harness (scoped @anweat) — bundles Playwright (chromium) and OpenCLI as plugin-local dependencies (with global-reuse fallback), exposes a `browser` s"
+  },
+  {
+    "id": "@michengai/dsh-automation",
+    "name": "@michengai/dsh-automation",
+    "description": "在独立 DSH Session 中按计划执行编码任务，支持 Web 设置页与 Agent 双入口管理。",
+    "homepage": "https://www.npmjs.com/package/%40michengai%2Fdsh-automation",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "在独立 DSH Session 中按计划执行编码任务，支持 Web 设置页与 Agent 双入口管理。"
+  },
+  {
+    "id": "dsh-web-plugin-manager",
+    "name": "dsh-web-plugin-manager",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-web-plugin-manager",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "Manage DeepSeek Harness (DSH) plugins from the Web UI: list, enable/disable, install/remove, environments, and a GitHub-awesome-driven marketplace."
+  },
+  {
+    "id": "@mars-sea/dsh-commandcode-provider",
+    "name": "@mars-sea/dsh-commandcode-provider",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40mars-sea%2Fdsh-commandcode-provider",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "开源"
+    ],
+    "originalDescription": "Unofficial DeepSeek Harness LLM provider plugin for Command Code, ported from pi-commandcode-provider (MIT). Registers the 'commandcode' provider route with a Models-page card and live model catalog."
+  },
+  {
+    "id": "dsh-update-checker",
+    "name": "dsh-update-checker",
+    "description": "DSH 通知推送插件，支持多渠道消息通知和任务提醒功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-update-checker",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI",
+      "自动化"
+    ],
+    "originalDescription": "Auto-check DeepSeek Harness and third-party plugin updates, notify in the Web GUI, one-click update with backup/rollback and restart watchdog."
+  },
+  {
+    "id": "@a9i5k4/dsh-auto-memory",
+    "name": "@a9i5k4/dsh-auto-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40a9i5k4%2Fdsh-auto-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "免费",
+      "本地优先",
+      "自动化"
+    ],
+    "originalDescription": "Proactive associative memory for DSH: zero-prompt recall injected before the model speaks, three-layer auto-consolidation, skill crystallization, and Astra-style context management - handoff ledgers, "
+  },
+  {
+    "id": "dsh-plugin-writing-guard",
+    "name": "dsh-plugin-writing-guard",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-writing-guard",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "Scientific writing & document integrity guard for AI-assisted research - prompt-guided argument economy with deterministic scientific, delivery, journal, and Word integrity checks."
+  },
+  {
+    "id": "dsh-free-vision",
+    "name": "dsh-free-vision",
+    "description": "免费视觉插件：纯文本模型看图能力，优先免费模型（通义千问 / 硅基流动 / 豆包）。",
+    "homepage": "https://www.npmjs.com/package/dsh-free-vision",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "免费"
+    ],
+    "originalDescription": "Free vision plugin for DeepSeek Harness (dsh): image understanding for text-only models with free-tier providers (Qwen3-VL-Flash / DeepSeek-OCR / Doubao). 免费视觉插件：纯文本模型看图能力，优先免费模型（通义千问 / 硅基流动 / 豆包）。"
+  },
+  {
+    "id": "@dsh-market/core",
+    "name": "@dsh-market/core",
+    "description": "插件端核心层：纯 Node 模块，零 DSH API 依赖（数据/搜索/画像/推荐/安装），可独立测试",
+    "homepage": "https://www.npmjs.com/package/%40dsh-market%2Fcore",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "API"
+    ],
+    "originalDescription": "DSH Market 插件端核心层：纯 Node 模块，零 DSH API 依赖（数据/搜索/画像/推荐/安装），可独立测试"
+  },
+  {
+    "id": "dsh-web-search-pro",
+    "name": "dsh-web-search-pro",
+    "description": "站/YouTube/V2EX/小红书/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, and Playwrigh",
+    "homepage": "https://www.npmjs.com/package/dsh-web-search-pro",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "多引擎",
+      "Web UI"
+    ],
+    "originalDescription": "Enhanced, persistent web search plugin for DeepSeek Harness — multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extr"
+  },
+  {
+    "id": "dsh-tavern",
+    "name": "dsh-tavern",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-tavern",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "DeepSeek Tavern - DSH roleplay plugin: character cards, worldbooks, presets, memory, relations, plot options. PolyForm-Noncommercial-Copyleft-1.0.0"
+  },
+  {
+    "id": "dsh-easyrewrite",
+    "name": "dsh-easyrewrite",
+    "description": "内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin",
+    "homepage": "https://www.npmjs.com/package/dsh-easyrewrite",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ],
+    "originalDescription": "DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web — native experience, strong compatibility, simple toggles, rich settings, modern"
+  },
+  {
+    "id": "@ychris12138/dsh-usage-stats",
+    "name": "@ychris12138/dsh-usage-stats",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40ychris12138%2Fdsh-usage-stats",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "Token usage, provider accounts, session cost estimates, budgets, and exports for the dsh web GUI"
+  },
+  {
+    "id": "@zhangfengshun/dsh-remote-ssh",
+    "name": "@zhangfengshun/dsh-remote-ssh",
+    "description": "DSH 插件：DSH web plugin: VSCode Remote-SSH-like remote development (SSH to supercomputers...",
+    "homepage": "https://www.npmjs.com/package/%40zhangfengshun%2Fdsh-remote-ssh",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH web plugin: VSCode Remote-SSH-like remote development (SSH to supercomputers/servers, remote workspace, file explorer, integrated terminal), integrated with dsh-better-sidebar and DSH settings."
+  },
+  {
+    "id": "dsh-edge",
+    "name": "dsh-edge",
+    "description": "DSH 插件：Your DeepSeek Harness",
+    "homepage": "https://www.npmjs.com/package/dsh-edge",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": [],
+    "originalDescription": "Your DeepSeek Harness, anywhere — deploy a persistent personal coding agent to Cloudflare Workers in one command"
+  },
+  {
+    "id": "dsh-ui-tweaks",
+    "name": "dsh-ui-tweaks",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-ui-tweaks",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ],
+    "originalDescription": "DSH web plugin: live-tune the conversation UI — code font size (px input), a timeline switch (DSH's native turn rail, or the classic v0.11 web rail: hover to preview, click to jump; native by default)"
+  },
+  {
+    "id": "dsh-plugin-shop-catalog",
+    "name": "dsh-plugin-shop-catalog",
+    "description": "DSH 插件：The dsh plugin catalog",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-shop-catalog",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "The dsh plugin catalog, as published by dsh-plugin-shop."
+  },
+  {
+    "id": "@vascent/dsh-tui",
+    "name": "@vascent/dsh-tui",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40vascent%2Fdsh-tui",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "One-command DeepSeek Harness TUI launcher and community extension workspace"
+  },
+  {
+    "id": "dsh-zotero",
+    "name": "dsh-zotero",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-zotero",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "Let agents search, read, and cite your local Zotero library: find papers, browse notes and annotations, pull evidence by question, open the source document, generate citations."
+  },
+  {
+    "id": "@dsh-market/schema",
+    "name": "@dsh-market/schema",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-market%2Fschema",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH Market shared types (DshPlugin / MarketData / PracticalScore)"
+  },
+  {
+    "id": "@fslong/dsh-yishi",
+    "name": "@fslong/dsh-yishi",
+    "description": "为 AI Agent 提供类人记忆系统的 DSH 插件（自包含）：同步 docs/scripts 至 ~/.local/share/yishi，注入记忆指令 + 注册 memocap 技能。混合检索/",
+    "homepage": "https://www.npmjs.com/package/%40fslong%2Fdsh-yishi",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "本地优先",
+      "可视化"
+    ],
+    "originalDescription": "为 AI Agent 提供类人记忆系统的 DSH 插件（自包含）：同步 docs/scripts 至 ~/.local/share/yishi，注入记忆指令 + 注册 memocap 技能。混合检索/遗忘曲线/时间胶囊/可视化。"
+  },
+  {
+    "id": "deepseek-harness-acp",
+    "name": "deepseek-harness-acp",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/deepseek-harness-acp",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "Standalone Agent Client Protocol (ACP) server for DeepSeek Harness with real-time streaming, thought visibility, tool lifecycle updates, and session recovery."
+  },
+  {
+    "id": "dsh-megamesh",
+    "name": "dsh-megamesh",
+    "description": "DSH 插件：Super multi-agent architecture: files are messages",
+    "homepage": "https://www.npmjs.com/package/dsh-megamesh",
+    "category": "消息编辑",
+    "icon": "✏️",
+    "tags": [
+      "多引擎"
+    ],
+    "originalDescription": "Super multi-agent architecture: files are messages, adoption replaces all-hands-on-deck failure, term leases replace single points, invariants replace trust, timelines replace non-reproducibility, one"
+  },
+  {
+    "id": "@lyd123qw2008/dsh-tool-control-chrome",
+    "name": "@lyd123qw2008/dsh-tool-control-chrome",
+    "description": "DSH 浏览器插件，提供内置浏览器、网页交互和自动化操作功能。",
+    "homepage": "https://www.npmjs.com/package/%40lyd123qw2008%2Fdsh-tool-control-chrome",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "DeepSeek Harness browser-control tools backed by the pi-control-chrome local Bridge"
+  },
+  {
+    "id": "@hytime/dsh-thinking-effort",
+    "name": "@hytime/dsh-thinking-effort",
+    "description": "为 DSH 的 pi-ai 第三方模型补充可配置的思考强度档位，并设置子 agent 默认思考强度。",
+    "homepage": "https://www.npmjs.com/package/%40hytime%2Fdsh-thinking-effort",
+    "category": "模型提供商",
+    "icon": "🧩",
+    "tags": [],
+    "originalDescription": "为 DSH 的 pi-ai 第三方模型补充可配置的思考强度档位，并设置子 agent 默认思考强度。"
+  },
+  {
+    "id": "dsh-openwolf",
+    "name": "dsh-openwolf",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-openwolf",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "A compact code-map 'second brain' for DeepSeek Harness: pre-indexed project maps, per-file digests, session digests, read/write interception, and AGENTS.md injection so the agent stops re-reading whol"
+  },
+  {
+    "id": "@seaveyon/harness-switch",
+    "name": "@seaveyon/harness-switch",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40seaveyon%2Fharness-switch",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI",
+      "API"
+    ],
+    "originalDescription": "A secure web control plane that switches API providers for Claude Code, Codex, Kimi Code, Pi and DeepSeek Harness by writing their native config files on SSH servers."
+  },
+  {
+    "id": "dsh-conversation-navigator",
+    "name": "dsh-conversation-navigator",
+    "description": "会话导航插件:按轮折叠的对话大纲面板,支持节点点击跳转、滚动位置高亮与轨迹视图同款配色。",
+    "homepage": "https://www.npmjs.com/package/dsh-conversation-navigator",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "DSH(DeepSeek Harness)会话导航插件:按轮折叠的对话大纲面板,支持节点点击跳转、滚动位置高亮与轨迹视图同款配色。"
+  },
+  {
+    "id": "@chenkai114/dsh-daemon",
+    "name": "@chenkai114/dsh-daemon",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/%40chenkai114%2Fdsh-daemon",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI",
+      "API",
+      "自动化"
+    ],
+    "originalDescription": "dsh daemon: register the DeepSeek Harness web server (dsh web) as an auto-start, self-healing background service (LaunchAgent / systemd / cron + watchdog)."
+  },
+  {
+    "id": "@xgone/dsh-remote",
+    "name": "@xgone/dsh-remote",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40xgone%2Fdsh-remote",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先",
+      "Web UI"
+    ],
+    "originalDescription": "Remote access & authentication for the DeepSeek Harness web UI: login gate, MFA (TOTP), signed session cookies, role-based access, in-browser directory picker, account management settings. Fully local"
+  },
+  {
+    "id": "@jieai/dsh-plugin-vet",
+    "name": "@jieai/dsh-plugin-vet",
+    "description": "DSH 插件：Audit deepseek-harness (DSH) plugins before install",
+    "homepage": "https://www.npmjs.com/package/%40jieai%2Fdsh-plugin-vet",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Audit deepseek-harness (DSH) plugins before install, guard them at runtime. Static verdict + pre-install audit protocol; supply-chain checks (typosquat, OSV); exfiltration & ransomware detection, hone"
+  },
+  {
+    "id": "@syncended/dsh-automations",
+    "name": "@syncended/dsh-automations",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/%40syncended%2Fdsh-automations",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [
+      "自动化"
+    ],
+    "originalDescription": "Durable cron automations for DeepSeek Harness"
+  },
+  {
+    "id": "@enderfga/claw-orchestrator",
+    "name": "@enderfga/claw-orchestrator",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40enderfga%2Fclaw-orchestrator",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "Claw Orchestrator — run Claude Code, Codex, Gemini, Cursor Agent, OpenCode and custom coding CLIs as one unified runtime. Drop into Hermes Agent, Claude Desktop, Cursor, Cline, Continue, Zed, Windsurf"
+  },
+  {
+    "id": "@a9i5k4/dsh-literature",
+    "name": "@a9i5k4/dsh-literature",
+    "description": "文献侧窗：在 DeepSeek Harness 侧边栏识别 DOI/arXiv/标题、抓取元数据与全文、写入本地文献库或导出目录，并提供内置 PDF 阅读器（缩放/翻页/目录/搜索/高亮/笔记）。",
+    "homepage": "https://www.npmjs.com/package/%40a9i5k4%2Fdsh-literature",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "DSH Literature 文献侧窗：在 DeepSeek Harness 侧边栏识别 DOI/arXiv/标题、抓取元数据与全文、写入本地文献库或导出目录，并提供内置 PDF 阅读器（缩放/翻页/目录/搜索/高亮/笔记）。"
+  },
+  {
+    "id": "@dsh-plugin/dsh-auxiliary",
+    "name": "@dsh-plugin/dsh-auxiliary",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-plugin%2Fdsh-auxiliary",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [],
+    "originalDescription": "DeepSeek Harness plugin that uses configured model providers for image analysis and context compaction."
+  },
+  {
+    "id": "dsh-context-compass",
+    "name": "dsh-context-compass",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-context-compass",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "Session health for DeepSeek Harness: real token-meter data, configurable continue-vs-new decision model. Reactive header badge (compaction-aware), /compass command, context_compass tool."
+  },
+  {
+    "id": "@xmoon76/dsh-pi-tui",
+    "name": "@xmoon76/dsh-pi-tui",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40xmoon76%2Fdsh-pi-tui",
+    "category": "UI界面",
+    "icon": "🎨",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "The dsh-pi-tui bundle: a TUI surface for DeepSeek Harness profiles (dsh --profile pi-tui)"
+  },
+  {
+    "id": "dsh-ssh-ops",
+    "name": "dsh-ssh-ops",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-ssh-ops",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "SSH ops and database tools for DSH Web UI: connect to remote servers via SSH terminal/SFTP/tunnels, and connect to MySQL/PostgreSQL/Redis/MongoDB databases. Host half manages sessions with ssh2; clien"
+  },
+  {
+    "id": "dsh-spend",
+    "name": "dsh-spend",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-spend",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "多引擎",
+      "Web UI",
+      "自动化"
+    ],
+    "originalDescription": "Token usage, multi-dimensional statistics, auto-detected billing plans (Code/Token) and estimated spend for the dsh web UI"
+  },
+  {
+    "id": "dsh-privmask",
+    "name": "dsh-privmask",
+    "description": "本地脱敏插件：在 llm/stream 出口拦截发往云端大模型的请求，将密钥、PII、中文实体（姓名/身份证/公司/机关/地址等）替换为占位符后再发送；用户输入与工具结果在写入本地会话日志前同样遮罩，",
+    "homepage": "https://www.npmjs.com/package/dsh-privmask",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "DeepSeek Harness 本地脱敏插件：在 llm/stream 出口拦截发往云端大模型的请求，将密钥、PII、中文实体（姓名/身份证/公司/机关/地址等）替换为占位符后再发送；用户输入与工具结果在写入本地会话日志前同样遮罩，模型回复经入站还原以原值落盘与显示。"
+  },
+  {
+    "id": "deepseek-acp",
+    "name": "deepseek-acp",
+    "description": "DSH 插件：Editor-facing Agent Client Protocol adapter for DeepSeek Harness",
+    "homepage": "https://www.npmjs.com/package/deepseek-acp",
+    "category": "消息编辑",
+    "icon": "✏️",
+    "tags": [],
+    "originalDescription": "Editor-facing Agent Client Protocol adapter for DeepSeek Harness"
+  },
+  {
+    "id": "deepseek-flow",
+    "name": "deepseek-flow",
+    "description": "DSH 插件：DeepSeek Flow — Markdown-first visual workflow plugin for DeepSeek Harness with ...",
+    "homepage": "https://www.npmjs.com/package/deepseek-flow",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "可视化"
+    ],
+    "originalDescription": "DeepSeek Flow — Markdown-first visual workflow plugin for DeepSeek Harness with executable Boolean gate semantics, two-way canvas sync, and AI review/optimization."
+  },
+  {
+    "id": "dsh-audiogen",
+    "name": "dsh-audiogen",
+    "description": "音频 panel.",
+    "homepage": "https://www.npmjs.com/package/dsh-audiogen",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "多引擎",
+      "Web UI"
+    ],
+    "originalDescription": "AI audio generation plugin for the dsh web GUI: multi-vendor TTS/music/sound-effect channels (OpenAI-compatible, ElevenLabs, MiniMax, Stability AI and custom), per-channel model/voice catalogs, Agent "
+  },
+  {
+    "id": "dsh-oc",
+    "name": "dsh-oc",
+    "description": "插件全家桶聚合安装器:一条命令装齐 壳/会话新窗口/深链/右侧工作台/逐轮产出物卡片/会话撤回(并为引擎补齐撤回所需 truncate 补丁;无功能代码,各功能为独立插件)",
+    "homepage": "https://www.npmjs.com/package/dsh-oc",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "DeepSeek Harness 插件全家桶聚合安装器:一条命令装齐 壳/会话新窗口/深链/右侧工作台/逐轮产出物卡片/会话撤回(并为引擎补齐撤回所需 truncate 补丁;无功能代码,各功能为独立插件)"
+  },
+  {
+    "id": "dsh-dev-memory",
+    "name": "dsh-dev-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-dev-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ],
+    "originalDescription": "Lightweight project memory library for DeepSeek Harness: markdown files, three tools, session-start retrieval. No Claude Code or extra skill required."
+  },
+  {
+    "id": "@xxxyz/dsh-mcp-manager",
+    "name": "@xxxyz/dsh-mcp-manager",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40xxxyz%2Fdsh-mcp-manager",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI",
+      "API"
+    ],
+    "originalDescription": "DSH-standard MCP manager plugin: Settings UI + HTTP API + model-facing mcp_manager_* tools. Install with one command: dsh plugin --profile web add @xxxyz/dsh-mcp-manager@latest"
+  },
+  {
+    "id": "dsh-multi-chat",
+    "name": "dsh-multi-chat",
+    "description": "多窗口墙：在官方 DeepSeek Harness Web 界面里以多窗口网格并排运行、监控多个对话实例，一屏盯住所有 Agent 的实时进度；内置带口令认证的局域网网关，手机/平板也能看。",
+    "homepage": "https://www.npmjs.com/package/dsh-multi-chat",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH 多窗口墙：在官方 DeepSeek Harness Web 界面里以多窗口网格并排运行、监控多个对话实例，一屏盯住所有 Agent 的实时进度；内置带口令认证的局域网网关，手机/平板也能看。"
+  },
+  {
+    "id": "dsh1024",
+    "name": "dsh1024",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh1024",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "The 1024 Store for DeepSeek Harness: in-app plugin market and tracked installer CLI."
+  },
+  {
+    "id": "@dougen/dsh-deepseek-usage",
+    "name": "@dougen/dsh-deepseek-usage",
+    "description": "余额侧边栏插件：余额（官方 API）、当前档单价与峰谷时段指示灯，支持中/英文界面。",
+    "homepage": "https://www.npmjs.com/package/%40dougen%2Fdsh-deepseek-usage",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI",
+      "API"
+    ],
+    "originalDescription": "DeepSeek 余额侧边栏插件：余额（官方 API）、当前档单价与峰谷时段指示灯，支持中/英文界面。"
+  },
+  {
+    "id": "dsh-git-worktree",
+    "name": "dsh-git-worktree",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-git-worktree",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "Experimental Git worktree Session Targets for DeepSeek Harness with isolated sessions, review checkpoints, human-confirmed delivery, and safe recovery."
+  },
+  {
+    "id": "@banana-peeljj12/dsh-trellis",
+    "name": "@banana-peeljj12/dsh-trellis",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40banana-peeljj12%2Fdsh-trellis",
+    "category": "自动化任务",
+    "icon": "🤖",
+    "tags": [],
+    "originalDescription": "Self-contained Trellis workflow trigger for DeepSeek Harness: per-turn breadcrumb injection via agent/pre-step, a bundled skill provider, and DSH-native task/phase state resolution. No Trellis AGPL co"
+  },
+  {
+    "id": "dsh-ears",
+    "name": "dsh-ears",
+    "description": "DSH 插件：Voice input plugin for DeepSeek Harness",
+    "homepage": "https://www.npmjs.com/package/dsh-ears",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Voice input plugin for DeepSeek Harness"
+  },
+  {
+    "id": "dsh-layered-memory",
+    "name": "dsh-layered-memory",
+    "description": "分层蒸馏记忆插件 for DeepSeek Harness：自动捕获对话（L0）、抽取原子记忆（L1）、整合场景块（L2）、蒸馏核心画像/团队方法论（L3），并在模型步骤前自动召回注入。移植自 Mem",
+    "homepage": "https://www.npmjs.com/package/dsh-layered-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "自动化",
+      "企业级"
+    ],
+    "originalDescription": "L0~L3 分层蒸馏记忆插件 for DeepSeek Harness：自动捕获对话（L0）、抽取原子记忆（L1）、整合场景块（L2）、蒸馏核心画像/团队方法论（L3），并在模型步骤前自动召回注入。移植自 MemoryCore (TencentDB Agent Memory) 的管线设计。"
+  },
+  {
+    "id": "@syncended/dsh-messenger",
+    "name": "@syncended/dsh-messenger",
+    "description": "DSH 插件：Messenger bridge plugin for DeepSeek Harness",
+    "homepage": "https://www.npmjs.com/package/%40syncended%2Fdsh-messenger",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Messenger bridge plugin for DeepSeek Harness, starting with Telegram"
+  },
+  {
+    "id": "dsh-ringcentral",
+    "name": "dsh-ringcentral",
+    "description": "DSH 插件：RingCentral Team Messaging IM channel plugin for deepseek-harness (dsh)",
+    "homepage": "https://www.npmjs.com/package/dsh-ringcentral",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "RingCentral Team Messaging IM channel plugin for deepseek-harness (dsh)"
+  },
+  {
+    "id": "dsh-plugin-om",
+    "name": "dsh-plugin-om",
+    "description": "DSH 插件：[![npm version](https://img",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-om",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "[![npm version](https://img.shields.io/npm/v/dsh-plugin-om.svg)](https://www.npmjs.com/package/dsh-plugin-om)"
+  },
+  {
+    "id": "dsh-plugin-guide",
+    "name": "dsh-plugin-guide",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-guide",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "The dsh-plugin-guide knowledge base plus the dsh-plugin-dev CLI toolchain: official docs, Cordis primer, community deep-dives, and battle-tested pitfalls registered as an on-demand agent skill, with a"
+  },
+  {
+    "id": "dsh-plugin-observatory",
+    "name": "dsh-plugin-observatory",
+    "description": "DSH 插件：Independent DSH plugin compatibility audit and bounded Loader lifecycle observat...",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-observatory",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Independent DSH plugin compatibility audit and bounded Loader lifecycle observation"
+  },
+  {
+    "id": "dsh-plugin-studio",
+    "name": "dsh-plugin-studio",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-studio",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "DSH plugin manager: official/community grouped plugin list with localized descriptions, one-click enable/disable and uninstall, plus a GitHub dsh-plugin market tab."
+  },
+  {
+    "id": "dsh-plugin-console",
+    "name": "dsh-plugin-console",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-console",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH Plugin Console: a verified community catalog, profile manager, and Harness updater for DeepSeek Harness"
+  },
+  {
+    "id": "dsh-plugin-mgr",
+    "name": "dsh-plugin-mgr",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-mgr",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin that manages installed plugins in Settings → Plugins: list, enable/disable via patch layer, update check, uninstall."
+  },
+  {
+    "id": "dsh-plugin-uisfx",
+    "name": "dsh-plugin-uisfx",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-uisfx",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "dsh plugin: semantic UI sound effects powered by uisfx — per-scenario cues with a settings UI"
+  },
+  {
+    "id": "@mkaliezz/dsh-docs",
+    "name": "@mkaliezz/dsh-docs",
+    "description": "DSH 插件：DSH plugin: dsh-docs",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-docs",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: dsh-docs"
+  },
+  {
+    "id": "dsh-electro-lab",
+    "name": "dsh-electro-lab",
+    "description": "DSH 插件：DSH plugin: electrical & electronics problem solving",
+    "homepage": "https://www.npmjs.com/package/dsh-electro-lab",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: electrical & electronics problem solving"
+  },
+  {
+    "id": "@huanlin/dsh-plugin-mineru",
+    "name": "@huanlin/dsh-plugin-mineru",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-mineru",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI",
+      "API"
+    ],
+    "originalDescription": "DSH plugin exposing MinerU document parsing tools to the model, with a web UI settings page for the API base URL."
+  },
+  {
+    "id": "dsh-plugins-store",
+    "name": "dsh-plugins-store",
+    "description": "DSH 浏览器插件，提供内置浏览器、网页交互和自动化操作功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugins-store",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "Native DSH browser integration for the DSH Plugin Store"
+  },
+  {
+    "id": "@choate/dsh-plugin-token-stat",
+    "name": "@choate/dsh-plugin-token-stat",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40choate%2Fdsh-plugin-token-stat",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "DSH plugin: append each answer's token usage to the conversation"
+  },
+  {
+    "id": "@mkaliezz/dsh-repo-map",
+    "name": "@mkaliezz/dsh-repo-map",
+    "description": "DSH 插件：DSH plugin: dsh-repo-map",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-repo-map",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: dsh-repo-map"
+  },
+  {
+    "id": "@jw-king/dsh-plugin-parallel",
+    "name": "@jw-king/dsh-plugin-parallel",
+    "description": "版本](https://img.shields.io/npm/v/@jw-king/dsh-plugin-parallel.svg)](https://www.npmjs.com/package/@j",
+    "homepage": "https://www.npmjs.com/package/%40jw-king%2Fdsh-plugin-parallel",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "开源"
+    ],
+    "originalDescription": "[![npm 版本](https://img.shields.io/npm/v/@jw-king/dsh-plugin-parallel.svg)](https://www.npmjs.com/package/@jw-king/dsh-plugin-parallel) [![许可证: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)"
+  },
+  {
+    "id": "dsh-context-milvus",
+    "name": "dsh-context-milvus",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-context-milvus",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "DSH plugin for semantic code search via Milvus vector database"
+  },
+  {
+    "id": "@mkaliezz/dsh-dev-server",
+    "name": "@mkaliezz/dsh-dev-server",
+    "description": "DSH 插件：DSH plugin: dsh-dev-server",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-dev-server",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: dsh-dev-server"
+  },
+  {
+    "id": "@hqzhao95/dscode",
+    "name": "@hqzhao95/dscode",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40hqzhao95%2Fdscode",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "dscode - DeepSeek Harness coding TUI, distributed as a dsh plugin (grok-leader bridge + launcher)"
+  },
+  {
+    "id": "dsh-aimail",
+    "name": "dsh-aimail",
+    "description": "DSH 插件：AIMail plugin for dsh — install via: dsh plugin --profile web add dsh-aimail",
+    "homepage": "https://www.npmjs.com/package/dsh-aimail",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "AIMail plugin for dsh — install via: dsh plugin --profile web add dsh-aimail"
+  },
+  {
+    "id": "@mkaliezz/dsh-error-explainer",
+    "name": "@mkaliezz/dsh-error-explainer",
+    "description": "DSH 插件：DSH plugin: dsh-error-explainer",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-error-explainer",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: dsh-error-explainer"
+  },
+  {
+    "id": "@goodandready/dsh-time-machine",
+    "name": "@goodandready/dsh-time-machine",
+    "description": "DSH 插件：DSH plugin for smart checkpoints",
+    "homepage": "https://www.npmjs.com/package/%40goodandready%2Fdsh-time-machine",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin for smart checkpoints, workspace safety guards, and instant rollback"
+  },
+  {
+    "id": "dsh-plugin-wallpaper-engine-mac",
+    "name": "dsh-plugin-wallpaper-engine-mac",
+    "description": "DSH 插件：macOS-enhanced fork of dsh-plugin-wallpaper-engine: WaifuX + loose-media support...",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-wallpaper-engine-mac",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "macOS-enhanced fork of dsh-plugin-wallpaper-engine: WaifuX + loose-media support on top of the original Windows Wallpaper Engine implementation by elysia395."
+  },
+  {
+    "id": "@rezti/dsh-rez-suite",
+    "name": "@rezti/dsh-rez-suite",
+    "description": "DSH 更新管理插件，提供版本检查、自动更新和变更通知功能。",
+    "homepage": "https://www.npmjs.com/package/%40rezti%2Fdsh-rez-suite",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "ReZ-TI one-package install for DeepSeek Harness. Update with: dsh plugin --profile web add @rezti/dsh-rez-suite@0.1.62"
+  },
+  {
+    "id": "@mkaliezz/dsh-api-client",
+    "name": "@mkaliezz/dsh-api-client",
+    "description": "DSH 插件：DSH plugin: dsh-api-client",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-api-client",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "API"
+    ],
+    "originalDescription": "DSH plugin: dsh-api-client"
+  },
+  {
+    "id": "@goodandready/dsh-context-lens",
+    "name": "@goodandready/dsh-context-lens",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40goodandready%2Fdsh-context-lens",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "DSH plugin for AST context compression, test log filtering, and token budget guard"
+  },
+  {
+    "id": "@oh-story/dsh",
+    "name": "@oh-story/dsh",
+    "description": "DSH 插件：A DSH plugin for fiction",
+    "homepage": "https://www.npmjs.com/package/%40oh-story%2Fdsh",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "A DSH plugin for fiction, short-drama, interactive-game, and video-recap production"
+  },
+  {
+    "id": "dsh-plugin-diepi",
+    "name": "dsh-plugin-diepi",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-diepi",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "Community DSH plugin for constrained, auditable diePi research backtests"
+  },
+  {
+    "id": "dsh-plugin-ops-core",
+    "name": "dsh-plugin-ops-core",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-ops-core",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "API"
+    ],
+    "originalDescription": "Shared engine for dsh-plugin-ops: profile readers, scan rules, fault memory, fix planner, panel API"
+  },
+  {
+    "id": "@linziyanleo/dsh-custom-provider",
+    "name": "@linziyanleo/dsh-custom-provider",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40linziyanleo%2Fdsh-custom-provider",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "DSH plugin for static OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages providers"
+  },
+  {
+    "id": "@huanlin/dsh-plugin-sleep",
+    "name": "@huanlin/dsh-plugin-sleep",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-sleep",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin exposing a single `sleep` tool that lets the model pause for a configurable number of milliseconds, honoring cancellation."
+  },
+  {
+    "id": "@goodandready/dsh-shadow-auditor",
+    "name": "@goodandready/dsh-shadow-auditor",
+    "description": "DSH 插件：DSH plugin for background security audits",
+    "homepage": "https://www.npmjs.com/package/%40goodandready%2Fdsh-shadow-auditor",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin for background security audits, secret leakage detection, and command safety"
+  },
+  {
+    "id": "dsh-dead-links",
+    "name": "dsh-dead-links",
+    "description": "DSH 插件：DSH plugin: Markdown dead-link checker tool (dead_links)",
+    "homepage": "https://www.npmjs.com/package/dsh-dead-links",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "免费"
+    ],
+    "originalDescription": "DSH plugin: Markdown dead-link checker tool (dead_links), zero-dependency."
+  },
+  {
+    "id": "dsh-model-health",
+    "name": "dsh-model-health",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/dsh-model-health",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin that lists all configured models with availability/latency testing, by reading $DSH_HOME/settings.yaml."
+  },
+  {
+    "id": "dsh-experience-plugin",
+    "name": "dsh-experience-plugin",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/dsh-experience-plugin",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: model reasoning levels plus CLI request mimic, with a unified Daily Optimization settings section."
+  },
+  {
+    "id": "dsh-browser-control",
+    "name": "dsh-browser-control",
+    "description": "DSH 浏览器插件，提供内置浏览器、网页交互和自动化操作功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-browser-control",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "DSH plugin for controlling browsers (CDP / Playwright)"
+  },
+  {
+    "id": "@jianxx/dsh-cc-plugin-loader",
+    "name": "@jianxx/dsh-cc-plugin-loader",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40jianxx%2Fdsh-cc-plugin-loader",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "Load Claude Code plugin.json manifests as in-memory dsh plugin mounts"
+  },
+  {
+    "id": "@michengai/dsh-codex-suite",
+    "name": "@michengai/dsh-codex-suite",
+    "description": "兼容聚合包：保留旧版 dsh plugin add 安装方式",
+    "homepage": "https://www.npmjs.com/package/%40michengai%2Fdsh-codex-suite",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH Codex UI 兼容聚合包：保留旧版 dsh plugin add 安装方式"
+  },
+  {
+    "id": "dsh-session-fork",
+    "name": "dsh-session-fork",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-session-fork",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "dsh plugin: git-like conversation forking (branch refs on sessions)"
+  },
+  {
+    "id": "@huanlin/dsh-plugin-aigc-canvas",
+    "name": "@huanlin/dsh-plugin-aigc-canvas",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40huanlin%2Fdsh-plugin-aigc-canvas",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "免费",
+      "API",
+      "自动化"
+    ],
+    "originalDescription": "DSH plugin: an infinite free canvas for the better-sidebar plus provider-agnostic generation. Exposes aigc_get_provider_info / aigc_http_request (endpoint + apiKey auto-attached) / aigc_provider_set_i"
+  },
+  {
+    "id": "dsh-tool-memory-manager",
+    "name": "dsh-tool-memory-manager",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-tool-memory-manager",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin for managing tool usage memories"
+  },
+  {
+    "id": "dsh-plugin-ops-bundle",
+    "name": "dsh-plugin-ops-bundle",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-ops-bundle",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "Embedded dsh bundle for dsh-plugin-ops: a settings-page health panel (scan, plugin rows, diagnosis chat) over the shared engine"
+  },
+  {
+    "id": "noatmark-dsh-plugin",
+    "name": "noatmark-dsh-plugin",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/noatmark-dsh-plugin",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "NoAtMark text hygiene as a DeepSeek Harness (dsh) plugin — sanitize untrusted text, scan invisible characters, clean LLM formatting, and escape CSV formula injection."
+  },
+  {
+    "id": "dsh-undo-plugin",
+    "name": "dsh-undo-plugin",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-undo-plugin",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "dsh plugin: conversation undo/rollback and archive tasks for DeepSeek Harness"
+  },
+  {
+    "id": "dsh-air",
+    "name": "dsh-air",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-air",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "轻量"
+    ],
+    "originalDescription": "Lightweight DSH plugin for history recall and BTW side conversations."
+  },
+  {
+    "id": "@laoyuehanni/dsh-git-worktree",
+    "name": "@laoyuehanni/dsh-git-worktree",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40laoyuehanni%2Fdsh-git-worktree",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH plugin: branch visibility and git worktree isolation for Web UI sessions"
+  },
+  {
+    "id": "@chaoset/session-archive",
+    "name": "@chaoset/session-archive",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40chaoset%2Fsession-archive",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "多引擎"
+    ],
+    "originalDescription": "DSH plugin: browse archived sessions, inspect their content, batch-restore or permanently delete them with multi-select"
+  },
+  {
+    "id": "dsh-opencode-go-models",
+    "name": "dsh-opencode-go-models",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/dsh-opencode-go-models",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "多引擎"
+    ],
+    "originalDescription": "DSH plugin to sync opencode-go model catalog with precise multi-modal support"
+  },
+  {
+    "id": "dsh-honcho-memory",
+    "name": "dsh-honcho-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-honcho-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "DSH plugin: official-model Honcho v3 memory plus a perspective-safe shared knowledge base"
+  },
+  {
+    "id": "dsh-plugin-rdsh",
+    "name": "dsh-plugin-rdsh",
+    "description": "DSH 插件：Reserved for remote-dsh (rdsh) — DSH plugin for remote access",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-rdsh",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Reserved for remote-dsh (rdsh) — DSH plugin for remote access. Placeholder."
+  },
+  {
+    "id": "dsh-crosspost",
+    "name": "dsh-crosspost",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/dsh-crosspost",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "自动化"
+    ],
+    "originalDescription": "dsh-crosspost — a content-automation DSH plugin."
+  },
+  {
+    "id": "dsh-plugins",
+    "name": "dsh-plugins",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugins",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "Search and install DeepSeek Harness plugins from the DSH plugin registry"
+  },
+  {
+    "id": "@mkaliezz/dsh-test-runner",
+    "name": "@mkaliezz/dsh-test-runner",
+    "description": "DSH 插件：DSH plugin: dsh-test-normalizer (npm package: @mkaliezz/dsh-test-runner)",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-test-runner",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: dsh-test-normalizer (npm package: @mkaliezz/dsh-test-runner)"
+  },
+  {
+    "id": "@dsh-plus/shared",
+    "name": "@dsh-plus/shared",
+    "description": "DSH 插件：dsh-plus workspace shared pure helpers (not a dsh plugin)",
+    "homepage": "https://www.npmjs.com/package/%40dsh-plus%2Fshared",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh-plus workspace shared pure helpers (not a dsh plugin)"
+  },
+  {
+    "id": "dsh-case",
+    "name": "dsh-case",
+    "description": "DSH 插件：DSH plugin: case/naming conversion tool (case_convert)",
+    "homepage": "https://www.npmjs.com/package/dsh-case",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: case/naming conversion tool (case_convert)."
+  },
+  {
+    "id": "@yiln-dsh/dsh-plugin-web-daemon",
+    "name": "@yiln-dsh/dsh-plugin-web-daemon",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40yiln-dsh%2Fdsh-plugin-web-daemon",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH plugin that manages `dsh web` as a real systemd unit, exposes live server CPU, memory, network, and filesystem metrics in the Web GUI, and resumes attached sessions after restart."
+  },
+  {
+    "id": "dsh-thread",
+    "name": "dsh-thread",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-thread",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "Thread session memory for dsh — lossless event capture + status-card injection (dsh plugin, standalone repo)."
+  },
+  {
+    "id": "openharness-rule-for-dsh-plugin",
+    "name": "openharness-rule-for-dsh-plugin",
+    "description": "DSH 插件：DSH plugin that injects a system-prompt rule block for assisting with DeepSeek H...",
+    "homepage": "https://www.npmjs.com/package/openharness-rule-for-dsh-plugin",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin that injects a system-prompt rule block for assisting with DeepSeek Harness plugin development: what you CAN / SHOULD / MUST NOT / SHOULD NOT do."
+  },
+  {
+    "id": "@harrylabsj/kiwi-dsh-plugin",
+    "name": "@harrylabsj/kiwi-dsh-plugin",
+    "description": "DSH 插件：Kiwi Buyer plugin for DeepSeek Harness — kiwi-buyer-mcp as an MCP plugin + kiwi-...",
+    "homepage": "https://www.npmjs.com/package/%40harrylabsj%2Fkiwi-dsh-plugin",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "Kiwi Buyer plugin for DeepSeek Harness — kiwi-buyer-mcp as an MCP plugin + kiwi-buyer skill. Install: dsh plugin --profile web add @harrylabsj/kiwi-dsh-plugin"
+  },
+  {
+    "id": "dsh-web3",
+    "name": "dsh-web3",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/dsh-web3",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DeepSeek Harness (DSH) plugin: agent-safe EVM wallet with encrypted vault, signing policy, model tools, bundled skill, and web UI."
+  },
+  {
+    "id": "dsh-wsl-tray",
+    "name": "dsh-wsl-tray",
+    "description": "DSH 插件：DSH plugin: Windows desktop shortcut and system-tray launcher for DSH running in...",
+    "homepage": "https://www.npmjs.com/package/dsh-wsl-tray",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: Windows desktop shortcut and system-tray launcher for DSH running in WSL"
+  },
+  {
+    "id": "@mkaliezz/dsh-task-board",
+    "name": "@mkaliezz/dsh-task-board",
+    "description": "DSH 插件：DSH plugin: dsh-evidence-task-board (npm package: @mkaliezz/dsh-task-board)",
+    "homepage": "https://www.npmjs.com/package/%40mkaliezz%2Fdsh-task-board",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: dsh-evidence-task-board (npm package: @mkaliezz/dsh-task-board)"
+  },
+  {
+    "id": "dsh-gap-feed",
+    "name": "dsh-gap-feed",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-gap-feed",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "dsh plugin: during long agent thinking, posts a hot-news or reminder message directly into the conversation stream."
+  },
+  {
+    "id": "dsh-timeline",
+    "name": "dsh-timeline",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-timeline",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DeepSeek Harness (DSH) plugin: timeline navigation, starred folders, conversation export, prompt library, and quick notes in one."
+  },
+  {
+    "id": "dsh-ai-solution-council",
+    "name": "dsh-ai-solution-council",
+    "description": "DSH 插件：Independent DSH plugin for isolated parallel codebase exploration and serial sol...",
+    "homepage": "https://www.npmjs.com/package/dsh-ai-solution-council",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Independent DSH plugin for isolated parallel codebase exploration and serial solution review"
+  },
+  {
+    "id": "dsh-lcx-codex",
+    "name": "dsh-lcx-codex",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-lcx-codex",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "Model-scoped DSH plugin: GPT Responses lifecycle, Native V2 compaction and Hosted/Alpha Search; Grok native Web/X Search"
+  },
+  {
+    "id": "@xcr1234/dsh-plugin-dbhub",
+    "name": "@xcr1234/dsh-plugin-dbhub",
+    "description": "DSH 插件：DSH plugin: manage dbhub database MCP servers from the settings panel",
+    "homepage": "https://www.npmjs.com/package/%40xcr1234%2Fdsh-plugin-dbhub",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: manage dbhub database MCP servers from the settings panel; starts dbhub in-process (no npx) and exposes its tools via dsh-mcp-client."
+  },
+  {
+    "id": "@cromus-ai/dsh-plugin",
+    "name": "@cromus-ai/dsh-plugin",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40cromus-ai%2Fdsh-plugin",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Cromus DSH plugin — score, validate, and cost-estimate AI skills from DeepSeek Harness."
+  },
+  {
+    "id": "dsh-fmt",
+    "name": "dsh-fmt",
+    "description": "DSH 插件：DSH plugin: format/validate JSON",
+    "homepage": "https://www.npmjs.com/package/dsh-fmt",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: format/validate JSON, YAML, TOML and SQL text."
+  },
+  {
+    "id": "dsh-wewrite",
+    "name": "dsh-wewrite",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-wewrite",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "WeChat official account AI writing pipeline as a DeepSeek Harness (DSH) plugin"
+  },
+  {
+    "id": "@objectivex666/dsh-settings-search",
+    "name": "@objectivex666/dsh-settings-search",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/%40objectivex666%2Fdsh-settings-search",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH settings panel search plugin – instantly filter setting sections and general items with navigation guidance. Installable via `dsh plugin add`."
+  },
+  {
+    "id": "dsh-pkg-info",
+    "name": "dsh-pkg-info",
+    "description": "DSH 插件：DSH plugin: query package metadata from the npm and PyPI registries (pkg_info)",
+    "homepage": "https://www.npmjs.com/package/dsh-pkg-info",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: query package metadata from the npm and PyPI registries (pkg_info)."
+  },
+  {
+    "id": "dsh-plugin-gate",
+    "name": "dsh-plugin-gate",
+    "description": "DSH 插件：Installation safety gate & data-protection guard for DeepSeek Harness: 60 static...",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-gate",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Installation safety gate & data-protection guard for DeepSeek Harness: 60 static signature rules scan plugin sources for malicious install scripts, credential theft, obfuscation and network callbacks "
+  },
+  {
+    "id": "dsh-plug-manager",
+    "name": "dsh-plug-manager",
+    "description": "插件管理器：发现 GitHub dsh-plugin topic 下的插件仓库，通过 `dsh plugin` 安装/移除/更新 profile 插件，并在 设置 → 插件 → 插件市场 标签页中浏览",
+    "homepage": "https://www.npmjs.com/package/dsh-plug-manager",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DeepSeek Harness 插件管理器：发现 GitHub dsh-plugin topic 下的插件仓库，通过 `dsh plugin` 安装/移除/更新 profile 插件，并在 设置 → 插件 → 插件市场 标签页中浏览管理。"
+  },
+  {
+    "id": "talon-ui",
+    "name": "talon-ui",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/talon-ui",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "Talon: a terminal UI for DeepSeek Harness agents (dsh plugin)"
+  },
+  {
+    "id": "@aiwayds/dsh-model-sync",
+    "name": "@aiwayds/dsh-model-sync",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-model-sync",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh plugin: keep llm-pi-ai provider routes' model lists in step with the pi.dev gateway, written through the official settings seam"
+  },
+  {
+    "id": "@chaoset/dsh-any-connect",
+    "name": "@chaoset/dsh-any-connect",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40chaoset%2Fdsh-any-connect",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "免费"
+    ],
+    "originalDescription": "DSH plugin: bring models offered by WorkBuddy-style desktop agents into DeepSeek Harness — zero configuration, per-model thinking effort, and billing rate at a glance"
+  },
+  {
+    "id": "dsh-plugin-scorecard",
+    "name": "dsh-plugin-scorecard",
+    "description": "插件体检评分卡：质量/安全审计、榜单、搜索、历史评分曲线与开放数据导出（目录增量同步）。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-scorecard",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "DSH plugin health scorecard: quality & security audit, rankings, search, score history and open-data export across the dsh-plugin ecosystem, with a workspace-persisted incrementally-synced catalog. 插件"
+  },
+  {
+    "id": "@kt11/dsh-deepseek-balance",
+    "name": "@kt11/dsh-deepseek-balance",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40kt11%2Fdsh-deepseek-balance",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "API"
+    ],
+    "originalDescription": "dsh plugin: DeepSeek API balance and daily spend card in the sidebar footer"
+  },
+  {
+    "id": "dsh-plugin-mission-control",
+    "name": "dsh-plugin-mission-control",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-mission-control",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "DeepSeek-Harness (dsh) plugin that streams sessions, turns, and tool activity to a JARVIS Mission Control board"
+  },
+  {
+    "id": "@dsh-plugin-hub/example-hello",
+    "name": "@dsh-plugin-hub/example-hello",
+    "description": "DSH 插件：Minimal DSH bundle used to verify npm-first publishing through DSH Plugin Hub",
+    "homepage": "https://www.npmjs.com/package/%40dsh-plugin-hub%2Fexample-hello",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Minimal DSH bundle used to verify npm-first publishing through DSH Plugin Hub."
+  },
+  {
+    "id": "dsh-plugin-kit",
+    "name": "dsh-plugin-kit",
+    "description": "DSH 插件：Quality-assurance toolkit for DSH plugin bundles: declarative verify runs and te...",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-kit",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Quality-assurance toolkit for DSH plugin bundles: declarative verify runs and template-driven client-bundle generation."
+  },
+  {
+    "id": "dsh-searxng-web",
+    "name": "dsh-searxng-web",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-searxng-web",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "dsh plugin: back the native web_search / web_fetch tools with your self-hosted SearXNG instance - keyless, private, no third-party search vendor."
+  },
+  {
+    "id": "dsh-novel",
+    "name": "dsh-novel",
+    "description": "DSH 插件：Standard DSH plugin: novel workspace",
+    "homepage": "https://www.npmjs.com/package/dsh-novel",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Standard DSH plugin: novel workspace, PGlite canon, tools, skills, and content tab"
+  },
+  {
+    "id": "lynkr-dsh-plugin",
+    "name": "lynkr-dsh-plugin",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/lynkr-dsh-plugin",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "多引擎"
+    ],
+    "originalDescription": "DeepSeek Harness (dsh) plugin that registers Lynkr — a self-hosted, multi-provider LLM tier-routing gateway — as a custom OpenAI-compatible provider in settings.yaml."
+  },
+  {
+    "id": "dsh-plugin-greeter",
+    "name": "dsh-plugin-greeter",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-greeter",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "A DeepSeek Harness (dsh) plugin that greets the user at the start of every session with varied wording, learns their name on first use, and greets them personally afterward."
+  },
+  {
+    "id": "@jieai/dsh-malong-bridge",
+    "name": "@jieai/dsh-malong-bridge",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40jieai%2Fdsh-malong-bridge",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "LiuHe (Six Harmonies) tool suite as a DeepSeek Harness (dsh) plugin bundle — 44 MCP tools with dynamic workspace injection"
+  },
+  {
+    "id": "dsh-http",
+    "name": "dsh-http",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-http",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH plugin: structured HTTP request tool (http_request) built on the Node built-in fetch."
+  },
+  {
+    "id": "dsh-smooth-cursor",
+    "name": "dsh-smooth-cursor",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-smooth-cursor",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "Smooth comet-mode animated caret for the DSH chat composer — a standalone installable DSH plugin (ported from the Obsidian Animated Cursor plugin)"
+  },
+  {
+    "id": "dsh-clipboard",
+    "name": "dsh-clipboard",
+    "description": "DSH 写作辅助插件，提供文档生成、写作指导和内容优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-clipboard",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: write text to the system clipboard (pbcopy / clip / xclip / xsel)."
+  },
+  {
+    "id": "@aiwayds/dsh-llm-proxy",
+    "name": "@aiwayds/dsh-llm-proxy",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-llm-proxy",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh plugin: SYSTEM proxy (env) + LLM traffic-splitting proxy via a process-global undici routing dispatcher"
+  },
+  {
+    "id": "dsh-simple-greet",
+    "name": "dsh-simple-greet",
+    "description": "DSH 插件：A minimal DSH plugin that greets people",
+    "homepage": "https://www.npmjs.com/package/dsh-simple-greet",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "A minimal DSH plugin that greets people"
+  },
+  {
+    "id": "@dsh-mixxed/dsh-client-ui-filesystem",
+    "name": "@dsh-mixxed/dsh-client-ui-filesystem",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-mixxed%2Fdsh-client-ui-filesystem",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "Out-of-tree dsh plugin: '@' project file/directory suggestions and plain-text references in the chat composer."
+  },
+  {
+    "id": "@aiwayds/dsh-vault",
+    "name": "@aiwayds/dsh-vault",
+    "description": "DSH 插件：dsh-plugin: encrypted backup / restore / migration of the dsh home config throug...",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-vault",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh-plugin: encrypted backup / restore / migration of the dsh home config through a private GitHub repo"
+  },
+  {
+    "id": "dsh-jwt",
+    "name": "dsh-jwt",
+    "description": "DSH 插件：DSH plugin: decode and inspect JWT tokens (debug only",
+    "homepage": "https://www.npmjs.com/package/dsh-jwt",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: decode and inspect JWT tokens (debug only, no signature verification)."
+  },
+  {
+    "id": "@eco-dsh/eco-permission-gate",
+    "name": "@eco-dsh/eco-permission-gate",
+    "description": "DSH 插件：dsh plugin: L1-L4 risk permission gate (port of eco-agent permissions",
+    "homepage": "https://www.npmjs.com/package/%40eco-dsh%2Feco-permission-gate",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh plugin: L1-L4 risk permission gate (port of eco-agent permissions.py)"
+  },
+  {
+    "id": "dsh-plugin-boom",
+    "name": "dsh-plugin-boom",
+    "description": "DSH 插件：dsh-plugin-boom — a DeepSeek Harness plugin (tool template)",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-boom",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh-plugin-boom — a DeepSeek Harness plugin (tool template)."
+  },
+  {
+    "id": "ds-balance",
+    "name": "ds-balance",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/ds-balance",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "API"
+    ],
+    "originalDescription": "DeepSeek API balance + per-call cost tracker — a dsh plugin (cordis host half + sidebar client half)"
+  },
+  {
+    "id": "dsh-lan-access",
+    "name": "dsh-lan-access",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-lan-access",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH plugin: bind the Web GUI to 0.0.0.0 for LAN access and polyfill crypto.randomUUID for non-secure (LAN HTTP) contexts. Trusted networks only."
+  },
+  {
+    "id": "dsh-nuphus-mcp",
+    "name": "dsh-nuphus-mcp",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/dsh-nuphus-mcp",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "自动化"
+    ],
+    "originalDescription": "DeepSeek Harness (DSH) plugin: mount the nuphus-mcp desktop automation MCP server as native tools (mcp__nuphus-mcp__*)."
+  },
+  {
+    "id": "dshplugin-registry",
+    "name": "dshplugin-registry",
+    "description": "DSH 网页搜索插件，提供多引擎搜索、网页抓取和内容摘要功能。",
+    "homepage": "https://www.npmjs.com/package/dshplugin-registry",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "DSH Plugin Registry inside DeepSeek Harness — search, compare, and inspect source-backed plugin information before installation."
+  },
+  {
+    "id": "@abruzz1/dsh-plugin-test",
+    "name": "@abruzz1/dsh-plugin-test",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40abruzz1%2Fdsh-plugin-test",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "TEST PUBLISH of @memorylake/dsh-plugin — do not depend on this package"
+  },
+  {
+    "id": "@aiwayds/dsh-feishu",
+    "name": "@aiwayds/dsh-feishu",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-feishu",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "dsh plugin: drive an existing dsh session from Feishu/Lark — round cards, interactive resume, ask-user cards, steer (outbound-only WebSocket bot)"
+  },
+  {
+    "id": "auto-dshp",
+    "name": "auto-dshp",
+    "description": "DSH 自动化插件，支持定时任务、自动执行和工作流编排。",
+    "homepage": "https://www.npmjs.com/package/auto-dshp",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "自动化"
+    ],
+    "originalDescription": "Autonomous DSH Plugin Engineering"
+  },
+  {
+    "id": "@jcy2387/dsh-conversation-ui",
+    "name": "@jcy2387/dsh-conversation-ui",
+    "description": "DSH 插件：DeepSeek Harness (dsh) plugin: Codex-style progress",
+    "homepage": "https://www.npmjs.com/package/%40jcy2387%2Fdsh-conversation-ui",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DeepSeek Harness (dsh) plugin: Codex-style progress, tool activity, and final answers."
+  },
+  {
+    "id": "dsh-plugin-security-review",
+    "name": "dsh-plugin-security-review",
+    "description": "DSH 浏览器插件，提供内置浏览器、网页交互和自动化操作功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-security-review",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [],
+    "originalDescription": "Static bundle form of the DSH plugin-install security gate: reviews cordis_define/cordis_run with a fail-safe policy, plus review/audit tools and a browser approval popup (agree / agree+whitelist / re"
+  },
+  {
+    "id": "dsh-plugin-dev-kb",
+    "name": "dsh-plugin-dev-kb",
+    "description": "插件开发知识库：DeepSeek Harness 官方文档站完整 Markdown 镜像（中英双语 188 页）+ 62 篇仓库补充开发参考 + 主题导航与 253 文件全量搜索索引；以 dsh-pl",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-dev-kb",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "自动化"
+    ],
+    "originalDescription": "dsh 插件开发知识库：DeepSeek Harness 官方文档站完整 Markdown 镜像（中英双语 188 页）+ 62 篇仓库补充开发参考 + 主题导航与 253 文件全量搜索索引；以 dsh-plugin-dev-kb 技能让 agent 在插件开发任务中自动加载定位文档。纯数据插件，零运行时依赖。"
+  },
+  {
+    "id": "dsh-ess-proposal",
+    "name": "dsh-ess-proposal",
+    "description": "DSH 插件：DSH plugin: Generate solar + energy storage proposals from electricity bills",
+    "homepage": "https://www.npmjs.com/package/dsh-ess-proposal",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DSH plugin: Generate solar + energy storage proposals from electricity bills"
+  },
+  {
+    "id": "@yinging/dsh-plugin-pub-review",
+    "name": "@yinging/dsh-plugin-pub-review",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/%40yinging%2Fdsh-plugin-pub-review",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "轻量",
+      "Web UI"
+    ],
+    "originalDescription": "dsh-plugin-pub-review: publish-readiness review for DeepSeek Harness plugins — official docs freshness check (docs-check), 30+ static checks with a Ready/Not-Ready verdict (plugin-review), and publish"
+  },
+  {
+    "id": "@dsh-cc/plugin-loader",
+    "name": "@dsh-cc/plugin-loader",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-cc%2Fplugin-loader",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "Load Claude Code plugin.json manifests as in-memory dsh plugin mounts"
+  },
+  {
+    "id": "dsh-client-ui-aqua",
+    "name": "dsh-client-ui-aqua",
+    "description": "DSH 界面美化插件，提供主题切换、皮肤定制和UI优化功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-client-ui-aqua",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "Aqua: a highly customizable glassmorphism theme for the DSH Web UI - blur, frost, fluid or video wallpaper, unified glass, and motion. Install with: dsh plugin --profile web add dsh-client-ui-aqua"
+  },
+  {
+    "id": "@aiwayds/dsh-llm-net-retry",
+    "name": "@aiwayds/dsh-llm-net-retry",
+    "description": "DSH 插件：dsh plugin: bounded retry for gateway network_error failures the stock retry pol...",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-llm-net-retry",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh plugin: bounded retry for gateway network_error failures the stock retry policy cannot classify (e.g. OpenCode Zen finish_reason: network_error)"
+  },
+  {
+    "id": "@eco-dsh/eco-audit-chain",
+    "name": "@eco-dsh/eco-audit-chain",
+    "description": "DSH 插件：dsh plugin: SM3 tamper-evident execution audit chain (port of eco-agent trace_au...",
+    "homepage": "https://www.npmjs.com/package/%40eco-dsh%2Feco-audit-chain",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh plugin: SM3 tamper-evident execution audit chain (port of eco-agent trace_audit.py)"
+  },
+  {
+    "id": "local-ocr-cli",
+    "name": "local-ocr-cli",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/local-ocr-cli",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "Fully-local OCR CLI for text-only LLMs: PaddleOCR-VL first-tier engine with tesseract fallback, dsh plugin included"
+  },
+  {
+    "id": "dsh-plugin-installer",
+    "name": "dsh-plugin-installer",
+    "description": "插件商店 + 安装排障技能一体包：Web GUI「插件商店」页签浏览插件目录（名称/介绍/原链接），一键触发安装；内置 dsh-plugin-installer 技能作为安装后端引擎。",
+    "homepage": "https://www.npmjs.com/package/dsh-plugin-installer",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "DSH 插件商店 + 安装排障技能一体包：Web GUI「插件商店」页签浏览插件目录（名称/介绍/原链接），一键触发安装；内置 dsh-plugin-installer 技能作为安装后端引擎。"
+  },
+  {
+    "id": "dsh-xmemo",
+    "name": "dsh-xmemo",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-xmemo",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "Native DeepSeek Harness (dsh) plugin: hybrid local and XMemo cloud memory for Cordis-based agents."
+  },
+  {
+    "id": "@mindmemos/deepseek-harness-plugin",
+    "name": "@mindmemos/deepseek-harness-plugin",
+    "description": "DSH 对话回退插件，支持同窗口内对话撤回和工作区备份恢复。",
+    "homepage": "https://www.npmjs.com/package/%40mindmemos%2Fdeepseek-harness-plugin",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "DeepSeek Harness (dsh) plugin that recalls and writes MindMemOS memories through the mindmemos CLI."
+  },
+  {
+    "id": "@aiwayds/dsh-llm-stats",
+    "name": "@aiwayds/dsh-llm-stats",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-llm-stats",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [],
+    "originalDescription": "dsh plugin: persistent whole-machine LLM usage ledger with a markdown /llm-stats report (GFM tables + emoji: tokens, cache hit, model/tool time, per-day bars)"
+  },
+  {
+    "id": "@aiwayds/dsh-cron",
+    "name": "@aiwayds/dsh-cron",
+    "description": "DSH 插件：dsh plugin: cron scheduling — bounded tasks with calendar & interval rules",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-cron",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh plugin: cron scheduling — bounded tasks with calendar & interval rules, delivered to live agents"
+  },
+  {
+    "id": "@weaxs/dsh-stock-analysis",
+    "name": "@weaxs/dsh-stock-analysis",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40weaxs%2Fdsh-stock-analysis",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DeepSeek Harness (dsh) plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets"
+  },
+  {
+    "id": "@lcthe/dsh-usage-monitor",
+    "name": "@lcthe/dsh-usage-monitor",
+    "description": "DSH 费用统计插件，提供用量追踪、费用计算和配额管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40lcthe%2Fdsh-usage-monitor",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "API",
+      "自动化"
+    ],
+    "originalDescription": "DSH plugin: usage and credit balance monitor — auto-query provider balances from configured API keys."
+  },
+  {
+    "id": "dsh-daily-local-memory",
+    "name": "dsh-daily-local-memory",
+    "description": "DSH 记忆上下文插件，提供长期记忆、上下文管理和智能回忆功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-daily-local-memory",
+    "category": "记忆上下文",
+    "icon": "🧠",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "dsh plugin: local-memory (developer preview)"
+  },
+  {
+    "id": "@qiqiangvae/dsh-obsidian",
+    "name": "@qiqiangvae/dsh-obsidian",
+    "description": "DSH 插件：Self-organizing AI second brain for Obsidian",
+    "homepage": "https://www.npmjs.com/package/%40qiqiangvae%2Fdsh-obsidian",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Self-organizing AI second brain for Obsidian, as a single DeepSeek Harness plugin. Merged fork of dsh-plugin-wiki-skills + dsh-plugin-wiki-tools, targeting parity with claude-obsidian."
+  },
+  {
+    "id": "@steven-wu/dsh-cost-meter",
+    "name": "@steven-wu/dsh-cost-meter",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40steven-wu%2Fdsh-cost-meter",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "dsh plugin: live USD cost badge (whole-session + per-turn) from provider token usage and a configurable pricing table."
+  },
+  {
+    "id": "@huangzhaoyu/zhaoyu-restart",
+    "name": "@huangzhaoyu/zhaoyu-restart",
+    "description": "DSH 插件：One-click silent DSH restart button in the composer input bar",
+    "homepage": "https://www.npmjs.com/package/%40huangzhaoyu%2Fzhaoyu-restart",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "One-click silent DSH restart button in the composer input bar. DeepSeek Harness plugin (dsh-plugin)."
+  },
+  {
+    "id": "@dsh-mixxed/dsh-client-ui-filesystem-manager",
+    "name": "@dsh-mixxed/dsh-client-ui-filesystem-manager",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-mixxed%2Fdsh-client-ui-filesystem-manager",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [],
+    "originalDescription": "Out-of-tree dsh plugin: a 'Files' tab in the conversation window with a VSCode-style file tree and viewer over the session workspace."
+  },
+  {
+    "id": "@aiwayds/dsh-ask-router",
+    "name": "@aiwayds/dsh-ask-router",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-ask-router",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "dsh plugin: routes ask-user questions to every interaction surface bound to the asking session (TUI panel, Feishu card, web, ...) — first answer wins"
+  },
+  {
+    "id": "dsh-router-codebuddy",
+    "name": "dsh-router-codebuddy",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-router-codebuddy",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "API"
+    ],
+    "originalDescription": "DSH plugin: CodeBuddy supplier for dsh-router. Provides the codebuddy supplier (OAuth login, OpenAI-compatible chat gateway) to dsh-router through the router.suppliers cordis service."
+  },
+  {
+    "id": "@omicverse/dsh-omicos",
+    "name": "@omicverse/dsh-omicos",
+    "description": "DSH 插件：OmicOS as a deepseek-harness (dsh) plugin — Mode A: omicos bioinformatics tools ...",
+    "homepage": "https://www.npmjs.com/package/%40omicverse%2Fdsh-omicos",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "OmicOS as a deepseek-harness (dsh) plugin — Mode A: omicos bioinformatics tools + background jobs + login commands for the dsh agent (DSH-PLUGIN.md)."
+  },
+  {
+    "id": "dsh-tesseract-ocr",
+    "name": "dsh-tesseract-ocr",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-tesseract-ocr",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "dsh plugin: recognize attached images locally with Tesseract OCR and send only the recognized text to the model. Text models never receive image bytes; vision passthrough is opt-in."
+  },
+  {
+    "id": "@dsh-suite/plugin-notify",
+    "name": "@dsh-suite/plugin-notify",
+    "description": "DSH 通知推送插件，支持多渠道消息通知和任务提醒功能。",
+    "homepage": "https://www.npmjs.com/package/%40dsh-suite%2Fplugin-notify",
+    "category": "搜索联网",
+    "icon": "🔎",
+    "tags": [
+      "本地优先",
+      "Web UI"
+    ],
+    "originalDescription": "DSH plugin: send IM webhook + local notifications when a turn completes, errors, or requests approval (Feishu/WeCom/DingTalk/Slack/Discord/custom)."
+  },
+  {
+    "id": "dsh-windows-ocr",
+    "name": "dsh-windows-ocr",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-windows-ocr",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "dsh plugin: recognize attached images with the built-in Windows OCR engine (Windows.Media.Ocr) and send only the recognized text to the model. Text models never receive image bytes; vision passthrough"
+  },
+  {
+    "id": "dsh-url-tools",
+    "name": "dsh-url-tools",
+    "description": "DSH 插件：DSH plugin: URL parse/clean/decode/encode/expand tool (url_tool)",
+    "homepage": "https://www.npmjs.com/package/dsh-url-tools",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "免费"
+    ],
+    "originalDescription": "DSH plugin: URL parse/clean/decode/encode/expand tool (url_tool), zero-dependency pure ESM."
+  },
+  {
+    "id": "@aiwayds/dsh-mcp-adapter",
+    "name": "@aiwayds/dsh-mcp-adapter",
+    "description": "DSH 插件：dsh plugin: token-efficient prompt-side shim for the official MCP client — folds...",
+    "homepage": "https://www.npmjs.com/package/%40aiwayds%2Fdsh-mcp-adapter",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "dsh plugin: token-efficient prompt-side shim for the official MCP client — folds mcp__* tool schemas out of every assembled prompt and exposes two constant meta-tools (mcp_list / mcp_call) instead"
+  },
+  {
+    "id": "dsh-auto-mode",
+    "name": "dsh-auto-mode",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/dsh-auto-mode",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "自动化"
+    ],
+    "originalDescription": "DSH plugin: auto mode that routes permission-gated tool calls through an LLM review before approving, blocking, or asking for confirmation."
+  },
+  {
+    "id": "@maxwell-feng/dsh-tesseract-ocr",
+    "name": "@maxwell-feng/dsh-tesseract-ocr",
+    "description": "DSH 视觉图像插件，支持图像理解、OCR识别、视觉问答等功能。",
+    "homepage": "https://www.npmjs.com/package/%40maxwell-feng%2Fdsh-tesseract-ocr",
+    "category": "视觉图像",
+    "icon": "🖼️",
+    "tags": [
+      "本地优先"
+    ],
+    "originalDescription": "dsh plugin: recognize attached images locally with Tesseract OCR and send only the recognized text to the model. Text models never receive image bytes; vision passthrough is opt-in."
+  },
+  {
+    "id": "dsh-stock-analysis",
+    "name": "dsh-stock-analysis",
+    "description": "DSH 插件市场插件，提供插件浏览、搜索、安装和管理功能。",
+    "homepage": "https://www.npmjs.com/package/dsh-stock-analysis",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "DeepSeek Harness (dsh) plugin for stock analysis, screening, and strategy backtesting across A/HK/US/JP/KR/TW markets"
+  },
+  {
+    "id": "dsh-reasoning-efforts",
+    "name": "dsh-reasoning-efforts",
+    "description": "DSH 模型提供商插件，集成第三方LLM服务，支持多模型切换。",
+    "homepage": "https://www.npmjs.com/package/dsh-reasoning-efforts",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [
+      "自动化"
+    ],
+    "originalDescription": "DSH plugin: auto-detect thinking levels (reasoningEfforts) for custom models in llm-pi-ai settings."
+  },
+  {
+    "id": "@huiliyi37/dsh-tianshu-tui",
+    "name": "@huiliyi37/dsh-tianshu-tui",
+    "description": "DSH 会话管理插件，提供对话历史、会话切换和上下文管理功能。",
+    "homepage": "https://www.npmjs.com/package/%40huiliyi37%2Fdsh-tianshu-tui",
+    "category": "会话管理",
+    "icon": "💬",
+    "tags": [
+      "Web UI"
+    ],
+    "originalDescription": "dsh-tianshu-tui: an interactive terminal UI plugin for the official DeepSeek Harness — streaming markdown/tool cards, 16+ themes, slash commands, session tabs, LSP diagnostics, cost tracking, self-upd"
+  },
+  {
+    "id": "@4t145/create-dsh-plugin",
+    "name": "@4t145/create-dsh-plugin",
+    "description": "DSH 插件：Scaffold a new DeepSeek Harness (DSH) plugin project in TypeScript",
+    "homepage": "https://www.npmjs.com/package/%404t145%2Fcreate-dsh-plugin",
+    "category": "插件市场",
+    "icon": "🏪",
+    "tags": [],
+    "originalDescription": "Scaffold a new DeepSeek Harness (DSH) plugin project in TypeScript, ready for npx."
+  }
+]
