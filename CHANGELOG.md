@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2026-09-16
+
+### ⚠️ Breaking Changes
+
+- 🔌 **侧边栏挂载方式迁移**：由「DOM 注入按钮 + 绝对定位 overlay」改为 DSH 壳原生面板机制——
+  注册 `main` keyed slot（key=`tech-workbench`）作为独立页面 + `sidebar.panellist`（id=`tech-workbench`, label=Meta管理）由壳自绘侧边栏行。
+  `src/client/sidebar-integration.ts` 整体删除；不再有任何 MutationObserver、`display:none!important` 强隐兄弟节点与 createRoot 手动挂载。
+  与其它壳原生面板（如应用中心）的互斥切换由壳层保证；卸载即注册 disposer，无 DOM 残留。
+- 移除 client inject 中的 `@deepseek-ai/dsh-client-ui-renderer` 依赖（不再自渲染 React root）。
+
+### Added
+
+- `.dshwb-page-shell` 全尺寸页面壳（height:100%/overflow:auto/flex column）。
+- client `VERSION` 常量与 package 版本对齐，消除 client/host 版本比对误报。
+
+### Tests
+
+- 79/79 通过（业务组件与数据面零改动，仅挂载层迁移）。
+
 ## [2.0.0] - 2026-09-12
 
 ### ⚠️ Breaking Changes
