@@ -147,7 +147,6 @@ dsh-tech-workbench/
 │   └── client/
 │       ├── index.tsx               # Client 入口
 │       ├── workbench.css.ts        # 工作台样式（全变量，无硬编码颜色）
-│       ├── sidebar-integration.ts  # 侧边栏集成
 │       ├── types.ts
 │       └── components/
 │           ├── WorkbenchPage.tsx

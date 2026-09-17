@@ -1,6 +1,6 @@
 {
   "name": "dsh-tech-workbench",
-  "version": "2.2.4",
+  "version": "2.3.0",
   "description": "DSH 插件/预设/应用统一工作台，侧边栏重构，双源数据抓取（Market+GitHub）。样式使用 DSH 原生 --dsw-alias-* 变量，适配任意 DSH 主题（推荐搭配 dsh-tech-skin）",
   "type": "module",
   "main": "lib/index.js",
@@ -27,8 +27,7 @@
     "client": {
       "platform": "web",
       "inject": [
-        "@deepseek-ai/dsh-client-locale",
-        "@deepseek-ai/dsh-client-ui-renderer"
+        "@deepseek-ai/dsh-client-locale"
       ]
     }
   },
