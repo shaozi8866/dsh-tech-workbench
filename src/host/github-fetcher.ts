@@ -189,6 +189,8 @@ interface GithubRepoInfo {
   name: string;
   full_name: string;
   description: string | null;
+  /** GitHub 网页地址（API 恒有） */
+  html_url?: string;
   stargazers_count: number;
   forks_count: number;
   updated_at: string;

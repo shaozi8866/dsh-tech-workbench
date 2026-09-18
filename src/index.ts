@@ -25,12 +25,30 @@ import { getLocalCache, renderCacheData, type WorkbenchContext } from './host/ma
 import * as fs from 'fs';
 import * as path from 'path';
 
+// 插件生命周期管理（方案A: dsh plugin 命令转发）
+import {
+  installPlugin, uninstallPlugin, enablePlugin, disablePlugin,
+  listPlugins, updatePlugin, rollbackPlugin, getVersions,
+  type PluginCliOptions,
+} from './host/plugin-cli.js';
+// 预设维护（agentPresets 名册服务）
+import {
+  listPresets, readPresetComposition, savePresetComposition,
+  copyPreset, deletePreset, validatePreset, type AgentPresetsService,
+} from './host/preset-cli.js';
+// 技能维护（用户技能根文件系统）
+import {
+  listSkills, readSkill, createSkill, saveSkill, deleteSkill,
+} from './host/skill-cli.js';
+
 export const PLUGIN_ID = 'dsh-tech-workbench';
-export const VERSION = '2.0.0';
+export const VERSION = '2.4.0';
 export const name = 'dsh-tech-workbench';
 
 // 重新导出类型，方便外部引用
 export type { PluginConfig, ResolvedConfig, StandardResource, WorkbenchCache } from './host/types';
+
+// ===== 插件生命周期管理 (方案A: 命令转发) =====
 
 /**
  * 内存中的最新数据（避免每次请求都读文件）
@@ -49,6 +67,9 @@ function resolveConfig(config: PluginConfig): ResolvedConfig {
     customPresetRepos: Array.isArray(config.customPresetRepos) ? config.customPresetRepos : [],
     customAppRepos: Array.isArray(config.customAppRepos) ? config.customAppRepos : [],
     cacheExpireSeconds: config.cacheExpireSeconds ?? CACHE_EXPIRE_SECONDS,
+    profile: config.profile || 'web',
+    dshHome: config.dshHome || process.env.DSH_HOME || path.join(require('os').homedir(), '.dsh'),
+    dshBin: config.dshBin || 'dsh',
   };
 }
 
@@ -235,6 +256,149 @@ function parseBody(req: any): Promise<any> {
   });
 }
 
+// ============================================================
+// 维护路由（二期：插件生命周期 / 预设 / 技能）
+// 路径契约:
+//   GET  /workbench/api/plugin/list
+//   POST /workbench/api/plugin/install            {source}
+//   POST /workbench/api/plugin/uninstall/:id
+//   POST /workbench/api/plugin/enable/:id
+//   POST /workbench/api/plugin/disable/:id
+//   POST /workbench/api/plugin/update/:id
+//   POST /workbench/api/plugin/rollback/:id       {version}
+//   GET  /workbench/api/plugin/versions/:id
+//   GET  /workbench/api/preset/list
+//   GET  /workbench/api/preset/composition/:id
+//   POST /workbench/api/preset/copy               {from,id,name?}
+//   POST /workbench/api/preset/save               {id,content}
+//   POST /workbench/api/preset/validate           {id}
+//   POST /workbench/api/preset/delete             {id}
+//   GET  /workbench/api/skill/list
+//   GET  /workbench/api/skill/content/:name
+//   POST /workbench/api/skill/create              {name,description?}
+//   POST /workbench/api/skill/save                {name,content}
+//   POST /workbench/api/skill/delete              {name}
+// 响应统一: { ok, data, errorCode, errorMessage, durationMs }
+// ============================================================
+
+interface AdminDeps {
+  cliOpts: PluginCliOptions;
+  getRoster: () => AgentPresetsService | undefined;
+  logger: any;
+}
+
+function decodeSegment(s: string): string {
+  try { return decodeURIComponent(s); } catch { return s; }
+}
+
+async function handleAdminRoute(
+  pathname: string,
+  method: string,
+  req: any,
+  res: any,
+  deps: AdminDeps,
+): Promise<boolean> {
+  if (!pathname.startsWith('/workbench/api/')) return false;
+  const parts = pathname.split('/').filter(Boolean); // ['workbench','api',kind,...]
+  if (parts.length < 3) return false;
+  const kind = parts[2];
+  if (kind !== 'plugin' && kind !== 'preset' && kind !== 'skill') return false;
+
+  const started = Date.now();
+  let body: any = {};
+  if (method === 'POST' || method === 'PUT' || method === 'DELETE') {
+    body = await parseBody(req);
+  }
+  const rest = parts.slice(3);
+  const action = rest[0];
+  const target = rest.length > 1 ? decodeSegment(rest.slice(1).join('/')) : '';
+
+  const send = (result: { ok: boolean; data: any; error: string | null }, statusHint = 200) => {
+    const status = result.ok ? 200 : (result as any).exitCode === 403 ? 403 : (result as any).exitCode === 404 ? 404 : (result as any).exitCode === 400 ? 400 : statusHint;
+    sendJson(res, status, {
+      ok: result.ok,
+      data: result.data,
+      errorCode: result.ok ? null : 'OPERATION_FAILED',
+      errorMessage: result.error,
+      durationMs: Date.now() - started,
+    });
+  };
+
+  try {
+    // ===== 插件生命周期 =====
+    if (kind === 'plugin') {
+      switch (action) {
+        case 'list':
+          return send(await listPlugins(deps.cliOpts), 200), true;
+        case 'install':
+          return send(installPlugin(body?.source || target, deps.cliOpts), 200), true;
+        case 'uninstall':
+          return send(uninstallPlugin(target, deps.cliOpts), 200), true;
+        case 'enable':
+          return send(enablePlugin(target, deps.cliOpts), 200), true;
+        case 'disable':
+          return send(disablePlugin(target, deps.cliOpts), 200), true;
+        case 'update':
+          return send(updatePlugin(target, { ...deps.cliOpts, version: body?.version }), 200), true;
+        case 'rollback':
+          return send(rollbackPlugin(target, body?.version || '', deps.cliOpts), 200), true;
+        case 'versions':
+          return send(await getVersions(target, deps.cliOpts), 200), true;
+        default:
+          sendJson(res, 400, { ok: false, data: null, errorCode: 'UNKNOWN_ACTION', errorMessage: `未知插件操作: ${action}`, durationMs: Date.now() - started });
+          return true;
+      }
+    }
+
+    // ===== 预设维护 =====
+    if (kind === 'preset') {
+      const roster = deps.getRoster();
+      switch (action) {
+        case 'list':
+          return send(await listPresets(roster), 200), true;
+        case 'composition':
+          return send(await readPresetComposition(roster, target), 200), true;
+        case 'copy':
+          return send(await copyPreset(roster, body?.from, body?.id, body?.name), 200), true;
+        case 'save':
+          return send(await savePresetComposition(roster, body?.id, body?.content), 200), true;
+        case 'validate':
+          return send(await validatePreset(roster, body?.id || target), 200), true;
+        case 'delete':
+          return send(await deletePreset(roster, body?.id || target), 200), true;
+        default:
+          sendJson(res, 400, { ok: false, data: null, errorCode: 'UNKNOWN_ACTION', errorMessage: `未知预设操作: ${action}`, durationMs: Date.now() - started });
+          return true;
+      }
+    }
+
+    // ===== 技能维护 =====
+    if (kind === 'skill') {
+      const skillOpts = { dshHome: deps.cliOpts.dshHome };
+      switch (action) {
+        case 'list':
+          return send(await listSkills(skillOpts), 200), true;
+        case 'content':
+          return send(await readSkill(target, skillOpts), 200), true;
+        case 'create':
+          return send(await createSkill(body?.name, body?.description || '', skillOpts), 200), true;
+        case 'save':
+          return send(await saveSkill(body?.name, body?.content, skillOpts), 200), true;
+        case 'delete':
+          return send(await deleteSkill(body?.name, skillOpts), 200), true;
+        default:
+          sendJson(res, 400, { ok: false, data: null, errorCode: 'UNKNOWN_ACTION', errorMessage: `未知技能操作: ${action}`, durationMs: Date.now() - started });
+          return true;
+      }
+    }
+  } catch (err: any) {
+    deps.logger?.error?.(`维护路由异常 ${method} ${pathname}`, err);
+    sendJson(res, 500, { ok: false, data: null, errorCode: 'INTERNAL', errorMessage: err?.message || 'Internal Server Error', durationMs: Date.now() - started });
+    return true;
+  }
+  return false;
+}
+
 /**
  * 插件主入口
  * @param ctx Cordis 上下文
@@ -243,7 +407,24 @@ function parseBody(req: any): Promise<any> {
 export function apply(ctx: Context, config: PluginConfig = {}): void {
   const resolvedConfig = resolveConfig(config);
   const wbCtx = buildWorkbenchContext(ctx);
-  const logger = wbCtx.logger;
+  const logger = wbCtx.logger ?? console;
+
+  // 维护路由依赖：profile/dshHome 可配，agentPresets 服务按请求惰性获取
+  const adminDeps: AdminDeps = {
+    cliOpts: {
+      profile: resolvedConfig.profile,
+      dshHome: resolvedConfig.dshHome,
+      dshBin: resolvedConfig.dshBin,
+    },
+    getRoster: () => {
+      try {
+        return (ctx as any).get?.('agentPresets') as AgentPresetsService | undefined;
+      } catch {
+        return undefined;
+      }
+    },
+    logger,
+  };
 
   logger.info(`正在挂载 v${VERSION}...`);
   logger.info(`配置：githubToken=${resolvedConfig.githubToken ? '已配置' : '未配置'}, customRepos=${resolvedConfig.customRepos.length}个, customPresetRepos=${resolvedConfig.customPresetRepos.length}个, customAppRepos=${resolvedConfig.customAppRepos.length}个`);
@@ -361,8 +542,16 @@ export function apply(ctx: Context, config: PluginConfig = {}): void {
                   'GET  /workbench/api/status',
                   'GET  /workbench/api/cache',
                   'POST /workbench/api/cache/clear',
+                  'GET  /workbench/api/plugin/list | POST install|uninstall/:id|enable/:id|disable/:id|update/:id|rollback/:id | GET versions/:id',
+                  'GET  /workbench/api/preset/list | GET composition/:id | POST copy|save|validate|delete',
+                  'GET  /workbench/api/skill/list | GET content/:name | POST create|save|delete',
                 ],
               });
+              return;
+            }
+
+            // ===== 维护路由：插件生命周期 + 预设 + 技能（二期） =====
+            if (await handleAdminRoute(pathname, req.method || 'GET', req, res, adminDeps)) {
               return;
             }
 

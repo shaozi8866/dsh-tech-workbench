@@ -132,6 +132,12 @@ export interface PluginConfig {
   customAppRepos?: string[];
   /** 缓存过期时间（秒） */
   cacheExpireSeconds?: number;
+  /** 维护操作作用的 profile（默认 web） */
+  profile?: string;
+  /** DSH 家目录（默认 $DSH_HOME → ~/.dsh） */
+  dshHome?: string;
+  /** dsh 可执行文件路径（默认 PATH 中的 dsh） */
+  dshBin?: string;
 }
 
 /**
@@ -144,6 +150,9 @@ export interface ResolvedConfig {
   customPresetRepos: string[];
   customAppRepos: string[];
   cacheExpireSeconds: number;
+  profile: string;
+  dshHome: string;
+  dshBin: string;
 }
 
 /**
@@ -154,6 +163,8 @@ export interface GithubRepoInfo {
   name: string;
   full_name: string;
   description: string | null;
+  /** GitHub 网页地址（API 恒有；二期类型补齐） */
+  html_url?: string;
   stargazers_count: number;
   forks_count: number;
   updated_at: string;
@@ -189,4 +200,33 @@ export interface GithubContentItem {
   type: 'file' | 'dir';
   size: number;
   download_url: string | null;
+}
+
+// ===== 插件生命周期管理类型 =====
+export type PluginInstallType = 'bundle' | 'insert';
+
+export type PluginLifecycleState =
+  | 'discovered' | 'installed' | 'disabled'
+  | 'installing' | 'uninstalling' | 'updating'
+  | 'rolling_back' | 'error';
+
+export interface PluginItem {
+  id: string;
+  name: string;
+  version: string;
+  source: 'market' | 'github';
+  installed: boolean;
+  enabled: boolean;
+  updateAvailable: boolean;
+  lifecycleState?: PluginLifecycleState;
+  installType?: PluginInstallType;
+  protected?: boolean;
+}
+
+export interface OperationResult<T = void> {
+  ok: boolean;
+  data: T | null;
+  errorCode: string | null;
+  errorMessage: string | null;
+  durationMs: number;
 }

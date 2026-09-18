@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.0] - 2026-09-18 (二期)
+
+### ✨ Added — Meta管理「维护」能力（插件 · Skill · 预设）
+
+- 🔌 **插件生命周期**（接管自 09-18 会话，修复后转正）：
+  - 安装/卸载/更新/回退转发 `dsh plugin --profile <p> add/remove`（方案A，不造轮子）
+  - 启用/停用只写 `cordis.patch.yml` 托管区块（managed block），`patchReload: live` 热生效
+  - 受保护插件名单（基座/工作台自身/认证/桥）拒绝停用与卸载
+- 🧩 **Skill 维护**（`/workbench/api/skill/*` + SkillManageSection）：
+  - 本机技能根 `~/.dsh/skills` 列表 / 查看 / 编辑 SKILL.md / 新建（模板）/ 删除
+  - 路径净化防逃逸；保存后由 dsh-skill-filesystem 监听热更新
+- 📋 **预设维护**（`/workbench/api/preset/*` + PresetManageSection）：
+  - 基于 `agentPresets` 名册服务：list / read / copy / remove / standingKeyFor 挂载校验
+  - 组合（agent.cordis.yml）编辑仅限 `trust=user` 的预设；system 预设只读并引导「复制为新预设」
+- 🖥️ Meta管理页面新增本机维护区：预设页 / Skill 页顶部卡片，插件页「＋安装插件」入口
+
+### 🐛 Fixed
+
+- `plugin-cli.ts` 在 promises-fs 句柄上误用 `readFileSync/writeFileSync`（启用/停用必然 TypeError 崩溃）
+- 生命周期路由 action/id 解析错位：`GET /plugin/list`、`POST /plugin/install` 曾被解析为未知操作
+- `handleAdminRoute` 统一三类路由，错误码映射 400/403/404/500，响应带 `durationMs`
+- `GithubRepoInfo` 补 `html_url` 类型（修复 tsc 报错）
+
+### ⚠️ Breaking（继承 v2.3.0 挂载迁移，本仓基线原为 DOM 注入）
+
+- 侧边栏挂载迁移为壳原生 `main` 面板（key=tech-workbench）+ `sidebar.panellist` 入口「Meta管理」
+- `src/client/sidebar-integration.ts`（MutationObserver DOM 注入）整体删除
+
+### Tests
+
+- 单元 118/118（旧 79 + plugin-cli 托管区块/保护名单/normalizeSource + preset-cli 护栏 + skill-cli CRUD，全沙箱）
+- 构建产物端到端冒烟 `tests/e2e-build-smoke.mjs` 9/9：真实 bundle 挂假 ctx 打路由；disable→patch 落盘→enable→还原、403/400 拒绝、skill CRUD、preset 无服务降级
+
 ## [2.0.0] - 2026-09-12
 
 ### ⚠️ Breaking Changes

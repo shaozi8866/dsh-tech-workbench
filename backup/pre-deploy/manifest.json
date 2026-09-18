@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-09-17T13:11:46.615Z",
+  "dshVersion": "0.1.5-rc.1",
+  "profile": "web",
+  "currentPluginVersion": "2.2.4-native.1",
+  "packageJson": "/home/ecs-assist-user/workplace/project/projects/dsh-tech-workbench/backup/pre-deploy/package.json.bak",
+  "cordisPatch": "/home/ecs-assist-user/workplace/project/projects/dsh-tech-workbench/backup/pre-deploy/cordis.patch.yml.bak",
+  "pluginBackup": "/home/ecs-assist-user/workplace/project/projects/dsh-tech-workbench/backup/pre-deploy/dsh-tech-workbench.bak"
+}

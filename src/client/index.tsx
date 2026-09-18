@@ -1,7 +1,8 @@
 /**
  * DSH 科技风工作台插件 - Client 半侧入口
  * 运行于用户浏览器（React），负责：
- *   - 侧边栏重构（三槽位工作台入口）
+ *   - 注册壳原生 main 面板（key='tech-workbench'）
+ *   - 注册侧边栏 sidebar.panellist 入口
  *   - 插件/预设/应用统一工作台页面渲染
  *   - 与 Host 侧 HTTP 接口通信获取数据
  *
@@ -13,25 +14,38 @@
 
 import type { Context } from '@deepseek-ai/cordis';
 import React, { useEffect, useState, useCallback } from 'react';
-import { createRoot } from 'react-dom/client';
 import { WORKBENCH_CSS } from './workbench.css';
-import { injectSidebarWorkbench, cleanupSidebarIntegration, setWorkbenchRenderFunction, setWorkbenchOpen } from './sidebar-integration';
 import { WorkbenchPage } from './components/WorkbenchPage';
 import type { StandardResource, ResourceType, FetchResult, PluginConfig } from './types';
 
 export const PLUGIN_ID = 'dsh-tech-workbench';
-export const VERSION = '2.0.0';
+export const VERSION = '2.4.0';
 export const name = 'dsh-tech-workbench';
 
 /**
  * 服务依赖声明（DSH 客户端 rejectGuard 要求）
- * - slots: 槽位注册服务（settings.section 卡片）
+ * - slots: 槽位注册服务（main + sidebar.panellist）
  *
  * 注意：logger、timer、effect 是 Cordis 上下文内置属性，不需要声明。
  * 声明了反而会导致插件等待不存在的服务而 pending（参考 dsh-skin-picker
  * 官方插件只声明 ['slots', 'theme']）。
  */
 export const inject = ['slots'];
+
+// ==============================================
+// 局部窄接口类型（不 import 壳包名）
+// ==============================================
+
+/** slots 服务最小形状 */
+interface SlotsService {
+  inject(name: string, callback: () => void): (() => void) | undefined;
+  register(definition: object, component: unknown): void;
+}
+
+/** 本插件客户端使用的局部窄 ctx 接口 */
+interface TechWorkbenchContext extends Context {
+  slots: SlotsService;
+}
 
 // ==============================================
 // 简易 Toast 提示（不依赖皮肤）
@@ -220,7 +234,8 @@ function WorkbenchRoot({ initialTab }: { initialTab?: string }) {
         {/* 返回按钮 */}
         <button
           onClick={() => {
-            setWorkbenchOpen(false);
+            // 在壳原生面板模式下，返回由壳层处理（点击会话列表即退出）
+            // 此处不再需要手动控制显隐
           }}
           style={{
             display: 'flex',
@@ -317,63 +332,108 @@ function WorkbenchRoot({ initialTab }: { initialTab?: string }) {
 }
 
 // ==============================================
-// 侧边栏工作台入口组件（三槽位）
+// PageShell — 壳原生面板页面外壳
 // ==============================================
 
-function SidebarWorkbenchEntry() {
-  const [activeSlot, setActiveSlot] = useState<string>('plugin');
-
-  const slots = [
-    { id: 'plugin', label: '插件管理', icon: '🔌' },
-    { id: 'preset', label: '预设管理', icon: '📋' },
-    { id: 'app', label: '应用管理', icon: '🚀' },
-  ];
-
-  const handleSlotClick = (slotId: string) => {
-    setActiveSlot(slotId);
-    // 触发自定义事件，通知主界面切换Tab
-    window.dispatchEvent(new CustomEvent('dshwb-switch-tab', { detail: { tab: slotId } }));
-    showToast(`切换到${slots.find((s) => s.id === slotId)?.label}`, 'success');
-  };
-
+/**
+ * 独立页面外壳。
+ * 包一层 div.dshwb-page-shell 提供全尺寸可滚动容器，
+ * 内部渲染 WorkbenchRoot。
+ */
+function PageShell() {
   return (
-    <div className="dshwb-sidebar-workbench-module">
-      {slots.map((slot) => (
-        <div
-          key={slot.id}
-          className={`dshwb-sidebar-workbench-item ${activeSlot === slot.id ? 'active' : ''}`}
-          onClick={() => handleSlotClick(slot.id)}
-        >
-          <span style={{ fontSize: '16px' }}>{slot.icon}</span>
-          <span>{slot.label}</span>
-        </div>
-      ))}
+    <div className="dshwb-page-shell">
+      <WorkbenchRoot initialTab="plugin" />
     </div>
   );
 }
 
 // ==============================================
-// 主界面工作台页面（参考 @dely0/dsh-personal-workbench 实现）
-// 通过 html 属性控制显隐，position: absolute 插入到主内容区
+// 侧边栏 glyph 图标（壳自绘行按钮，注册组件只画 glyph）
 // ==============================================
 
-let workbenchReactRoot: any = null;
+interface PanelIconProps {
+  size: number;
+  active: boolean;
+}
 
 /**
- * 渲染工作台内容到指定容器（供 sidebar-integration.ts 调用）
+ * 科技风工作台侧边栏图标（16px 齿轮）。
+ * stroke currentColor；active 时用 var(--dsw-alias-state-business-primary)。
  */
-export function renderWorkbenchContent(container: HTMLElement): void {
-  try {
-    if (workbenchReactRoot) {
-      workbenchReactRoot.unmount();
-    }
-    workbenchReactRoot = createRoot(container);
-    workbenchReactRoot.render(React.createElement(WorkbenchRoot, { initialTab: 'plugin' }));
-    console.log('[dsh-tech-workbench] 工作台内容已渲染');
-  } catch (err) {
-    console.error('[dsh-tech-workbench] 工作台内容渲染失败:', err);
-    container.innerHTML = '<div style="padding:40px;text-align:center;color:var(--dsw-alias-label-secondary);">工作台加载失败，请刷新页面</div>';
-  }
+function TechWorkbenchPanelIcon({ size, active }: PanelIconProps) {
+  const stroke = active
+    ? 'var(--dsw-alias-state-business-primary)'
+    : 'currentColor';
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 16 16"
+      fill="none"
+      stroke={stroke}
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="8" cy="8" r="2.5" />
+      <path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.41 1.41M11.54 11.54l1.41 1.41M3.05 12.95l1.41-1.41M11.54 4.46l1.41-1.41" />
+    </svg>
+  );
+}
+
+// ==============================================
+// 面板 ID 常量
+// ==============================================
+
+/** 面板 ID（main key 与 sidebar.panellist id 必须完全一致） */
+const PANEL_ID = 'tech-workbench';
+
+/** 侧边栏入口排序 */
+const PANEL_ORDER = 5;
+
+/** 侧边栏入口标签 */
+const PANEL_LABEL = 'Meta管理';
+
+// ==============================================
+// 注册函数
+// ==============================================
+
+/**
+ * 注册科技风工作台 main keyed slot（壳原生独立页面）。
+ * 返回 dispose 函数。
+ */
+export function registerTechWorkbenchPanel(ctx: Context): (() => void) | undefined {
+  const slots = (ctx as TechWorkbenchContext).slots;
+  return slots.inject('main', () => {
+    slots.register(
+      {
+        name: 'main',
+        key: PANEL_ID,
+      },
+      PageShell,
+    );
+  });
+}
+
+/**
+ * 注册科技风工作台侧边栏入口（sidebar.panellist）。
+ * 返回 dispose 函数。
+ */
+export function registerTechWorkbenchEntry(ctx: Context): (() => void) | undefined {
+  const slots = (ctx as TechWorkbenchContext).slots;
+  return slots.inject('sidebar.panellist', () => {
+    slots.register(
+      {
+        name: 'sidebar.panellist',
+        id: PANEL_ID,
+        label: PANEL_LABEL,
+        order: PANEL_ORDER,
+      },
+      TechWorkbenchPanelIcon as unknown as (props: object) => any,
+    );
+  });
 }
 
 // ==============================================
@@ -395,16 +455,22 @@ export function apply(ctx: Context): void {
     logger?.info?.(`[${PLUGIN_ID}] 工作台样式已注入（使用 DSH 原生 --dsw-alias-* 变量）`);
   }
 
-  // ===== 1. 侧边栏工作台入口注入（参考 @dely0/dsh-personal-workbench 实现）=====
+  // ===== 1. 注册壳原生 main 面板 =====
+  let disposePanel: (() => void) | undefined;
   try {
-    // 先设置渲染函数，避免动态导入
-    setWorkbenchRenderFunction((container) => {
-      renderWorkbenchContent(container);
-    });
-    injectSidebarWorkbench();
-    logger?.info?.(`[${PLUGIN_ID}] 侧边栏工作台入口注入已启动`);
+    disposePanel = registerTechWorkbenchPanel(ctx);
+    logger?.info?.(`[${PLUGIN_ID}] main panel registered (key=${PANEL_ID})`);
   } catch (err) {
-    logger?.error?.(`[${PLUGIN_ID}] 侧边栏注入失败:`, err);
+    logger?.error?.(`[${PLUGIN_ID}] main panel registration failed:`, err);
+  }
+
+  // ===== 2. 注册侧边栏 sidebar.panellist 入口 =====
+  let disposeEntry: (() => void) | undefined;
+  try {
+    disposeEntry = registerTechWorkbenchEntry(ctx);
+    logger?.info?.(`[${PLUGIN_ID}] sidebar panellist registered (id=${PANEL_ID}, label=${PANEL_LABEL})`);
+  } catch (err) {
+    logger?.error?.(`[${PLUGIN_ID}] sidebar panellist registration failed:`, err);
   }
 
   // ===== 3. 版本比对提示 =====
@@ -427,7 +493,8 @@ export function apply(ctx: Context): void {
       ctx.effect(() => {
         return () => {
           logger?.info?.(`[${PLUGIN_ID}] 插件卸载，执行清理...`);
-          cleanupSidebarIntegration();
+          disposeEntry?.();
+          disposePanel?.();
           document.querySelector('style[data-dshwb-workbench]')?.remove();
           moduleCtx = null;
         };
@@ -437,8 +504,8 @@ export function apply(ctx: Context): void {
     logger?.error?.(`[${PLUGIN_ID}] 卸载清理注册失败:`, err);
   }
 
-  logger?.info?.(`[${PLUGIN_ID}] client mounted v${VERSION}（无皮肤模式，使用 DSH 原生 --dsw-alias-* 变量）`);
+  logger?.info?.(`[${PLUGIN_ID}] client mounted v${VERSION}（壳原生 main 面板 + sidebar.panellist）`);
 }
 
 // 导出组件供外部使用
-export { WorkbenchRoot, SidebarWorkbenchEntry };
+export { WorkbenchRoot };

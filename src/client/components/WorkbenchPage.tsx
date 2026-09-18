@@ -2,13 +2,18 @@
  * DSH 科技风工作台 - 工作台主页面组件
  * 整合：操作栏、资源卡片网格、分页、空状态、加载状态
  * 支持：搜索、状态筛选、排序、分页
+ * v2.1: 集成插件生命周期管理（安装/卸载/启用/停用/更新/回退）
  */
 import { useMemo, useState, useEffect } from 'react';
-import type { StandardResource, ResourceType, FilterStatus, SortField, SortOrder } from '../types';
+import type { StandardResource, ResourceType, FilterStatus, SortField, SortOrder, PendingAction, ActionFeedback } from '../types';
 import { ResourceCard } from './ResourceCard';
 import { ActionBar } from './ActionBar';
 import { Pagination } from './Pagination';
 import { EmptyState, LoadingState } from './EmptyState';
+import { InstallForm } from './InstallForm';
+import { PluginActionDialog } from './PluginActionDialog';
+import { ActionFeedback as ActionFeedbackComponent } from './ActionFeedback';
+import { PresetManageSection, SkillManageSection } from './LocalManage';
 
 interface WorkbenchPageProps {
   type: ResourceType;
@@ -28,6 +33,74 @@ const TYPE_TITLES: Record<ResourceType, string> = {
   app: '应用管理',
 };
 
+/** API 调用：安装插件 */
+async function apiInstall(source: string): Promise<{ ok: boolean; message: string }> {
+  try {
+    const resp = await fetch('/workbench/api/plugin/install', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ source }),
+    });
+    const data = await resp.json();
+    if (data.ok) return { ok: true, message: `安装成功！请重启 DSH 生效。` };
+    return { ok: false, message: data.errorMessage || '安装失败' };
+  } catch (err: any) {
+    return { ok: false, message: `网络错误: ${err.message}` };
+  }
+}
+
+/** API 调用：卸载插件 */
+async function apiUninstall(id: string): Promise<{ ok: boolean; message: string }> {
+  try {
+    const resp = await fetch(`/workbench/api/plugin/uninstall/${id}`, { method: 'DELETE' });
+    const data = await resp.json();
+    if (data.ok) return { ok: true, message: `插件 ${id} 已卸载` };
+    return { ok: false, message: data.errorMessage || '卸载失败' };
+  } catch (err: any) {
+    return { ok: false, message: `网络错误: ${err.message}` };
+  }
+}
+
+/** API 调用：启用/停用插件 */
+async function apiToggle(id: string, enable: boolean): Promise<{ ok: boolean; message: string }> {
+  try {
+    const resp = await fetch(`/workbench/api/plugin/${enable ? 'enable' : 'disable'}/${id}`, { method: 'POST' });
+    const data = await resp.json();
+    if (data.ok) return { ok: true, message: `已${enable ? '启用' : '停用'}插件 ${id}` };
+    return { ok: false, message: data.errorMessage || '操作失败' };
+  } catch (err: any) {
+    return { ok: false, message: `网络错误: ${err.message}` };
+  }
+}
+
+/** API 调用：更新插件 */
+async function apiUpdate(id: string): Promise<{ ok: boolean; message: string }> {
+  try {
+    const resp = await fetch(`/workbench/api/plugin/update/${id}`, { method: 'POST' });
+    const data = await resp.json();
+    if (data.ok) return { ok: true, message: `插件 ${id} 已更新到 v${data.data?.to || '最新'}` };
+    return { ok: false, message: data.errorMessage || '更新失败' };
+  } catch (err: any) {
+    return { ok: false, message: `网络错误: ${err.message}` };
+  }
+}
+
+/** API 调用：回退插件 */
+async function apiRollback(id: string, version: string): Promise<{ ok: boolean; message: string }> {
+  try {
+    const resp = await fetch(`/workbench/api/plugin/rollback/${id}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ version }),
+    });
+    const data = await resp.json();
+    if (data.ok) return { ok: true, message: `已回退到 v${data.data?.to || version}` };
+    return { ok: false, message: data.errorMessage || '回退失败' };
+  } catch (err: any) {
+    return { ok: false, message: `网络错误: ${err.message}` };
+  }
+}
+
 export function WorkbenchPage({
   type,
   resources,
@@ -43,10 +116,32 @@ export function WorkbenchPage({
   const [sortOrder, setSortOrder] = useState<SortOrder>('desc');
   const [currentPage, setCurrentPage] = useState(1);
 
+  // 生命周期管理状态
+  const [showInstallForm, setShowInstallForm] = useState(false);
+  const [installSource, setInstallSource] = useState('');
+  const [confirmDialog, setConfirmDialog] = useState<{
+    open: boolean;
+    action: 'update' | 'rollback' | 'uninstall';
+    pluginId: string;
+    fromVersion?: string;
+    toVersion?: string;
+  }>({ open: false, action: 'uninstall', pluginId: '' });
+  const [pendingAction, setPendingAction] = useState<PendingAction | null>(null);
+  const [feedback, setFeedback] = useState<ActionFeedback | null>(null);
+  const [installError, setInstallError] = useState<string | null>(null);
+
   // 搜索/筛选变化时重置页码
   useEffect(() => {
     setCurrentPage(1);
   }, [searchQuery, filterStatus, selectedCategory, sortField, sortOrder]);
+
+  // 自动消失反馈
+  useEffect(() => {
+    if (feedback && feedback.ok && feedback.autoDismissMs > 0) {
+      const timer = setTimeout(() => setFeedback(null), feedback.autoDismissMs);
+      return () => clearTimeout(timer);
+    }
+  }, [feedback]);
 
   // 获取所有分类
   const categories = useMemo(() => {
@@ -60,13 +155,9 @@ export function WorkbenchPage({
   // 过滤 + 排序 + 分页
   const processedResources = useMemo(() => {
     let result = [...resources];
-
-    // 分类筛选
     if (selectedCategory !== 'all') {
       result = result.filter((r) => r.category === selectedCategory);
     }
-
-    // 搜索过滤
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       result = result.filter(
@@ -77,83 +168,130 @@ export function WorkbenchPage({
           r.category.toLowerCase().includes(q),
       );
     }
-
-    // 状态筛选
     switch (filterStatus) {
-      case 'installed':
-        result = result.filter((r) => r.isInstalled);
-        break;
-      case 'not-installed':
-        result = result.filter((r) => !r.isInstalled);
-        break;
-      case 'updatable':
-        result = result.filter((r) => r.updateAvailable);
-        break;
-      case 'official':
-        result = result.filter((r) => r.isOfficial);
-        break;
-      case 'community':
-        result = result.filter((r) => !r.isOfficial);
-        break;
+      case 'installed': result = result.filter((r) => r.isInstalled); break;
+      case 'not-installed': result = result.filter((r) => !r.isInstalled); break;
+      case 'updatable': result = result.filter((r) => r.updateAvailable); break;
+      case 'official': result = result.filter((r) => r.isOfficial); break;
+      case 'community': result = result.filter((r) => !r.isOfficial); break;
     }
-
-    // 排序
     result.sort((a, b) => {
       let cmp = 0;
       switch (sortField) {
-        case 'name':
-          cmp = a.name.localeCompare(b.name);
-          break;
-        case 'star':
-          cmp = a.star - b.star;
-          break;
-        case 'updateTime':
-          cmp = a.updateTime - b.updateTime;
-          break;
-        case 'version':
-          cmp = compareVersionStr(a.latestVersion, b.latestVersion);
-          break;
+        case 'name': cmp = a.name.localeCompare(b.name); break;
+        case 'star': cmp = a.star - b.star; break;
+        case 'updateTime': cmp = a.updateTime - b.updateTime; break;
+        case 'version': cmp = compareVersionStr(a.latestVersion, b.latestVersion); break;
       }
       return sortOrder === 'asc' ? cmp : -cmp;
     });
-
     return result;
   }, [resources, searchQuery, filterStatus, selectedCategory, sortField, sortOrder]);
 
-  // 分页
   const totalPages = Math.ceil(processedResources.length / PAGE_SIZE);
   const pagedResources = processedResources.slice(
     (currentPage - 1) * PAGE_SIZE,
     currentPage * PAGE_SIZE,
   );
 
-  // 操作回调（演示用，实际可调用Host接口）
-  const handleInstall = (resource: StandardResource) => {
-    console.log('[Workbench] 安装资源:', resource.id, resource.installCmd);
-    // 实际实现中调用 Host 接口执行安装
-    alert(`安装命令已复制：${resource.installCmd}\n\n请在终端执行此命令完成安装。`);
+  // ===== 生命周期操作回调 =====
+  const handleInstall = (resource?: StandardResource) => {
+    // 打开安装表单弹窗；从资源卡片进入时预填来源（installCmd / homepage）
+    setInstallError(null);
+    setInstallSource(resource?.installCmd || resource?.homepage || '');
+    setShowInstallForm(true);
+  };
+
+  const handleInstallSubmit = async (source: string) => {
+    setPendingAction({ pluginId: source, action: 'install', startedAt: Date.now() });
+    const result = await apiInstall(source);
+    setPendingAction(null);
+    setShowInstallForm(false);
+    setFeedback({
+      pluginId: source,
+      action: 'install',
+      ok: result.ok,
+      message: result.message,
+      autoDismissMs: result.ok ? 5000 : 0,
+    });
   };
 
   const handleUninstall = (resource: StandardResource) => {
-    console.log('[Workbench] 卸载资源:', resource.id);
-    if (confirm(`确定要卸载 ${resource.name} 吗？`)) {
-      // 实际实现中调用 Host 接口执行卸载
-      alert('卸载操作已记录，请重启 DSH 生效。');
-    }
+    setConfirmDialog({ open: true, action: 'uninstall', pluginId: resource.id, fromVersion: resource.latestVersion });
   };
 
-  const handleToggleEnable = (resource: StandardResource) => {
-    console.log('[Workbench] 切换启用状态:', resource.id, !resource.isEnabled);
-    // 实际实现中调用 Host 接口切换状态
+  const handleToggleEnable = async (resource: StandardResource) => {
+    setPendingAction({ pluginId: resource.id, action: resource.isEnabled ? 'disable' : 'enable', startedAt: Date.now() });
+    const result = await apiToggle(resource.id, !resource.isEnabled);
+    setPendingAction(null);
+    setFeedback({
+      pluginId: resource.id,
+      action: resource.isEnabled ? 'disable' : 'enable',
+      ok: result.ok,
+      message: result.message,
+      autoDismissMs: result.ok ? 3000 : 0,
+    });
   };
 
   const handleUpdate = (resource: StandardResource) => {
-    console.log('[Workbench] 更新资源:', resource.id);
-    alert(`更新 ${resource.name} 到 v${resource.latestVersion}\n\n请执行：${resource.installCmd}`);
+    setConfirmDialog({ open: true, action: 'update', pluginId: resource.id, fromVersion: resource.latestVersion, toVersion: resource.latestVersion });
+  };
+
+  const handleConfirmAction = async () => {
+    const { action, pluginId, toVersion } = confirmDialog;
+    setConfirmDialog({ ...confirmDialog, open: false });
+    setPendingAction({ pluginId, action, startedAt: Date.now() });
+    let result: { ok: boolean; message: string };
+    switch (action) {
+      case 'update': result = await apiUpdate(pluginId); break;
+      case 'rollback': result = await apiRollback(pluginId, toVersion || ''); break;
+      case 'uninstall': result = await apiUninstall(pluginId); break;
+      default: result = { ok: false, message: '未知操作' };
+    }
+    setPendingAction(null);
+    setFeedback({ pluginId, action, ok: result.ok, message: result.message, autoDismissMs: result.ok ? 3000 : 0 });
+  };
+
+  const handleRollback = (resource: StandardResource) => {
+    setConfirmDialog({ open: true, action: 'rollback', pluginId: resource.id, toVersion: resource.versions?.[1]?.version || resource.latestVersion });
   };
 
   return (
     <div className="dshwb-workbench-container">
+      {/* 二期：Meta管理本机维护区（预设 / 技能） */}
+      {type === 'preset' && <PresetManageSection />}
+      {type === 'skill' && <SkillManageSection />}
+      {type === 'plugin' && (
+        <div style={{
+          margin: '0 16px 12px 16px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          padding: '10px 16px',
+          borderRadius: '14px',
+          border: '1px solid var(--dsw-alias-border, #e0e0e0)',
+          background: 'var(--dsw-alias-bg-primary, #fff)',
+        }}>
+          <span style={{ fontSize: '13px', color: 'var(--dsw-alias-text-secondary, #86868b)', flex: 1 }}>
+            安装/卸载/启停经 dsh plugin 与 cordis.patch.yml 托管区块执行，启停热生效，安装重启后生效
+          </span>
+          <button
+            onClick={() => handleInstall()}
+            style={{
+              padding: '6px 16px',
+              borderRadius: '9999px',
+              border: '1.5px solid var(--dsw-accent, #0066cc)',
+              background: 'var(--dsw-accent, #0066cc)',
+              color: '#fff',
+              fontSize: '13px',
+              cursor: 'pointer',
+            }}
+          >
+            ＋ 安装插件
+          </button>
+        </div>
+      )}
+
       {/* 操作栏 */}
       <ActionBar
         title={TYPE_TITLES[type]}
@@ -205,7 +343,6 @@ export function WorkbenchPage({
         />
       ) : (
         <>
-          {/* 顶部分页 */}
           <Pagination
             currentPage={currentPage}
             totalPages={totalPages}
@@ -214,7 +351,6 @@ export function WorkbenchPage({
             onPageChange={setCurrentPage}
           />
 
-          {/* 资源卡片网格 */}
           <div className="dshwb-workbench-resource-grid">
             {pagedResources.map((resource) => (
               <ResourceCard
@@ -228,7 +364,6 @@ export function WorkbenchPage({
             ))}
           </div>
 
-          {/* 底部分页 */}
           <Pagination
             currentPage={currentPage}
             totalPages={totalPages}
@@ -238,13 +373,63 @@ export function WorkbenchPage({
           />
         </>
       )}
+
+      {/* 安装表单弹窗 */}
+      {showInstallForm && (
+        <div className="dshwb-overlay" style={{
+          position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.4)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000,
+        }}>
+          <div style={{
+            background: 'var(--dsw-alias-bg-primary, #fff)', borderRadius: '18px',
+            padding: '24px', minWidth: '360px', maxWidth: '480px', width: '90%',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.12)',
+          }}>
+            <h3 style={{
+              margin: '0 0 16px', color: 'var(--dsw-alias-text-primary, #1d1d1f)',
+              fontSize: '18px', fontWeight: 600,
+            }}>
+              安装插件
+            </h3>
+            <InstallForm
+              initialSource={installSource}
+              onSubmit={handleInstallSubmit}
+              busy={pendingAction?.action === 'install'}
+              errorMessage={installError}
+            />
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '12px' }}>
+              <button
+                onClick={() => setShowInstallForm(false)}
+                className="dshwb-btn dshwb-btn-secondary"
+              >
+                取消
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 操作确认弹窗 */}
+      <PluginActionDialog
+        open={confirmDialog.open}
+        action={confirmDialog.action}
+        pluginId={confirmDialog.pluginId}
+        fromVersion={confirmDialog.fromVersion}
+        toVersion={confirmDialog.toVersion}
+        onConfirm={handleConfirmAction}
+        onCancel={() => setConfirmDialog({ ...confirmDialog, open: false })}
+        busy={pendingAction?.action === confirmDialog.action}
+      />
+
+      {/* 操作反馈 */}
+      <ActionFeedbackComponent
+        feedback={feedback}
+        onDismiss={() => setFeedback(null)}
+      />
     </div>
   );
 }
 
-/**
- * 版本字符串比较（简化版）
- */
 function compareVersionStr(a: string, b: string): number {
   const parse = (v: string): number[] => {
     const cleaned = v.replace(/^[vV]/, '').trim();
