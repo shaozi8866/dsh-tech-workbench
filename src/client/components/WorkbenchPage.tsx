@@ -73,12 +73,16 @@ async function apiToggle(id: string, enable: boolean): Promise<{ ok: boolean; me
   }
 }
 
-/** API 调用：更新插件 */
-async function apiUpdate(id: string): Promise<{ ok: boolean; message: string }> {
+/** API 调用：更新插件（可指定目标版本，缺省 latest） */
+async function apiUpdate(id: string, targetVersion?: string): Promise<{ ok: boolean; message: string }> {
   try {
-    const resp = await fetch(`/workbench/api/plugin/update/${id}`, { method: 'POST' });
+    const resp = await fetch(`/workbench/api/plugin/update/${id}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ version: targetVersion || '' }),
+    });
     const data = await resp.json();
-    if (data.ok) return { ok: true, message: `插件 ${id} 已更新到 v${data.data?.to || '最新'}` };
+    if (data.ok) return { ok: true, message: `插件 ${id} 已更新到 v${data.data?.version || targetVersion || '最新'}` };
     return { ok: false, message: data.errorMessage || '更新失败' };
   } catch (err: any) {
     return { ok: false, message: `网络错误: ${err.message}` };
@@ -94,7 +98,7 @@ async function apiRollback(id: string, version: string): Promise<{ ok: boolean; 
       body: JSON.stringify({ version }),
     });
     const data = await resp.json();
-    if (data.ok) return { ok: true, message: `已回退到 v${data.data?.to || version}` };
+    if (data.ok) return { ok: true, message: `已回退到 v${data.data?.version || version}` };
     return { ok: false, message: data.errorMessage || '回退失败' };
   } catch (err: any) {
     return { ok: false, message: `网络错误: ${err.message}` };
@@ -195,10 +199,19 @@ export function WorkbenchPage({
   );
 
   // ===== 生命周期操作回调 =====
+  // 数据层 installCmd 是完整命令串（"dsh plugin --profile web add <src>"），
+  // 预填必须提取 add 之后的裸来源；提取失败退回 homepage（host 端也会兜底清洗）
+  const installSourceFor = (resource?: StandardResource): string => {
+    if (!resource) return '';
+    const m = (resource.installCmd || '').match(/\badd\s+(\S+)\s*$/);
+    if (m) return m[1];
+    return resource.homepage || resource.installCmd || '';
+  };
+
   const handleInstall = (resource?: StandardResource) => {
-    // 打开安装表单弹窗；从资源卡片进入时预填来源（installCmd / homepage）
+    // 打开安装表单弹窗；从资源卡片进入时预填来源
     setInstallError(null);
-    setInstallSource(resource?.installCmd || resource?.homepage || '');
+    setInstallSource(installSourceFor(resource));
     setShowInstallForm(true);
   };
 
@@ -214,6 +227,8 @@ export function WorkbenchPage({
       message: result.message,
       autoDismissMs: result.ok ? 5000 : 0,
     });
+    // 安装改变了 profile package.json / node_modules：强制刷新让「已安装」状态落卡
+    if (result.ok) await onRefresh();
   };
 
   const handleUninstall = (resource: StandardResource) => {
@@ -231,10 +246,19 @@ export function WorkbenchPage({
       message: result.message,
       autoDismissMs: result.ok ? 3000 : 0,
     });
+    // 启停走 patch 托管区块热生效：刷新拉回新的 enabled 状态
+    if (result.ok) await onRefresh();
   };
 
   const handleUpdate = (resource: StandardResource) => {
-    setConfirmDialog({ open: true, action: 'update', pluginId: resource.id, fromVersion: resource.latestVersion, toVersion: resource.latestVersion });
+    // from=本地已装版本，to=最新可得版本（此前两者都取 latestVersion，显示必然相同）
+    setConfirmDialog({
+      open: true,
+      action: 'update',
+      pluginId: resource.id,
+      fromVersion: resource.localVersion || resource.latestVersion,
+      toVersion: resource.latestVersion,
+    });
   };
 
   const handleConfirmAction = async () => {
@@ -243,13 +267,15 @@ export function WorkbenchPage({
     setPendingAction({ pluginId, action, startedAt: Date.now() });
     let result: { ok: boolean; message: string };
     switch (action) {
-      case 'update': result = await apiUpdate(pluginId); break;
+      case 'update': result = await apiUpdate(pluginId, toVersion); break;
       case 'rollback': result = await apiRollback(pluginId, toVersion || ''); break;
       case 'uninstall': result = await apiUninstall(pluginId); break;
       default: result = { ok: false, message: '未知操作' };
     }
     setPendingAction(null);
     setFeedback({ pluginId, action, ok: result.ok, message: result.message, autoDismissMs: result.ok ? 3000 : 0 });
+    // 更新/回退/卸载同理：成功后强制刷新列表状态
+    if (result.ok) await onRefresh();
   };
 
   const handleRollback = (resource: StandardResource) => {

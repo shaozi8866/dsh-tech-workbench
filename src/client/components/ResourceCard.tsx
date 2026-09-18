@@ -71,6 +71,47 @@ function getTypeIconColor(type: string): string {
   }
 }
 
+/**
+ * 更新日志（卡片就地展开）：首次展开时才请求，成功后不再重复拉取
+ * host 路由 GET /workbench/api/plugin/changelog/:id?homepage=
+ */
+function ChangelogSection({ resource }: { resource: StandardResource }) {
+  const [state, setState] = useState<{ loading: boolean; data: any | null }>({ loading: false, data: null });
+  const load = async () => {
+    if (state.loading || state.data) return;
+    setState({ loading: true, data: null });
+    try {
+      const u = `/workbench/api/plugin/changelog/${encodeURIComponent(resource.id)}?homepage=${encodeURIComponent(resource.homepage || '')}`;
+      const r = await (await fetch(u)).json();
+      setState({ loading: false, data: r.ok ? r.data : { found: false } });
+    } catch {
+      setState({ loading: false, data: { found: false } });
+    }
+  };
+  return (
+    <details
+      className="dshwb-changelog-apple"
+      onToggle={(e: any) => {
+        if (e.currentTarget.open) load();
+      }}
+    >
+      <summary className="dshwb-changelog-summary-apple">更新日志</summary>
+      {state.loading && <div className="dshwb-changelog-hint-apple">正在加载…</div>}
+      {state.data && state.data.found && (
+        <>
+          <div className="dshwb-changelog-hint-apple">
+            {state.data.source === 'local' ? `本地包 · ${state.data.path}` : 'GitHub 仓库'}
+          </div>
+          <pre className="dshwb-changelog-body-apple">{state.data.content}</pre>
+        </>
+      )}
+      {state.data && !state.data.found && !state.loading && (
+        <div className="dshwb-changelog-hint-apple">未找到 CHANGELOG（可到源站仓库查看发布说明）</div>
+      )}
+    </details>
+  );
+}
+
 export function ResourceCard({
   resource,
   onInstall,
@@ -100,28 +141,20 @@ export function ResourceCard({
     setTimeout(() => setShowInstallCmd(false), 2000);
   };
 
-  const openSource = () => {
-    // 优先使用 homepage 字段
+  const resolveSourceUrl = (): string => {
+    // 优先使用 homepage 字段；无效时按包名智能生成源站链接
     let url = resource.homepage;
-
-    // 如果 homepage 无效，智能生成源站链接
     if (!url || !url.startsWith('http')) {
       const name = resource.name || '';
-      // 如果名称包含 @owner/repo 格式，生成 npm 包页面链接
       if (name.startsWith('@')) {
         url = `https://www.npmjs.com/package/${encodeURIComponent(name)}`;
-      }
-      // 如果名称包含 /（如 owner/repo），可能是 GitHub 仓库
-      else if (name.includes('/') && !name.includes(' ')) {
+      } else if (name.includes('/') && !name.includes(' ')) {
         url = `https://github.com/${name}`;
-      }
-      // 默认生成 npm 搜索页面链接
-      else {
+      } else {
         url = `https://www.npmjs.com/search?q=${encodeURIComponent(name)}`;
       }
     }
-
-    window.open(url, '_blank', 'noopener,noreferrer');
+    return url;
   };
 
   return (
@@ -148,9 +181,25 @@ export function ResourceCard({
               </span>
             )}
             {resource.isOfficial ? (
-              <span className="dshwb-badge-apple dshwb-badge-official-apple">官方</span>
+              <a
+                className="dshwb-badge-apple dshwb-badge-official-apple dshwb-badge-link-apple"
+                href={resolveSourceUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="访问源站"
+              >
+                官方
+              </a>
             ) : (
-              <span className="dshwb-badge-apple dshwb-badge-community-apple">社区</span>
+              <a
+                className="dshwb-badge-apple dshwb-badge-community-apple dshwb-badge-link-apple"
+                href={resolveSourceUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="访问源站"
+              >
+                社区
+              </a>
             )}
           </div>
         </div>
@@ -209,6 +258,9 @@ export function ResourceCard({
         )}
       </div>
 
+      {/* 二期：插件卡片就地展开更新日志 */}
+      {resource.type === 'plugin' && <ChangelogSection resource={resource} />}
+
       {/* 底部操作按钮（Apple 胶囊按钮风格） */}
       <div className="dshwb-card-actions-apple">
         {!resource.isInstalled ? (
@@ -226,13 +278,6 @@ export function ResourceCard({
               title="复制安装命令"
             >
               {showInstallCmd ? '已复制' : '复制命令'}
-            </button>
-            <button
-              className="dshwb-btn-apple dshwb-btn-ghost-apple"
-              onClick={openSource}
-              title="跳转到源网站"
-            >
-              源站
             </button>
           </>
         ) : (
@@ -252,13 +297,6 @@ export function ResourceCard({
               title={resource.isEnabled ? '点击禁用' : '点击启用'}
             >
               {resource.isEnabled ? '禁用' : '启用'}
-            </button>
-            <button
-              className="dshwb-btn-apple dshwb-btn-ghost-apple"
-              onClick={openSource}
-              title="跳转到源网站"
-            >
-              源站
             </button>
             <button
               className="dshwb-btn-apple dshwb-btn-danger-apple"

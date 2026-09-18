@@ -6,7 +6,8 @@
 > 仍然有效的部分：§4 错误码思路、§5.2 托管区块格式、§7 HTTP 路径契约（plugin 系）与 §8 组件契约。
 > **二期扩展（v2.4.0）**：预设维护 `/workbench/api/preset/{list,composition/:id,copy,save,validate,delete}`
 > （agentPresets 名册服务，组合编辑仅限 trust=user；system 只读）；
-> 技能维护 `/workbench/api/skill/{list,content/:name,create,save,delete}`
+> 技能维护 `/workbench/api/skill/{list,content/:name,create,save,delete}`；
+> 更新日志 `GET /workbench/api/plugin/changelog/:id?homepage=`（本地包 CHANGELOG 优先，GitHub raw 兜底，6h 缓存）
 > （用户技能根 ~/.dsh/skills，目录型 SKILL.md 或扁平 .md，路径净化防逃逸）。
 > 实现与测试见 `src/host/{plugin,preset,skill}-cli.ts`、`tests/{plugin,preset,skill}-cli.test.ts`、
 > `tests/e2e-build-smoke.mjs`（118 单元 + 9 冒烟全绿）。

@@ -33,9 +33,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 侧边栏挂载迁移为壳原生 `main` 面板（key=tech-workbench）+ `sidebar.panellist` 入口「Meta管理」
 - `src/client/sidebar-integration.ts`（MutationObserver DOM 注入）整体删除
 
+### 🔧 上线当日热修与体验优化（实测反馈驱动，并入 2.4.0）
+
+- 🐛 **安装失败**：卡片「安装」预填的是数据层完整命令串（`dsh plugin --profile web add <src>`），被整串当成包名传给 pnpm；现 host `normalizeSource` 自动提取 `add` 之后的裸来源（无法识别则 400 明确报错），前端预填同步改为提取裸来源
+- 🐛 **已安装状态不更新**：生命周期操作成功后前端只弹提示不刷新；现成功后一律强制刷新（`/data?force=true`），host 变更成功同时作废内存缓存，多窗口不再读旧状态
+- 🐛 **启停状态不对**：卡片 `isEnabled` 原依赖运行时插件服务列表，被停用插件（不挂载）从列表消失导致显示与事实相反；现以 `cordis.patch.yml` disabled 集合为唯一真相源（新导出 `getDisabledPluginIds`），已安装判定同时兼容磁盘声明（local-fetcher）
+- 🐛 **更新弹窗前后版本相同**：确认框 from/to 都取 `latestVersion`；改为 `localVersion → latestVersion`，并修正更新/回退成功消息读取的返回字段（`data.version`）
+- ✨ **卡片就地展开「更新日志」**（新 host 模块 `changelog-getter.ts` + 路由 `GET /plugin/changelog/:id?homepage=`）：已安装读包内 CHANGELOG，未安装自动拉 GitHub 仓库 raw（main/master），6 小时缓存、64KB 截断
+- ✨ **去掉「源站」按钮**：「官方/社区」徽章本身即源站链接，卡片操作区更干净
+
 ### Tests
 
-- 单元 118/118（旧 79 + plugin-cli 托管区块/保护名单/normalizeSource + preset-cli 护栏 + skill-cli CRUD，全沙箱）
+- 单元 120/120（旧 79 + plugin-cli 托管区块/保护名单/normalizeSource/启停真相源 + preset-cli 护栏 + skill-cli CRUD，全沙箱）
 - 构建产物端到端冒烟 `tests/e2e-build-smoke.mjs` 9/9：真实 bundle 挂假 ctx 打路由；disable→patch 落盘→enable→还原、403/400 拒绝、skill CRUD、preset 无服务降级
 
 ## [2.0.0] - 2026-09-12

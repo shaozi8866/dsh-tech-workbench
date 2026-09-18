@@ -57,3 +57,6 @@ temp/
 workbench-data.json
 plugin-readmes/
 plugins-80-230.txt
+
+# 部署备份与本地验证脚本产物
+backup/pre-deploy-*/

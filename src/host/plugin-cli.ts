@@ -68,7 +68,7 @@ export function isProtectedPlugin(id: string): boolean {
 
 // ===== 路径解析 =====
 
-function profileDir(opts: PluginCliOptions): string {
+export function profileDir(opts: PluginCliOptions): string {
   const home = opts.dshHome || process.env.DSH_HOME || path.join(process.env.HOME || '~', '.dsh');
   return path.join(home, 'profiles', opts.profile || DEFAULT_PROFILE);
 }
@@ -85,14 +85,28 @@ function patchFilePath(opts: PluginCliOptions): string {
 
 /**
  * 规范化来源：生成 dsh plugin add 可接受的格式
+ *   "dsh plugin --profile web add o/r" → 先提取 add 之后的裸来源再走下列规则
  *   "https://github.com/o/r" → "github:o/r"
  *   "github.com/o/r"         → "github:o/r"
  *   "o/r"                    → "github:o/r"
  *   "@scope/pkg[@ver]" / "pkg[@ver]" → 原样（npm）
+ *
+ * 卡片数据层的 installCmd 本身就是完整命令串；用户粘贴或前端预填都必须能吃下，
+ * 否则会把整条命令当成包名传给 pnpm（09-18 Meta管理安装失败根因）。
  */
 export function normalizeSource(source: string): string {
   const trimmed = (source || '').trim();
   if (!trimmed) throw new Error('来源不能为空');
+
+  // 含空格 → 视为命令串/多 token，提取 add 之后的尾参
+  if (/\s/.test(trimmed)) {
+    const addMatch = trimmed.match(/\badd\s+(\S+)\s*$/);
+    const candidate = (addMatch ? addMatch[1] : '').trim();
+    if (!candidate) {
+      throw new Error(`无法从输入中识别包来源（应形如 "dsh plugin add <来源>" 或直接给来源）: ${trimmed}`);
+    }
+    return normalizeSource(candidate);
+  }
 
   const httpsMatch = trimmed.match(/^https?:\/\/github\.com\/([\w.-]+\/[\w.-]+?)(?:\.git)?\/?$/);
   if (httpsMatch) return `github:${httpsMatch[1]}`;
@@ -303,6 +317,19 @@ export function collectDisabledIds(content: string): Set<string> {
   }
   if (currentId && sawDisabledTrue) disabled.add(currentId);
   return disabled;
+}
+
+/**
+ * 读取当前 profile 补丁文件，得到「被停用插件 id」集合。
+ * 启停状态的唯一真相源：声明存在 + 不在此集合 = 已启用。
+ * 文件不存在/解析失败按空集合处理（宁可显示为启用，也不误伤）。
+ */
+export function getDisabledPluginIds(opts: PluginCliOptions = {}): Set<string> {
+  try {
+    return collectDisabledIds(readFileSync(patchFilePath(opts), 'utf-8'));
+  } catch {
+    return new Set<string>();
+  }
 }
 
 /** 全文件扫描（只读）：补丁中出现过的所有条目 id */

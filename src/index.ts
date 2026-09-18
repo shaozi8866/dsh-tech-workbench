@@ -40,6 +40,8 @@ import {
 import {
   listSkills, readSkill, createSkill, saveSkill, deleteSkill,
 } from './host/skill-cli.js';
+// 更新日志（卡片就地展开）
+import { getChangelog } from './host/changelog-getter.js';
 
 export const PLUGIN_ID = 'dsh-tech-workbench';
 export const VERSION = '2.4.0';
@@ -322,6 +324,10 @@ async function handleAdminRoute(
       errorMessage: result.error,
       durationMs: Date.now() - started,
     });
+    // 变更类操作成功 → 作废内存缓存，杜绝其他窗口非 force 读取旧「已安装」状态
+    if (result.ok && method !== 'GET') {
+      memoryData = null;
+    }
   };
 
   try {
@@ -344,6 +350,12 @@ async function handleAdminRoute(
           return send(rollbackPlugin(target, body?.version || '', deps.cliOpts), 200), true;
         case 'versions':
           return send(await getVersions(target, deps.cliOpts), 200), true;
+        case 'changelog': {
+          const hz = new URL(req.url || '', 'http://local').searchParams.get('homepage') || undefined;
+          const r = await getChangelog(target, deps.cliOpts, hz);
+          sendJson(res, 200, { ok: true, data: r, errorCode: null, errorMessage: null, durationMs: Date.now() - started });
+          return true;
+        }
         default:
           sendJson(res, 400, { ok: false, data: null, errorCode: 'UNKNOWN_ACTION', errorMessage: `未知插件操作: ${action}`, durationMs: Date.now() - started });
           return true;

@@ -982,6 +982,55 @@ export const WORKBENCH_CSS = `
   color: var(--dsw-alias-label-secondary, #86868b);
 }
 
+/* 二期：徽章即源站链接（替代独立「源站」按钮） */
+.dshwb-badge-link-apple {
+  cursor: pointer;
+  text-decoration: none;
+  transition: filter 0.15s ease, opacity 0.15s ease;
+}
+.dshwb-badge-link-apple:hover {
+  filter: brightness(0.94);
+  text-decoration: underline;
+}
+
+/* 二期：卡片就地展开的更新日志 */
+.dshwb-changelog-apple {
+  margin: 8px 0 2px;
+  border-top: 1px solid var(--dsw-alias-separator-default, rgba(0, 0, 0, 0.08));
+  padding-top: 6px;
+}
+.dshwb-changelog-summary-apple {
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--dsw-alias-label-secondary, #86868b);
+  user-select: none;
+  list-style: none;
+}
+.dshwb-changelog-summary-apple::before {
+  content: '▸ ';
+}
+.dshwb-changelog-apple[open] .dshwb-changelog-summary-apple::before {
+  content: '▾ ';
+}
+.dshwb-changelog-hint-apple {
+  font-size: 11px;
+  color: var(--dsw-alias-label-tertiary, #aeaeb2);
+  margin: 4px 0;
+}
+.dshwb-changelog-body-apple {
+  max-height: 220px;
+  overflow: auto;
+  font-size: 11px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: var(--dsw-alias-bg-layer-2, #f5f5f7);
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin: 4px 0 0;
+  color: var(--dsw-alias-label-primary, #1d1d1f);
+}
+
 .dshwb-card-status-apple {
   display: flex;
   gap: 5px;

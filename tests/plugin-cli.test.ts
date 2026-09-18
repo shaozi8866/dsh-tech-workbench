@@ -11,7 +11,7 @@ import { tmpdir } from 'node:os';
 
 import {
   normalizeSource, isProtectedPlugin,
-  setPluginDisabled, parseManagedBlock, collectDisabledIds, collectPatchEntryIds,
+  setPluginDisabled, parseManagedBlock, collectDisabledIds, getDisabledPluginIds, collectPatchEntryIds,
   MANAGED_BEGIN, MANAGED_END,
   listPlugins, enablePlugin, disablePlugin,
 } from '../src/host/plugin-cli';
@@ -53,6 +53,19 @@ describe('normalizeSource - 来源规范化', () => {
   it('npm 包名与 scoped 包原样保留', () => {
     assert.equal(normalizeSource('dsh-market'), 'dsh-market');
     assert.equal(normalizeSource('@scope/pkg@1.2.3'), '@scope/pkg@1.2.3');
+  });
+  it('完整命令串（卡片 installCmd）提取 add 之后的裸来源 — 09-18 安装失败回归', () => {
+    assert.equal(
+      normalizeSource('dsh plugin --profile web add @anysearch/anysearch-dsh'),
+      '@anysearch/anysearch-dsh',
+    );
+    assert.equal(
+      normalizeSource('dsh plugin --profile web add https://github.com/owner/repo'),
+      'github:owner/repo',
+    );
+    assert.equal(normalizeSource('dsh --profile web plugin add owner/repo'), 'github:owner/repo');
+    assert.throws(() => normalizeSource('dsh plugin add'), /无法从输入中识别包来源/);
+    assert.throws(() => normalizeSource('rm -rf /tmp/x something'), /无法从输入中识别包来源/);
   });
   it('空来源抛错', () => {
     assert.throws(() => normalizeSource('   '), /来源不能为空/);
@@ -178,5 +191,16 @@ describe('enable/disable 结果包装', () => {
     const bad = disablePlugin('dsh-webui-auth', opts());
     assert.equal(bad.ok, false);
     assert.equal(bad.exitCode, 403);
+  });
+});
+
+describe('getDisabledPluginIds - 启停真相源（卡片 enabled 状态以此为准）', () => {
+  it('patch 缺失→空集；停用后含 id；还原后再为空', () => {
+    writeFileSync(patchFile(), '[]\n');
+    assert.equal(getDisabledPluginIds(opts()).size, 0);
+    setPluginDisabled('dsh-demo', true, opts());
+    assert.ok(getDisabledPluginIds(opts()).has('dsh-demo'));
+    setPluginDisabled('dsh-demo', false, opts());
+    assert.equal(getDisabledPluginIds(opts()).size, 0);
   });
 });

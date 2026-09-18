@@ -21,6 +21,7 @@ import {
 } from './market-fetcher';
 import { fetchGithubSource } from './github-fetcher';
 import { fetchLocalInstalledPlugins } from './local-fetcher';
+import { getDisabledPluginIds } from './plugin-cli';
 import { fetchNpmPlugins } from './npm-fetcher';
 import { fetchDshDesktopPresets } from './dshdesktop-fetcher';
 import { getResourceDescription, getResourceHomepage, getResourceCategory, getResourceMeta } from './resource-meta-database';
@@ -257,7 +258,15 @@ export function normalizeResourceList(list: StandardResource[]): StandardResourc
 export async function syncLocalEnvStatus(
   ctx: WorkbenchContext,
   list: StandardResource[],
+  config?: ResolvedConfig,
 ): Promise<StandardResource[]> {
+  // 启停真相源：cordis.patch.yml 的 disabled 集合（patchReload:live 实际消费的就是它）。
+  // 运行时服务 getInstalledList 的 enabled 仅作参考，避免卡片显示与热补丁状态相反。
+  const disabledIds = getDisabledPluginIds({
+    profile: config?.profile,
+    dshHome: config?.dshHome,
+  });
+
   // 读取本地已安装插件
   let localPlugins: Array<{ id: string; version: string; enabled: boolean }> = [];
   try {
@@ -293,11 +302,17 @@ export async function syncLocalEnvStatus(
 
     if (item.type === ResourceType.PLUGIN) {
       const local = localPlugins.find((p) => p.id === item.id || p.id === item.name);
-      if (local) {
+      // 被禁用的插件不会出现在运行时列表里：以磁盘声明（local-fetcher）判已安装，
+      // 以补丁 disabled 集合判启停，杜绝「已安装但显示未安装 / 停用后卡片仍显示启用」
+      const diskInstalled = !!local || item.isInstalled === true;
+      if (diskInstalled) {
         updated.isInstalled = true;
-        updated.isEnabled = local.enabled;
-        updated.localVersion = local.version || '0.0.0';
-        updated.updateAvailable = compareVersion(item.latestVersion, local.version || '0.0.0') > 0;
+        const disabledHere = disabledIds.has(item.id) || disabledIds.has(item.name || '');
+        updated.isEnabled = !disabledHere && (local ? local.enabled !== false : true);
+        if (local) {
+          updated.localVersion = local.version || '0.0.0';
+          updated.updateAvailable = compareVersion(item.latestVersion, local.version || '0.0.0') > 0;
+        }
       }
     } else if (item.type === ResourceType.PRESET) {
       const local = localPresets.find((p) => p.id === item.id || p.name === item.name);
@@ -535,7 +550,7 @@ export async function fetchDoubleSourceData(
 
     // ===== 阶段5：联动本地环境状态 =====
     ctx.logger?.info('[Fetch] 阶段5：本地环境状态联动');
-    const finalList = await syncLocalEnvStatus(ctx, standardList);
+    const finalList = await syncLocalEnvStatus(ctx, standardList, config);
 
     // ===== 阶段6：分层增量落库 =====
     ctx.logger?.info('[Fetch] 阶段6：增量缓存落库');
